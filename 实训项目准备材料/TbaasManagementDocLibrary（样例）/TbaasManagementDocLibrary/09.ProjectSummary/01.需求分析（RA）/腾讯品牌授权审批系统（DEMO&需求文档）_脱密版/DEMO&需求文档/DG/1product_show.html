@@ -1,0 +1,312 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=gb2312" />
+<title>产品开发申请</title>
+<link href="css/main.css" rel="stylesheet" />
+<style type="text/css">
+<!--
+.style1 {color: #FF9900}
+.style2 {color: #FF0000}
+.style3 {color: #FF6600}
+.style4 {color: #999999}
+-->
+</style>
+<br />
+<script src="js/main.js"></script>
+<script>
+   function sp(tag1,tag2){
+	 $(tag1).style.display ="none";
+	 $(tag2).style.display = "";
+   }
+   
+   function bo(tag){
+	document.getElementById(tag).style.display = "block";
+	document.getElementById("mask").style.display = "block";
+	document.getElementById("mask").height = document.body.clientHeight;
+	document.getElementById("mask").style.height = document.body.clientHeight;
+   }
+	 function checkAll() { 
+    var code_Values = document.getElementsByTagName("input"); 
+    for(i = 0;i < code_Values.length;i++){ 
+    if(code_Values[i].type == "checkbox") 
+      { 
+       code_Values[i].checked = true; 
+      } 
+   } 
+ } 
+</script>
+</head>
+
+<body>
+<div id="sub_content">
+
+<h2><p>普通产品开发申请</p></h2>
+
+<div align="center"> 
+<img src="images/approve_flow.png"/>
+</div>
+<div id="ctag">
+
+<div class="cando" >
+  <input type="submit" name="button" id="button" value="审批 & 转下一流程" onclick="bo('message')" /> | <input type="submit" name="button" id="button" value="驳回"  onclick="bo('pinfo')"/> | <input type="submit" name="button" id="button" value="返回" onclick="window.open('1product_list.html','_self')" />
+</div>
+
+</div>
+<table width="860" class="info_tab3 ctabt">
+  <tr>
+    <th width="15%">申请编号</th>
+    <td>roco_2011p001</td>
+    <th>申请单名称</th>
+    <td class="noborder">洛克王国周边衍生品授权</td>
+  </tr>
+  <tr>
+    <th width="15%">项目名称</th>
+    <td>洛克王国周边衍生品授权</td>
+    <th>&nbsp;</th>
+    <td class="noborder">&nbsp;</td>
+  </tr>
+  <tr>
+    <th>合作公司</th>
+    <td><span class="noborder">浙江甲壳虫动漫有限公司</span></td>
+    <th>项目时间</th>
+    <td class="noborder">2011.4.15-2013.5.15</td>
+  </tr>
+  <tr>
+    <th>申请人</th>
+    <td>李亚达</td>
+    <th>联系电话</th>
+    <td class="noborder">020-81019117</td>
+  </tr>
+</table>
+<h2 class="mt20"><p>产品资料</p>  </h2>
+<div id="fdiv">
+
+<table border="0" cellspacing="0" cellpadding="0" class="info_tab1 mt10" width="860">
+
+  <tr>
+    <th width="5%">选择</th>
+    <th width="5%">序号</th>
+    <th>腾讯审批编号</th>
+    <th>产品名称</th>
+    <th>大小规格</th>
+    <th>材质</th>
+    <th>颜色</th>
+    <th>零售价</th>
+    <th>批发价</th>
+    <th>出厂价</th>
+    <th>状态</th>
+    <th>备注</th>
+    <th>操作</th>
+  </tr>
+  <tr id="Dlist1_1" style="display:none ">
+    <td></td>
+    <td>1</td>
+    <td>ROCO2011P001001</td>
+    <td class="redf">洛克王国金色童年系列-男装</td>
+    <td>M</td>
+    <td>全棉</td>
+    <td>彩</td>
+    <td>135</td>
+    <td>80</td>
+    <td>50</td>
+    <td class="redf">已审批</td>
+    <td>查看</td>
+    <td></td>
+  </tr>
+  
+   <tr id="bDlist1_1" style="display:none ">
+    <td></td>
+    <td>1</td>
+    <td>ROCO2011P001001</td>
+    <td class="redf">洛克王国金色童年系列-男装</td>
+    <td>M</td>
+    <td>全棉</td>
+    <td>彩</td>
+    <td>135</td>
+    <td>80</td>
+    <td>50</td>
+    <td><span class="style3">驳回</span></td>
+    <td>查看</td>
+    <td></td>
+  </tr>
+  
+  <tr id="zDlist1_1" style="display:none ">
+    <td></td>
+    <td>1</td>
+    <td>ROCO2011P001001</td>
+    <td class="redf">洛克王国金色童年系列-男装</td>
+    <td>M</td>
+    <td>全棉</td>
+    <td>彩</td>
+    <td>135</td>
+    <td>80</td>
+    <td>50</td>
+    <td><span class="style4">终止</span></td>
+    <td>查看</td>
+    <td></td>
+  </tr>
+  
+  <tr id="Dlist1">
+    <td><input type="checkbox" name="checkbox5" id="checkbox7" /></td>
+    <td>1</td>
+    <td>ROCO2011P001001</td>
+    <td class="redf">洛克王国金色童年系列-男装</td>
+    <td>M</td>
+    <td>全棉</td>
+    <td>彩</td>
+    <td>135</td>
+    <td>80</td>
+    <td>50</td>
+    <td class="redf">待审批</td>
+    <td>查看</td>
+    <td><a onclick="sp('Dlist1','Dlist1_1')">审批</a> <a href="javascript:void(0)" onclick="bo('pinfo');sp('Dlist1','bDlist1_1')">驳回</a> 
+		  </td>
+  </tr>
+    <td></td>
+    <td>2</td>
+    <td>ROCO2011P001001</td>
+    <td>洛克王国金色童年系列-男装</td>
+    <td>M</td>
+    <td>全棉</td>
+    <td>彩</td>
+    <td>135</td>
+    <td>80</td>
+    <td>50</td>
+    <td>已审批</td>
+    <td>查看</td>
+    <td>下一流程</td>
+  </tr>
+</table>
+
+</div>
+<div class="boperation">批量操作：<a onclick="checkAll() ">全选</a> <a>审批</a> <a href="javascript:void(0)" onclick="bo('pinfo')">驳回</a></div>
+
+
+<div id="ctag2">
+
+</div>
+</div>
+<div class="noticeInfo"><h4>[备注]</h4>
+<h5>权限</h5>
+<p>此页面只有以下用户可以看到，且看到列表不一样，通过右上角角色列表切换</p>
+<p>腾讯总项目负责人、腾讯授权经理、腾讯项目组、代理公司负责人、代理公司授权经理、厂商负责人、厂商项目经理</p>
+<h5>产品状态：待审批、审核中、已审批、驳回、终止</h5>
+<ul>
+  <li></li>
+<li>待审批：厂商已发起申请，申请进入到审批流程 （标红）&lt; 当前审批人可以看到，例如当前进入到代理商审批，则代理商相应授权经理显示此状态&gt;</li>
+<li>审批中：该审批人环节已过，进入下一个审批人 &lt; （橙色）<strong>除了当前审批人，都显示&ldquo;审批中&rdquo;，申请人发起申请后，都显示为&ldquo;审批中&rdquo;</strong>&gt;</li>
+<li>已审批：完成所有审批流程 </li>
+<li>驳回：某个审批流程被驳回 （标红）</li>
+<li>终止：审批因特殊原因结束 （灰色）</li>
+</ul>
+<h5>操作</h5>
+<p>不同角色，不同申请状态显示操作项目不同，具体看页面中权限切换</p>
+<ul>
+<li>腾讯总项目负责人：审批通过、驳回、返回（如果产品项里面有驳回的，则操作项目里只显示驳回、返回按钮，如果用户进行了操作，返回时提醒是否转下一个流程）</li>
+<li>腾讯授权经理：审批&amp;转到下一流程、驳回、返回（如果产品项里面有驳回的，则操作项目里只显示驳回、返回按钮，如果用户进行了操作，返回时提醒是否转下一个流程）</li>
+<li>腾讯项目组：审批通过、驳回、返回（如果产品项里面有驳回的，则操作项目里只显示驳回、返回按钮，如果用户进行了操作，返回时提醒是否转下一个流程）</li>
+<li>代理公司负责人：审批&amp;转到下一流程、驳回、返回（如果产品项里面有驳回的，则操作项目里只显示驳回、返回按钮，如果用户进行了操作，返回时提醒是否转下一个流程）</li>
+<li>代理公司授权经理：审批&amp;转到下一流程、驳回、返回（如果产品项里面有驳回的，则操作项目里只显示驳回、返回按钮，如果用户进行了操作，返回时提醒是否转下一个流程）</li>
+<li>厂商负责人：重新提交、返回</li>
+<li>厂商项目经理：重新提交、返回</li>
+</ul>
+</div>
+<div id="pinfo" class="pop">
+<h2><p>驳回原因</p><a href="javascript:void(0)" onclick="closePop('pinfo')">[×] 关闭</a></h2>
+<table width="100%" border="0" cellspacing="0" cellpadding="0" class="info_tab5 mt10">
+  <tr>
+    <th>产品名称</th>
+    <td colspan="5"><span class="redf">
+      <input type="text" class="txt" size="64" value="洛克王国金色童年系列-男装" />
+    </span></td>
+    </tr>
+
+  <tr>
+    <th>请填写驳回原因</th>
+    <td colspan="10"><textarea name="textarea" id="textarea" cols="107" rows="3" class="longarea"></textarea></td>
+    </tr>
+  <tr>
+    <td>&nbsp;</td>
+    <td colspan="5" class="alignr"><input type="submit" name="button" id="button" value="确定" class="btn_sorange" onclick="closePop('pinfo'),changeIframe2('opResult.html?msg=已驳回申请&url=1product_list.html')" /></td>
+    </tr>
+</table>
+</div>
+<div id="stop" class="pop">
+<h2><p>终止原因</p><a href="javascript:void(0)" onclick="closePop('stop')">[×] 关闭</a></h2>
+<table width="100%" border="0" cellspacing="0" cellpadding="0" class="info_tab5 mt10">
+  <tr>
+    <th>产品名称</th>
+    <td colspan="5"><span class="redf">
+      <input type="text" class="txt" size="64" value="洛克王国金色童年系列-男装" />
+    </span></td>
+    </tr>
+
+  <tr>
+    <th>请填写终止原因</th>
+    <td colspan="10"><textarea name="textarea" id="textarea" cols="107" rows="3" class="longarea"></textarea></td>
+    </tr>
+  <tr>
+    <td>&nbsp;</td>
+    <td colspan="5" class="alignr"><input type="submit" name="button" id="button" value="确定" class="btn_sorange" onclick="closePop('stop')" /></td>
+    </tr>
+</table>
+</div>
+<div id="pedit" class="pop">
+<h2><p>修改产品</p><a href="javascript:void(0)" onclick="closePop('pedit')">[×] 关闭</a></h2>
+<table width="100%" border="0" cellspacing="0" cellpadding="0" class="info_tab5 mt10">
+  <tr>
+    <th>产品名称</th>
+    <td colspan="5"><span class="redf">
+      <input type="text" class="txt" size="64" value="洛克王国金色童年系列-男装" />
+    </span></td>
+    </tr>
+  <tr>
+    <th>大小规格</th>
+    <td><input type="text" class="txt" size="20" value="M" /></td>
+    <th>材质</th>
+    <td><input type="text" class="txt" size="20" value="全棉" /></td>
+    <th>颜色</th>
+    <td><input type="text" class="txt" size="20" value="彩" /></td>
+    </tr>
+  <tr>
+    <th>零售价</th>
+    <td><input type="text" class="txt" size="20" value="135" /></td>
+    <th>批发价</th>
+    <td><input type="text" class="txt" size="20" value="80" /></td>
+    <th>出厂价</th>
+    <td><input type="text" class="txt" size="20" value="50" /></td>
+    </tr>
+  <tr>
+    <th>产品描述</th>
+    <td colspan="5"><img src="images/editor.jpg" width="443" height="233" />
+     </td>
+    </tr>
+  <tr>
+    <th>上传图片</th>
+    <td colspan="5"><input name="textfield" type="text" class="txt" id="textfield" size="50" /> <input type="submit" name="button2" id="button2" value="浏览文件..." />
+      <input type="submit" name="button3" id="button3" value="上传" /></td>
+    </tr>
+  <tr>
+    <td>&nbsp;</td>
+    <td colspan="5" class="alignr"><input type="submit" name="button" id="button" value="确定" class="btn_sorange" onclick="closePop('pinfo');show2('line9')" /></td>
+    </tr>
+</table>
+
+</div>
+<div id="message" class="pop2">
+   <table class="info_tab3 ctabt">
+	<tr>
+    <td align="middle" class="style5"><div class="notice" id="msg1" name="msg1">审批成功</div></td>
+    </tr>
+    <tr>
+    <td align="center" class="style5">
+    <input type="button" value="确定" class="btn_sub" onclick="history.go(-1)" />
+    </td>
+    </tr>
+</table>
+</div>
+
+   <div id="mask"></div>
+</body>
+</html>

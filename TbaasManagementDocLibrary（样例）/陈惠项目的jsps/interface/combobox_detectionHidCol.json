@@ -1,0 +1,91 @@
+[{
+	"id":1,
+	"text":"PIP"	
+},{
+	"id":2,
+	"text":"TZP"
+},{
+	"id":3,
+	"text":"CAZ"
+},{
+	"id":4,
+	"text":"CFZ"
+},{
+	"id":5,
+	"text":"CRO"
+},{
+	"id":6,
+	"text":"CTX"
+},{
+	"id":7,
+	"text":"FEP"		
+},{
+	"id":8,
+	"text":"AMK"
+},{
+	"id":9,
+	"text":"APR"	
+},{
+	"id":10,
+	"text":"NEO"
+},{
+	"id":11,
+	"text":"NET"
+},{
+	"id":12,
+	"text":"STR"
+},{
+	"id":13,
+	"text":"TOB"
+},{
+	"id":14,
+	"text":"DOX"
+},{
+	"id":15,
+	"text":"MIN"
+},{
+	"id":16,
+	"text":"CHL"
+},{
+	"id":17,
+	"text":"AZM"
+},{
+	"id":18,
+	"text":"TEC"
+},{
+	"id":19,
+	"text":"CL"
+},{
+	"id":20,
+	"text":"IMP"
+},{
+	"id":21,
+	"text":"MEM"
+},{
+	"id":22,
+	"text":"FOS"
+},{
+	"id":23,
+	"text":"NIT"
+},{
+	"id":24,
+	"text":"SXT"
+},{
+	"id":25,
+	"text":"TMP"
+},{
+	"id":26,
+	"text":"LEV"
+},{
+	"id":27,
+	"text":"NAL"
+},{
+	"id":28,
+	"text":"NOR"
+},{
+	"id":29,
+	"text":"OFX"
+},{
+	"id":30,
+	"text":"OQX"
+}]

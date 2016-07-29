@@ -1,0 +1,165 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=gb2312" />
+<title>产品开发申请</title>
+<link href="css/main.css" rel="stylesheet" />
+<script>
+function  fill_table()
+ {
+	time.style.display= '';
+
+}
+
+function addRow()
+  {
+	 
+	  
+	  if(n4.style.display == '')
+	  {
+		  n5.style.display='';
+	  }
+	  else if(n3.style.display == '')
+	  {
+		  n4.style.display='';
+	  }
+	  else if(n2.style.display == '')
+	  {
+		  n3.style.display='';
+	  }
+	  else {
+	   n2.style.display = '';
+	  }
+}
+</script>
+</head>
+
+<body>
+<div id="sub_content">
+
+<h2>防伪标签申请</h2>
+  
+  <table id="select_display" width="860" id="display"  class="info_tab3 ctabt">
+  <tr>
+    <th width="15%">申请编号</th>
+    <td>roco_2011p001      </td>
+    <th>项目名称</th>
+    <td class="noborder">
+      <select onchange="fill_table()">
+	  <option value="0">-请选择-</option>
+      	<option>洛克王国周边衍生品授权</option> 
+        <option>洛克王国卡牌-小版</option>
+        <option>三国杀</option>     
+      </select>
+      </td>
+  </tr>
+  <tr>
+    <th>公司名称</th>
+    <td><span class="noborder">
+      <input type="text" class="txt" size="35" value="浙江甲壳虫动漫有限公司" disabled="disabled" />
+   </span></td>
+    <th>期望到货时间</th>
+    <td id="time" class="noborder"><input type="text" class="txt" size="35" value="2012.4.15" /></td>
+  </tr>
+  <tr>
+    <th>申请人</th>
+    <td><input type="text" disabled="disabled" class="txt" value="李亚达" size="35" /></td>
+    <th>联系电话</th>
+    <td class="noborder"><input type="text" class="txt" size="35" value="020-81019117" /></td>
+  </tr>
+  <tr>
+    <th>收件人</th>
+    <td><input type="text" class="txt" size="35" value="王小虎" /></td>
+    <th>联系电话</th>
+    <td class="noborder"><input type="text" class="txt" size="35" value="020-81019117" /></td>
+  </tr>
+  <tr>
+    <th>快递地址</th>
+    <td><input type="text" class="txt" size="35" value="浙江XXXXX市XX路231号" /></td>
+    <th>邮编</th>
+    <td class="noborder"><input type="text" class="txt" size="35" value="5467916" /></td>
+  </tr>
+  </table>
+<h2 class="mt20">防伪标签信息</h2>
+<table id="info_table" border="0" cellspacing="0" cellpadding="0" class="info_tab1 mt10" width="860">
+      <tr>
+        <th width="5%">序号</th>
+        <th>腾讯审批编号</th>
+        <th>产品名称</th>
+        <th>本期生产数量</th>
+        <th>申请张数</th>
+        <th>备注</th>
+        </tr>
+      <tr>
+        <td>1</td>
+        <td>ROCO2011P001001</td>
+        <td>
+        <input type="text" class="txt" size="35" value="" /></td>
+        <td>
+        <input type="text" class="txt" size="5" value="" /></td>
+        <td><input type="text" class="txt" size="5" value="" /></td>
+        <td><input type="text" class="txt" size="35" value="" /></td>
+        <td><input type="button"  value="删除行" /></td>
+        </tr>
+      <tr id="n2" style="display:none">
+        <td>2</td>
+        <td>ROCO2011P001002</td>
+        <td><input type="text" class="txt" size="35" value="" /></td>
+        <td><input type="text" class="txt" size="5" value="" /></td>
+        <td><input type="text" class="txt" size="5" value="" /></td>
+        <td><input type="text" class="txt" size="35" value="" /></td>
+        <td><input type="button"  value="删除行" /></td>
+        </tr>
+      <tr id="n3" style="display:none">
+        <td>3</td>
+        <td>ROCO2011P001003</td>
+        <td><input type="text" class="txt" size="35" value=""/></td>
+        <td><input type="text" class="txt" size="5" value="" /></td>
+        <td><input type="text" class="txt" size="5" value="" /></td>
+        <td><input type="text" class="txt" size="35" value="" /></td>
+        <td><input type="button"  value="删除行" /></td>
+      </tr>
+      <tr id="n4" style="display:none">
+        <td>4</td>
+        <td>ROCO2011P001004<h4></h4></td>
+        <td><input type="text" class="txt" size="35" value="" /></td>
+        <td><input type="text" class="txt" size="5" value="" /></td>
+        <td><input type="text" class="txt" size="5" value="" /></td>
+        <td><input type="text" class="txt" size="35" value="" /></td>
+        <td><input type="button"  value="删除行" /></td>
+      </tr>
+      <tr  id="n5" style="display:none">
+        <td>5</td>
+        <td>ROCO2011P001005</td>
+        <td><input type="text" class="txt" size="35" value="" /></td>
+        <td><input type="text" class="txt" size="5" value="" /></td>
+        <td><input type="text" class="txt" size="5" value="" /></td>
+        <td><input type="text" class="txt" size="35" value="" /></td>
+        <td><input type="button"  value="删除行" /></td>
+      </tr>
+      <tr>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+        <td align="right">总计</td>
+        <td>
+        <input type="text" class="txt" size="5" value="" /></td>
+        <td><input type="text" class="txt" size="5" value="" /></td>
+        <td><input type="text" class="txt" size="35" value="" /></td>
+        
+      </tr>
+</table>
+<div class="boperation">操作：<select name="">
+  <option value="1">1</option>
+  <option value="2">2</option>
+  <option value="3">3</option>
+  <option value="4">4</option>
+  <option value="5">5</option>
+</select>
+<input type="button" value="增加行" onclick="addRow()" />	
+</div>
+<div class="alignc pb20 pt20">
+  <input type="button" value="提  交" onclick="window.open('opResult.html?msg=修改成功&url=8label_list1.html','_self')" class="btn_sub" />
+</div>
+</div>
+</body>
+</html>

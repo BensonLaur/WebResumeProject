@@ -1,0 +1,102 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>公司管理</title>
+<link href="css/main.css" rel="stylesheet" />
+</head>
+<script>
+function deltrp(trid)
+{    //alert(trid);
+    var tab=document.getElementById("peo");
+    var row=document.getElementById(trid);    
+    var index=row.rowIndex;//rowIndex属性为tr的索引值，从0开始   
+    tab.deleteRow(index);  //从table中删除
+
+}
+</script>
+<body>
+<div id="sub_content">
+
+<h2 class="search_t">项目信息</h2>
+<table class="info_tab4 ctabtb">
+  <tr>
+    <th width="14%">项目编号</th>
+    <td class="f14">roco-2011-0001</td>
+    </tr>
+  <tr>
+    <th>项目名称</th>
+    <td class="f14">洛克王国周边衍生品授权（三方）</td>
+    </tr>
+</table>
+
+<h2 class="search_t">项目人员名单</h2>
+
+<div class="note">
+选择公司：<strong>
+<select name="select5" id="select5">
+  <option value="0">浙江甲壳虫有限公司</option>
+  <option>广州梦龙</option>
+  <option>凤凰文艺</option>
+</select>
+</strong>选择人员：
+<select name="select3" id="select4">
+    <option value="0">请选择人员</option>
+	<option value="1" selected="selected">aa(王丽)</option>
+    <option value="2">feifei(李菲菲)</option>
+    <option value="3">aha(王小丽)</option>
+  </select>
+分配权限：
+ <select name="select3" id="select4">
+    <option value="0">请选择权限</option>
+    <option value="1" selected="selected">设计师</option>
+    <option value="2">财务人员</option>
+    <option value="3">项目管理员</option>
+  </select>
+  <input type="button" value="添 加" class="btn_orange ml20" 
+  onclick="document.getElementById('peo4').style.display='';"/>
+ </div>
+ <div class="gray_info" style="width:840px">
+ 【权限说明】
+<ul>
+<li>· 设计师可以上传对应项目产品设计图</li>
+<li>· 财务人员可以提交、查看、打印公司报表</li>
+<li>· 项目经理可以进行该项目下所有操作</li>
+</ul>
+ </div>
+<table class="info_tab1" width="860" id="peo">
+  <tr>
+    <th>人员名单</th>
+    <th>人员角色</th>
+    <th>操作</th>
+    </tr>
+  <tr id="peo1">
+    <td>feifei(李菲菲)</td>
+    <td width="14%">设计师</td>
+    <td><a href="javascript:deltrp('peo1')">- 删除</a></td>
+    </tr>
+  <tr id="peo2">
+    <td>aha(王小丽)</td>
+    <td>设计师</td>
+    <td><a href="javascript:deltrp('peo2')">- 删除</a></td>
+    </tr>
+  <tr id="peo3">
+    <td>aha(王小丽)</td>
+    <td>财务</td>
+    <td><a href="javascript:deltrp('peo3')">- 删除</a></td>
+    </tr>
+  <tr id="peo4" style="display:none">
+	<td>aa(王丽)</td>
+    <td>设计师</td>
+    <td><a href="javascript:deltrp('peo4')">- 删除</a></td>
+  </tr>
+</table>
+
+
+<div class="alignc ptd10">
+	<input type="button" value="提 交" class="btn_sub" onclick="javascript :history.back(-1)"/>
+	<input type="button" value="返 回" class="btn_sub" onclick="javascript :history.back(-1)"/>
+</div>
+</div>
+</body>
+</html>

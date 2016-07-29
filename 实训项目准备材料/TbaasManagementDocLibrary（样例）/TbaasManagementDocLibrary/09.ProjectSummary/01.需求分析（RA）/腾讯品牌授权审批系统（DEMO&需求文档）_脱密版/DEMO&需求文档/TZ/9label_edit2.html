@@ -1,0 +1,79 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=gb2312" />
+<title>产品开发申请</title>
+<link href="css/main.css" rel="stylesheet" />
+</head>
+
+<body>
+<div id="sub_content">
+
+<h2>防伪标签生产信息</h2>
+<table width="860" class="info_tab3 ctabt">
+  <tr>
+    <th width="15%">生产批次</th>
+    <td>2011D1</td>
+    <th>生产数量</th>
+    <td class="noborder">
+      <input type="text" class="txt" size="15" value="200000" />
+      枚</td>
+  </tr>
+  <tr>
+    <th>标签单价</th>
+    <td><span class="noborder">
+      <input type="text" class="txt" size="15" value="3" />
+    分</span></td>
+    <th>标签总价</th>
+    <td class="noborder"><input type="text" class="txt" size="15" value="6000" /> 
+      元</td>
+  </tr>
+  <tr>
+    <th>生产厂家</th>
+    <td><span class="noborder">
+      <select name="select" id="select">
+	  <option value="0">-请选择-</option>
+        <option value="1">深圳何茂防伪有限公司</option>
+        <option value="2">台湾擎雷</option>
+    </select>
+    </span></td>
+    <th>防伪码文件</th>
+    <td class="noborder"><input type="file" class="txt" size="35" value="上传压缩包" />  
+    <input type="button" onclick="showPic()" class="btn_orange" value="上传图片" />
+      </span></td>
+  </tr>
+  <tr>
+    <th>是否带礼包</th>
+    <td><input name="checkbox" type="checkbox" id="checkbox" checked="checked" />
+      带礼包</td>
+    <th>礼包说明</th>
+    <td><span class="noborder">
+      <input type="text" class="txt" size="35" value="100洛克贝" />
+      </span></td>
+  </tr>
+    <tr>
+    <th>标签类型</th>
+    <td>
+    <select>
+    <option>-请选择-</option>
+    <option>腾讯游戏</option>
+    <option>腾讯儿童</option>
+    </select>
+    </td>
+    <th>下单时间</th>
+    <td>2012-2-6</td>
+  </tr>
+  <tr>
+    <th>备注信息</th>
+    <td><textarea name="textarea" id="textarea" cols="45" rows="5"></textarea></td>
+    <th>&nbsp;</th>
+    <td>&nbsp;</td>
+  </tr>
+
+  </table>
+<div class="alignc pb20 pt20">
+  <input type="button" value="提  交" onclick="window.open('opResult.html?msg=修改成功&url=9label_list2.html','_self')" class="btn_sub" />
+</div>
+</div>
+</body>
+</html>

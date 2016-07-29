@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8" ?> 
+ <!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd"> 
+ <mapper namespace="com.neusoft.basis.group.mapper.GroupMapper"> 
+     <resultMap type="com.neusoft.basis.group.entity.GroupEntity" id="groupResultMap"> 
+	    <id property="id" column="id" javaType="java.lang.Integer"/>  
+	    <result property="name" column="name" javaType="java.lang.String"/> 
+	    <result property="isDel" column="is_del" javaType="java.lang.String"/> 
+	    <result property="insertUserId" column="insert_user_id" javaType="java.lang.String"/> 
+	    <result property="insertDate" column="insert_date" javaType="java.util.Date"/> 
+	    <result property="lastModifyUserId" column="last_modify_user_id" javaType="java.lang.String"/> 
+	    <result property="lastModifyDate" column="last_modify_date" javaType="java.util.Date"/> 
+	 </resultMap>
+
+     <resultMap type="com.neusoft.basis.group.entity.GroupItemRelEntity" id="groupItemRelMap"> 
+	    <id property="groupId" column="group_id" javaType="java.lang.Integer"/>  
+	    <id property="itemId" column="item_id" javaType="java.lang.String"/> 
+	 </resultMap> 
+	 
+	<resultMap type="com.neusoft.basis.user.entity.MenuItemEntity" id="menuItemMap"> 
+	    <result property="menuName" column="menu_name" javaType="java.lang.String"/>  
+	    <result property="itemName" column="item_name" javaType="java.lang.String"/>
+	    <result property="itemId" column="item_id" javaType="java.lang.String"/>  
+	 </resultMap> 
+ 
+    <insert id="insertGroup" parameterType="com.neusoft.basis.group.entity.GroupEntity" > 
+	    insert into `group`(id,name,is_del,insert_user_id,insert_date) values(#{id}, #{name},'0',#{insertUserId},#{insertDate})
+	</insert> 
+	
+	<select id="getAllGroup" resultMap="groupResultMap">
+       SELECT * from `group`; 
+    </select>
+    
+    <select id="getGroup" parameterType="java.lang.Integer" resultMap="groupResultMap"> 
+	   <![CDATA[ 
+	     SELECT * from `group` b
+	     WHERE b.id = #{id}
+	    ]]> 
+    </select> 
+	
+	<update id="updateGroup" parameterType="com.neusoft.basis.group.entity.GroupEntity" > 
+	    update `group`
+	       set name= #{name},
+	           is_del = #{isDel},
+	           last_modify_user_id =  #{lastModifyUserId} ,
+	           last_modify_date =  #{lastModifyDate}       
+	     WHERE id = #{id}
+	</update> 
+	
+    <select id="getAllMenuItem" resultMap="menuItemMap">
+       SELECT m.`name` menu_name,i.`name` item_name,i.id item_id
+         from menu_item_rel r,menu m,item i
+		  WHERE r.item_id = i.id
+		    and r.menu_id = m.id
+		    and i.is_del = '0'
+		    and m.is_del = '0'
+		   order by m.order_num,i.order_num
+    </select>
+    
+    <select id="getAllGroupItem" parameterType="java.lang.Integer" resultMap="groupItemRelMap"> 
+	     SELECT * from group_item_rel b
+	     WHERE b.group_id = #{id}
+    </select>
+    
+    <delete id="deleteGroupItem" parameterType="java.lang.Integer" > 
+	    delete from group_item_rel
+	     WHERE group_id = #{id}
+	</delete> 
+    
+    <insert id="insertGroupItem" parameterType="com.neusoft.basis.group.entity.GroupItemRelEntity" > 
+	    insert into group_item_rel(group_id,item_id) values(#{groupId}, #{itemId})
+	</insert> 
+ 
+ </mapper>

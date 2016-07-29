@@ -1,0 +1,136 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=gb2312" />
+<title>添加产品设计</title>
+<link href="css/main.css" rel="stylesheet" />
+<script>
+function  showPic()
+{
+	test1.style.display='';
+	test2.style.display='';
+
+}
+function  displayAll()
+{
+	select_display.style.display= '';
+	select_invise.style.display= 'none';
+}
+</script>
+</head>
+
+<body>
+<div id="sub_content">
+
+<h2 class="search_t">
+<p>新增质量审核</p>
+</h2>
+<form id="myform" name="myform" action="7quality_list.html" >
+
+	
+<table id="select_display"  class="info_tab3 ctabt">
+  <tr>
+    <th width="13%">产品审批编号</th>
+    <td width="15%">ROCO2011-0001-0005</td>
+    <th width="13%">产品名称</th>
+    <td><select><option>洛克王国拼图玩具</option>
+    <option>洛克王国卡牌项目</option>
+    <option>洛克王国卡牌-大版</option>
+    </select></td>
+    <th width="13%">所属项目</th>
+    <td width="15%" class="noborder">洛克王国周边衍生品授权</td>
+  </tr>
+  <tr>
+    <th>申请公司</th>
+    <td><span class="noborder">浙江甲壳虫动漫有限公司</span></td>
+    <th>项目经理</th>
+    <td>李奚丹</td>
+    <th>联系方式</th>
+    <td class="noborder">020-88888888、13785154816</td>
+  </tr>
+  <tr>
+    <th>&nbsp;</th>
+    <td>&nbsp;</td>
+    <th>设计师</th>
+    <td>王力宏</td>
+    <th>联系方式</th>
+    <td class="noborder">020-88888888、13785154816</td>
+  </tr>
+</table>
+<!--<table width="100%" border="0" cellspacing="0" cellpadding="0" class="info_tab3 ctabt mt10">
+  <tr>
+    <th>产品样品照片</th>
+    <th width="30%">打样介绍</th>
+  </tr>
+  <tr id="test1">
+		<td> <img src="images\temp_sg1.jpg"  href="javascript:void(0)" onclick="showPop('showpic1')" />
+        <br/>
+          <input type="file" class="txt" value="请上传产品图片" size="30" /> <input type="button" onclick="showPic()" class="btn_orange" value="修改" />
+        </td>
+    	<td>
+        <textarea name="textarea2" id="textarea2" cols="40" rows="5">此设计体现时尚、新潮特色</textarea>
+        </td>
+    
+    </tr> 
+  <tr id="test2">
+		<td> <img src="images\temp_sg2.jpg" href="javascript:void(0)" onclick="showPop('showpic2')"/>
+         <br/>
+          <input type="file" class="txt" value="请上传产品图片" size="30" /> <input type="button" onclick="showPic()" class="btn_orange" value="修改" />
+        </td>
+    	<td>
+        <textarea name="textarea2" id="textarea2" cols="40" rows="5">此设计体现时尚、新潮特色</textarea>
+        </td>
+  </tr>
+  
+  <tr>
+    <td><p>显示产品缩略图（宽度不超过500px），支持多张图片</p>
+        <p>点击弹出层显示产品全图</p>
+      <div class=""><input type="file" class="txt" value="请上传产品图片" size="30" /> <input type="button" onclick="showPic()" class="btn_orange" value="上传图片" />
+   </td>
+    <td><textarea name="textarea2" id="textarea2" cols="40" rows="5">此设计体现时尚、新潮特色</textarea></td>
+  </tr>
+</table>-->
+<table width="100%" border="0" cellspacing="0" cellpadding="0" class="info_tab3 ctabt mt10">
+  <tr>
+    <th>打样附件</th>
+    <th width="30%">附件说明</th>
+   </tr>
+  <tr>
+    <td><input type="file" class="txt" value="请上传产品附件" size="30" /> <input type="button" onclick="showPic()" class="btn_orange" value="上传附件" /></td>
+    <td><textarea rows="3" cols="50">此设计体现时尚、新潮特色</textarea> </td>
+   </tr>
+</table>
+<table width="100%" border="0" cellspacing="0" cellpadding="0" class="info_tab3 ctabt mt10">
+  <tr>
+    <th>审核意见附件</th>
+    <th width="30%">附件说明</th>
+   </tr>
+  <tr>
+    <td><a href="#">《洛克王国拼图玩具打样附件包审核.rar》</a></td>
+    <td>此设计体现时尚、新潮特色</td>
+   </tr>
+</table>
+
+<div class="alignc pb20 pt20"></div>
+
+<div id="showpic1" class="pop">
+<h2><p>图片1</p><a href="javascript:void(0)" onclick="closePop('showpic1')">[×] 关闭</a></h2>
+<img src="images\temp_sg1.jpg" />
+</div>
+
+<div id="showpic2" class="pop">
+<h2><p>图片2</p><a href="javascript:void(0)" onclick="closePop('showpic2')">[×] 关闭</a></h2>
+<img src="images\temp_sg2.jpg" />
+</div>
+ 
+<!--<input type="button" value="提 交" class="btn_sub" />-->
+<input type="button" VALUE="修 改" onclick="window.open('opResult.html?msg=修改成功&url=7quality_list.html','_self')" class="btn_sub" action="option.jsp" > 
+<!--<input type="submit" value="login" />-->
+
+
+<script type="text/javascript" src="js/main.js"></script>
+</form>
+</div>
+<div id="mask"> </div>
+</body>
+</html>

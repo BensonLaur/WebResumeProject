@@ -1,0 +1,910 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>公司管理</title>
+<script>
+function pass()
+{
+	p1.style.display='none';
+	p2.style.display='';
+}
+function  usr()
+{
+	company.style.display= 'none';
+	company2.style.display= 'none';
+	invise.style.display= 'none';
+	display.style.display='';
+	invise2.style.display= 'none';
+	display2.style.display='';
+	result.style.display= '';
+}
+
+function changeRole(n){
+	if(n == 1)
+	{
+		invise.style.display= '';
+		invise2.style.display= '';
+		company.style.display= 'none';
+		company2.style.display= 'none';	
+		display.style.display='none';	
+		display2.style.display='none';
+	}
+	if(n==2)
+	{
+		invise.style.display= 'none';
+		invise2.style.display= 'none';
+		display.style.display='none';	
+		display2.style.display='none';
+		company.style.display= '';
+		company2.style.display= '';
+	}
+	
+}
+</script>
+<link href="css/main.css" rel="stylesheet" />
+</head>
+
+<body>
+<div id="sub_content">
+
+<h2 class="search_t">质量审核搜索<span class="sc_search"></span></h2>
+<div class="c_search">
+<input type="text" class="txt" value="洛克王国儿童开发申请" size="60" />
+ <input class="btn_search" type="button"  onclick="usr()" value="搜 索" />
+</div>
+
+<div id=result class="notice" style="display:none"><h3>搜索结果</h3><p>总共搜索到【14】条记录</p></div>
+<h2>
+  <p>审核列表</p><select name="change" id="change" onchange="changeRole(this.value)">
+  <option value="1">腾讯总负责人</option>
+  <option value="2">厂商负责人</option>
+</select>
+<a href="javascript:void(0)" onclick="show('fdiv','table')">显示全部</a>
+</h2>
+
+<h2>
+  <p>待审核列表</p>
+  </h2>
+<table id=invise width="100%" border="0" cellspacing="0" cellpadding="0" class="info_tab1">
+  <tr>
+    <th width="15%">产品编号</th>
+    <th width="15%">产品名称</th>
+    <th width="10%">申请人</th>
+    <th width="10%">申请时间</th>
+    <th width="15%">申请公司</th>
+    <th>状态</th>
+    <th>审批人</th>
+    <th>操作</th>
+  </tr>
+
+  <tr id="p1">
+    <td>roco_2011p0001</td>
+    <td class="redf"><a href="#">洛克王国衍生服装</a></td>
+    <td>安琪</td>
+    <td>2011.3.18</td>
+    <td>阿迪达斯</td>
+    <td class="redf">紧急</td>
+    <td>dorisqiu(邱晨)</td>
+    <td><a href="javascript:void(0)" onclick="changeIframe2('7quality_show.html')">详情 
+    <a href="javascript:void(0)" onclick="pass()">审批</a>
+    <a href="javascript:void(0)" onclick="showPop('reject')">驳回</a>
+    <a href="javascript:void(0)" onclick="showPop('terminate')">中止</a>
+    </td>
+  </tr>
+  <tr>
+    <td>roco_2011p0002</td>
+    <td class="redf"><a href="#">洛克王国卡牌项目</a></td>
+    <td>林立</td>
+    <td>2011.3.18</td>
+    <td>甲壳虫动漫</td>
+    <td class="redf">紧急</td>
+    <td>nuzhang(张弩)</td>
+   <td><a href="javascript:void(0)" onclick="changeIframe2('7quality_show.html')">详情 
+    <a href="javascript:void(0)" onclick="pass()">审批</a>
+    <a href="javascript:void(0)" onclick="showPop('reject')">驳回</a>
+    <a href="javascript:void(0)" onclick="showPop('terminate')">中止</a>
+    </td>
+  </tr>
+  <tr>
+    <td>roco_2011p0001</td>
+    <td><a href="#">洛克王国卡牌-大版</a></td>
+    <td>安琪</td>
+    <td>2011.3.18</td>
+    <td>阿迪达斯</td>
+    <td>待处理</td>
+    <td>dorisqiu(邱晨)</td>
+	<td>
+    <a href="javascript:void(0)" onclick="changeIframe2('7quality_show.html')">详情 
+    <a href="javascript:void(0)" onclick="pass()">审批</a>
+    <a href="javascript:void(0)" onclick="showPop('reject')">驳回</a>
+    <a href="javascript:void(0)" onclick="showPop('terminate')">中止</a>
+    </td>
+   </tr>
+  <tr>
+    <td>roco_2011p0002</td>
+    <td><a href="#">洛克王国卡牌-小版</a></td>
+    <td>林立</td>
+    <td>2011.3.18</td>
+    <td>甲壳虫动漫</td>
+    <td>待处理</td>
+    <td>nuzhang(张弩)</td>
+	<td>
+	<a href="javascript:void(0)" onclick="changeIframe2('7quality_show.html')">详情 
+    <a href="javascript:void(0)" onclick="pass()">审批</a>
+    <a href="javascript:void(0)" onclick="showPop('reject')">驳回</a>
+    <a href="javascript:void(0)" onclick="showPop('terminate')">中止</a>
+     </td>  
+    </tr>
+   
+  <tr>
+    <td>roco_2011p0001</td>
+    <td><a href="#">洛克王国儿童开发申请</a></td>
+    <td>安琪</td>
+    <td>2011.3.18</td>
+    <td>阿迪达斯</td>
+    <td>待处理</td>
+    <td>dorisqiu(邱晨)</td>
+	<td><a href="javascript:void(0)" onclick="changeIframe2('7quality_show.html')">详情 
+    <a href="javascript:void(0)" onclick="pass()">审批</a>
+    <a href="javascript:void(0)" onclick="showPop('reject')">驳回</a>
+    <a href="javascript:void(0)" onclick="showPop('terminate')">中止</a>
+    </td>
+    </tr>
+  <tr>
+    <td>roco_2011p0002</td>
+    <td><a href="#">洛克王国玩具开发申请</a></td>
+    <td>林立</td>
+    <td>2011.3.18</td>
+    <td>甲壳虫动漫</td>
+    <td>待处理</td>
+    <td>nuzhang(张弩)</td>
+<td><a href="javascript:void(0)" onclick="changeIframe2('7quality_show.html')">详情 
+    <a href="javascript:void(0)" onclick="pass()">审批</a>
+    <a href="javascript:void(0)" onclick="showPop('reject')">驳回</a>
+    <a href="javascript:void(0)" onclick="showPop('terminate')">中止</a>
+    </td> 
+   </tr>
+  <tr>
+    <td>roco_2011p0001</td>
+    <td><a href="#">洛克王国儿童开发申请</a></td>
+    <td>安琪</td>
+    <td>2011.3.18</td>
+    <td>阿迪达斯</td>
+    <td>待处理</td>
+    <td>dorisqiu(邱晨)</td>
+<td><a href="javascript:void(0)" onclick="changeIframe2('7quality_show.html')">详情 
+    <a href="javascript:void(0)" onclick="pass()">审批</a>
+    <a href="javascript:void(0)" onclick="showPop('reject')">驳回</a>
+    <a href="javascript:void(0)" onclick="showPop('terminate')">中止</a>
+    </td>
+   </tr>
+  <tr>
+    <td>roco_2011p0002</td>
+    <td><a href="#">洛克王国玩具开发申请</a></td>
+    <td>林立</td>
+    <td>2011.3.18</td>
+    <td>甲壳虫动漫</td>
+    <td>待处理</td>
+    <td>nuzhang(张弩)</td>
+    <td>
+        <a href="javascript:void(0)" onclick="changeIframe2('7quality_show.html')">详情 
+        <a href="javascript:void(0)" onclick="pass()">审批</a>
+        <a href="javascript:void(0)" onclick="showPop('reject')">驳回</a>
+        <a href="javascript:void(0)" onclick="showPop('terminate')">中止</a>
+    </td>
+  </tr>
+  <tr>
+    <td>roco_2011p0001</td>
+    <td><a href="#">洛克王国儿童开发申请</a></td>
+    <td>安琪</td>
+    <td>2011.3.18</td>
+    <td>阿迪达斯</td>
+    <td>待处理</td>
+    <td>dorisqiu(邱晨)</td>
+<td><a href="javascript:void(0)" onclick="changeIframe2('7quality_show.html')">详情 
+    <a href="javascript:void(0)" onclick="pass()">审批</a>
+    <a href="javascript:void(0)" onclick="showPop('reject')">驳回</a>
+    <a href="javascript:void(0)" onclick="showPop('terminate')">中止</a>
+    </td>    </tr>
+    </table>
+    
+   <table id=company style="display:none" width="100%" border="0" cellspacing="0" cellpadding="0" class="info_tab1">
+  <tr>
+    <th width="15%">产品编号</th>
+    <th width="15%">产品名称</th>
+    <th width="10%">申请人</th>
+    <th width="10%">申请时间</th>
+    <th width="15%">申请公司</th>
+    <th>状态</th>
+    <th>审批人</th>
+    <th>操作</th>
+  </tr>
+
+  <tr class>
+    <td>roco_2011p0001</td>
+    <td class="redf"><a href="#">111洛克王国衍生服装</a></td>
+    <td>安琪</td>
+    <td>2011.3.18</td>
+    <td>阿迪达斯</td>
+    <td class="redf">紧急</td>
+    <td>dorisqiu(邱晨)</td>
+    <td><a href="javascript:void(0)" onclick="changeIframe2('7quality_show.html')">详情 
+    </td>
+  </tr>
+  <tr>
+    <td>roco_2011p0002</td>
+    <td class="redf"><a href="#">洛克王国卡牌项目</a></td>
+    <td>林立</td>
+    <td>2011.3.18</td>
+    <td>甲壳虫动漫</td>
+    <td class="redf">紧急</td>
+    <td>nuzhang(张弩)</td>
+   <td><a href="javascript:void(0)" onclick="changeIframe2('7quality_show.html')">详情
+    </td>
+  </tr>
+  <tr>
+    <td>roco_2011p0001</td>
+    <td><a href="#">洛克王国卡牌-大版</a></td>
+    <td>安琪</td>
+    <td>2011.3.18</td>
+    <td>阿迪达斯</td>
+    <td>待处理</td>
+    <td>dorisqiu(邱晨)</td>
+<td><a href="javascript:void(0)" onclick="changeIframe2('7quality_show.html')">详情
+    </td>    </tr>
+  <tr>
+    <td>roco_2011p0002</td>
+    <td><a href="#">洛克王国卡牌-小版</a></td>
+    <td>林立</td>
+    <td>2011.3.18</td>
+    <td>甲壳虫动漫</td>
+    <td>待处理</td>
+    <td>nuzhang(张弩)</td>
+<td><a href="javascript:void(0)" onclick="changeIframe2('7quality_show.html')">详情
+    </td>    </tr>
+   
+  <tr>
+    <td>roco_2011p0001</td>
+    <td><a href="#">洛克王国儿童开发申请</a></td>
+    <td>安琪</td>
+    <td>2011.3.18</td>
+    <td>阿迪达斯</td>
+    <td>待处理</td>
+    <td>dorisqiu(邱晨)</td>
+<td><a href="javascript:void(0)" onclick="changeIframe2('7quality_show.html')">详情
+    </td>    </tr>
+  <tr>
+    <td>roco_2011p0002</td>
+    <td><a href="#">洛克王国玩具开发申请</a></td>
+    <td>林立</td>
+    <td>2011.3.18</td>
+    <td>甲壳虫动漫</td>
+    <td>待处理</td>
+    <td>nuzhang(张弩)</td>
+    <td><a href="javascript:void(0)" onclick="changeIframe2('7quality_show.html')">详情
+    </td>    </tr>
+  <tr>
+    <td>roco_2011p0001</td>
+    <td><a href="#">洛克王国儿童开发申请</a></td>
+    <td>安琪</td>
+    <td>2011.3.18</td>
+    <td>阿迪达斯</td>
+    <td>待处理</td>
+    <td>dorisqiu(邱晨)</td>
+<td><a href="javascript:void(0)" onclick="changeIframe2('7quality_show.html')">详情
+    </td>    </tr>
+  <tr>
+    <td>roco_2011p0002</td>
+    <td><a href="#">洛克王国玩具开发申请</a></td>
+    <td>林立</td>
+    <td>2011.3.18</td>
+    <td>甲壳虫动漫</td>
+    <td>待处理</td>
+    <td>nuzhang(张弩)</td>
+<td><a href="javascript:void(0)" onclick="changeIframe2('7quality_show.html')">详情
+    </td></tr>
+  <tr>
+    <td>roco_2011p0001</td>
+    <td><a href="#">洛克王国儿童开发申请</a></td>
+    <td>安琪</td>
+    <td>2011.3.18</td>
+    <td>阿迪达斯</td>
+    <td>待处理</td>
+    <td>dorisqiu(邱晨)</td>
+<td><a href="javascript:void(0)" onclick="changeIframe2('7quality_show.html')">详情
+    </td>    </tr>
+    </table>
+    
+    
+ <table id="display" style="display:none"  width="100%" border="0" cellspacing="0" cellpadding="0" class="info_tab1">
+  <tr>
+    <th width="15%">产品编号</th>
+    <th width="15%">产品名称</th>
+    <th width="10%">申请人</th>
+    <th width="10%">申请时间</th>
+    <th width="15%">申请公司</th>
+    <th>状态</th>
+    <th>审批人</th>
+    <th>操作</th>
+  </tr>
+  <tr>
+    <td>roco_2011p0001</td>
+    <td><a href="#">洛克王国儿童开发申请</a></td>
+    <td>安琪</td>
+    <td>2011.3.18</td>
+    <td>阿迪达斯</td>
+    <td>待处理</td>
+    <td>dorisqiu(邱晨)</td><td><a href="javascript:void(0)" onclick="changeIframe2('7quality_show.html')">详情 
+    <a href="javascript:void(0)" onclick="pass()">审批</a>
+    <a href="javascript:void(0)" onclick="showPop('reject')">驳回</a>
+    <a href="javascript:void(0)" onclick="showPop('terminate')">中止</a>
+    </td>    </tr>
+  <tr>
+    <td>roco_2011p0002</td>
+    <td><a href="#">洛克王国玩具开发申请</a></td>
+    <td>林立</td>
+    <td>2011.3.18</td>
+    <td>甲壳虫动漫</td>
+    <td>待处理</td>
+    <td>nuzhang(张弩)</td><td><a href="javascript:void(0)" onclick="changeIframe2('7quality_show.html')">详情 
+    <a href="javascript:void(0)" onclick="pass()">审批</a>
+    <a href="javascript:void(0)" onclick="showPop('reject')">驳回</a>
+    <a href="javascript:void(0)" onclick="showPop('terminate')">中止</a>
+    </td>    </tr>
+  <tr>
+    <td>roco_2011p0001</td>
+    <td><a href="#">洛克王国儿童开发申请</a></td>
+    <td>安琪</td>
+    <td>2011.3.18</td>
+    <td>阿迪达斯</td>
+    <td>待处理</td>
+    <td>dorisqiu(邱晨)</td><td><a href="javascript:void(0)" onclick="changeIframe2('7quality_show.html')">详情 
+    <a href="javascript:void(0)" onclick="pass()">审批</a>
+    <a href="javascript:void(0)" onclick="showPop('reject')">驳回</a>
+    <a href="javascript:void(0)" onclick="showPop('terminate')">中止</a>
+    </td>    </tr>
+  <tr>
+    <td>roco_2011p0002</td>
+    <td><a href="#">洛克王国玩具开发申请</a></td>
+    <td>林立</td>
+    <td>2011.3.18</td>
+    <td>甲壳虫动漫</td>
+    <td>待处理</td>
+    <td>nuzhang(张弩)</td><td><a href="javascript:void(0)" onclick="changeIframe2('7quality_show.html')">详情 
+    <a href="javascript:void(0)" onclick="pass()">审批</a>
+    <a href="javascript:void(0)" onclick="showPop('reject')">驳回</a>
+    <a href="javascript:void(0)" onclick="showPop('terminate')">中止</a>
+    </td>    </tr>
+  <tr>
+    <td>roco_2011p0001</td>
+    <td><a href="#">洛克王国儿童开发申请</a></td>
+    <td>安琪</td>
+    <td>2011.3.18</td>
+    <td>阿迪达斯</td>
+    <td>待处理</td>
+    <td>dorisqiu(邱晨)</td><td><a href="javascript:void(0)" onclick="changeIframe2('7quality_show.html')">详情 
+    <a href="javascript:void(0)" onclick="pass()">审批</a>
+    <a href="javascript:void(0)" onclick="showPop('reject')">驳回</a>
+    <a href="javascript:void(0)" onclick="showPop('terminate')">中止</a>
+    </td>    </tr>
+</table>
+<h2 class="mt20">已审核列表</h2>
+<table id="invise2" width="100%" border="0" cellspacing="0" cellpadding="0" class="info_tab1">
+  <tr>
+    <th width="15%">产品编号</th>
+    <th width="15%">产品名称</th>
+    <th width="10%">申请人</th>
+    <th width="10%">申请时间</th>
+    <th width="15%">申请公司</th>
+    <th>状态</th>
+    <th>审批人</th>
+    <th>操作</th>
+  </tr>
+  <tr id="p2" style="display:none">
+    <td>roco_2011p0001</td>
+    <td><a href="#">洛克王国衍生服装</a></td>
+    <td>安琪</td>
+    <td>2011.3.18</td>
+    <td>阿迪达斯</td>
+    <td class="redf">待审批</td>
+    <td>dorisqiu(邱晨)</td>
+  <td><a href="javascript:void(0)" onclick="changeIframe2('7quality_show.html')">详情 
+    </td>
+  </tr>
+  
+  <tr>
+    <td>roco_2011p0001</td>
+    <td><a href="#">洛克王国衍生服装</a></td>
+    <td>安琪</td>
+    <td>2011.3.18</td>
+    <td>阿迪达斯</td>
+    <td class="redf">待审批</td>
+    <td>dorisqiu(邱晨)</td>
+  <td><a href="javascript:void(0)" onclick="changeIframe2('7quality_show.html')">详情 
+    </td>
+  </tr>
+  <tr>
+    <td>roco_2011p0002</td>
+    <td><a href="#">洛克王国卡牌项目</a></td>
+    <td>林立</td>
+    <td>2011.3.18</td>
+    <td>甲壳虫动漫</td>
+    <td class="redf">驳回
+    </td>
+    <td>nuzhang(张弩)</td>
+   <td>
+   <a href="javascript:void(0)"  onclick="changeIframe2('7quality_edit.html')">修改
+   <a href="javascript:void(0)"  onclick="changeIframe2('7quality_show.html')">详情 
+    </td>
+  </tr>
+  <tr>
+    <td>roco_2011p0001</td>
+    <td><a href="#">洛克王国卡牌-大版</a></td>
+    <td>安琪</td>
+    <td>2011.3.18</td>
+    <td>阿迪达斯</td>
+    <td class="orangef">审批中</td>
+    <td>dorisqiu(邱晨)</td>
+<td><a href="javascript:void(0)" onclick="changeIframe2('7quality_show.html')">详情 
+    </td>    </tr>
+  <tr>
+    <td>roco_2011p0002</td>
+    <td><a href="#">洛克王国卡牌-小版</a></td>
+    <td>林立</td>
+    <td>2011.3.18</td>
+    <td>甲壳虫动漫</td>
+    <td>已完成</td>
+    <td>nuzhang(张弩)</td>
+<td><a href="javascript:void(0)" onclick="changeIframe2('7quality_show.html')">详情 
+    </td>    </tr>
+  <tr>
+    <td>roco_2011p0001</td>
+    <td><a href="#">洛克王国儿童开发申请</a></td>
+    <td>安琪</td>
+    <td>2011.3.18</td>
+    <td>阿迪达斯</td>
+    <td>已完成</td>
+    <td>dorisqiu(邱晨)</td>
+<td><a href="javascript:void(0)" onclick="changeIframe2('7quality_show.html')">详情 
+    </td>    </tr>
+  <tr>
+    <td>roco_2011p0002</td>
+    <td><a href="#">洛克王国玩具开发申请</a></td>
+    <td>林立</td>
+    <td>2011.3.18</td>
+    <td>甲壳虫动漫</td>
+    <td>已完成</td>
+    <td>nuzhang(张弩)</td>
+   <td><a href="javascript:void(0)" onclick="changeIframe2('7quality_show.html')">详情 
+    </td>
+    </tr>
+  <tr>
+    <td>roco_2011p0001</td>
+    <td><a href="#">洛克王国儿童开发申请</a></td>
+    <td>安琪</td>
+    <td>2011.3.18</td>
+    <td>阿迪达斯</td>
+    <td>已完成</td>
+    <td>dorisqiu(邱晨)</td>
+    <td><a href="javascript:void(0)" onclick="changeIframe2('7quality_show.html')">详情 
+    </td>
+    </tr>
+  <tr>
+    <td>roco_2011p0002</td>
+    <td><a href="#">洛克王国玩具开发申请</a></td>
+    <td>林立</td>
+    <td>2011.3.18</td>
+    <td>甲壳虫动漫</td>
+    <td>已完成</td>
+    <td>nuzhang(张弩)</td>
+   <td><a href="javascript:void(0)" onclick="changeIframe2('7quality_show.html')">详情 
+    </td>
+   
+    </tr>
+  <tr>
+    <td>roco_2011p0001</td>
+    <td><a href="#">洛克王国儿童开发申请</a></td>
+    <td>安琪</td>
+    <td>2011.3.18</td>
+    <td>阿迪达斯</td>
+    <td>已完成</td>
+    <td>dorisqiu(邱晨)</td>
+    <td>
+    <a href="javascript:void(0)" onclick="changeIframe2('7quality_show.html')">详情 
+    </td>
+    </tr>
+  <tr>
+    <td>roco_2011p0002</td>
+    <td><a href="#">洛克王国玩具开发申请</a></td>
+    <td>林立</td>
+    <td>2011.3.18</td>
+    <td>甲壳虫动漫</td>
+    <td>已完成</td>
+    <td>nuzhang(张弩)</td>
+    <td>
+    <a href="javascript:void(0)" onclick="changeIframe2('7quality_show.html')">详情 
+    </td>
+    </tr>
+  <tr>
+    <td>roco_2011p0001</td>
+    <td><a href="#">洛克王国儿童开发申请</a></td>
+    <td>安琪</td>
+    <td>2011.3.18</td>
+    <td>阿迪达斯</td>
+    <td>已完成</td>
+    <td>dorisqiu(邱晨)</td>
+    <td>
+    <a href="javascript:void(0)" onclick="changeIframe2('7quality_show.html')">详情 
+    </td>    </tr>
+  <tr>
+    <td>roco_2011p0002</td>
+    <td><a href="#">洛克王国玩具开发申请</a></td>
+    <td>林立</td>
+    <td>2011.3.18</td>
+    <td>甲壳虫动漫</td>
+    <td>已完成</td>
+    <td>nuzhang(张弩)</td>
+    <td>
+    <a href="javascript:void(0)" onclick="changeIframe2('7quality_show.html')">详情 
+    </td>    </tr>
+  <tr>
+    <td>roco_2011p0002</td>
+    <td><a href="#">洛克王国玩具开发申请</a></td>
+    <td>林立</td>
+    <td>2011.3.18</td>
+    <td>甲壳虫动漫</td>
+    <td>已完成</td>
+    <td>dorisqiu(邱晨)</td>
+	<td>
+		<a href="javascript:void(0)" onclick="changeIframe2('7quality_show.html')">详情 
+    </td>    
+   </tr>
+</table>
+
+<table id="company2" style="display:none" width="100%" border="0" cellspacing="0" cellpadding="0" class="info_tab1">
+  <tr>
+    <th width="15%">产品编号</th>
+    <th width="15%">产品名称</th>
+    <th width="10%">申请人</th>
+    <th width="10%">申请时间</th>
+    <th width="15%">申请公司</th>
+    <th>状态</th>
+    <th>审批人</th>
+    <th>操作</th>
+  </tr>
+  <tr>
+    <td>roco_2011p0001</td>
+    <td><a href="#">洛克王国衍生服装</a></td>
+    <td>安琪</td>
+    <td>2011.3.18</td>
+    <td>阿迪达斯</td>
+    <td>已完成</td>
+    <td>dorisqiu(邱晨)</td>
+    <td>
+    <a href="javascript:void(0)" onclick="changeIframe2('7quality_show.html')">详情
+    </td>
+  </tr>
+  <tr>
+    <td>roco_2011p0002</td>
+    <td><a href="#">洛克王国卡牌项目</a></td>
+    <td>林立</td>
+    <td>2011.3.18</td>
+    <td>甲壳虫动漫</td>
+    <td>已完成</td>
+    <td>nuzhang(张弩)</td>
+<td><a href="javascript:void(0)" onclick="changeIframe2('7quality_show.html')">详情
+    </td>
+  </tr>
+  <tr>
+    <td>roco_2011p0001</td>
+    <td><a href="#">洛克王国卡牌-大版</a></td>
+    <td>安琪</td>
+    <td>2011.3.18</td>
+    <td>阿迪达斯</td>
+    <td>已完成</td>
+    <td>dorisqiu(邱晨)</td>
+<td><a href="javascript:void(0)" onclick="changeIframe2('7quality_show.html')">详情
+    </td>    </tr>
+  <tr>
+    <td>roco_2011p0002</td>
+    <td><a href="#">洛克王国卡牌-小版</a></td>
+    <td>林立</td>
+    <td>2011.3.18</td>
+    <td>甲壳虫动漫</td>
+    <td>已完成</td>
+    <td>nuzhang(张弩)</td>
+<td><a href="javascript:void(0)" onclick="changeIframe2('7quality_show.html')">详情
+    </td>    </tr>
+  <tr>
+    <td>roco_2011p0001</td>
+    <td><a href="#">洛克王国儿童开发申请</a></td>
+    <td>安琪</td>
+    <td>2011.3.18</td>
+    <td>阿迪达斯</td>
+    <td>已完成</td>
+    <td>dorisqiu(邱晨)</td>
+<td><a href="javascript:void(0)" onclick="changeIframe2('7quality_show.html')">详情
+    </td>    </tr>
+  <tr>
+    <td>roco_2011p0002</td>
+    <td><a href="#">洛克王国玩具开发申请</a></td>
+    <td>林立</td>
+    <td>2011.3.18</td>
+    <td>甲壳虫动漫</td>
+    <td>已完成</td>
+    <td>nuzhang(张弩)</td>
+<td><a href="javascript:void(0)" onclick="changeIframe2('7quality_show.html')">详情
+    </td>
+    </tr>
+  <tr>
+    <td>roco_2011p0001</td>
+    <td><a href="#">洛克王国儿童开发申请</a></td>
+    <td>安琪</td>
+    <td>2011.3.18</td>
+    <td>阿迪达斯</td>
+    <td>已完成</td>
+    <td>dorisqiu(邱晨)</td>
+<td><a href="javascript:void(0)" onclick="changeIframe2('7quality_show.html')">详情
+    </td>
+    </tr>
+  <tr>
+    <td>roco_2011p0002</td>
+    <td><a href="#">洛克王国玩具开发申请</a></td>
+    <td>林立</td>
+    <td>2011.3.18</td>
+    <td>甲壳虫动漫</td>
+    <td>已完成</td>
+    <td>nuzhang(张弩)</td>
+<td><a href="javascript:void(0)" onclick="changeIframe2('7quality_show.html')">详情
+    </td>
+   
+    </tr>
+  <tr>
+    <td>roco_2011p0001</td>
+    <td><a href="#">洛克王国儿童开发申请</a></td>
+    <td>安琪</td>
+    <td>2011.3.18</td>
+    <td>阿迪达斯</td>
+    <td>已完成</td>
+    <td>dorisqiu(邱晨)</td>
+<td><a href="javascript:void(0)" onclick="changeIframe2('7quality_show.html')">详情
+       </td>
+    </tr>
+  <tr>
+    <td>roco_2011p0002</td>
+    <td><a href="#">洛克王国玩具开发申请</a></td>
+    <td>林立</td>
+    <td>2011.3.18</td>
+    <td>甲壳虫动漫</td>
+    <td>已完成</td>
+    <td>nuzhang(张弩)</td>
+<td><a href="javascript:void(0)" onclick="changeIframe2('7quality_show.html')">详情
+    </td>
+    </tr>
+  <tr>
+    <td>roco_2011p0001</td>
+    <td><a href="#">洛克王国儿童开发申请</a></td>
+    <td>安琪</td>
+    <td>2011.3.18</td>
+    <td>阿迪达斯</td>
+    <td>已完成</td>
+    <td>dorisqiu(邱晨)</td>
+<td><a href="javascript:void(0)" onclick="changeIframe2('7quality_show.html')">详情
+    </td>    </tr>
+  <tr>
+    <td>roco_2011p0002</td>
+    <td><a href="#">洛克王国玩具开发申请</a></td>
+    <td>林立</td>
+    <td>2011.3.18</td>
+    <td>甲壳虫动漫</td>
+    <td>已完成</td>
+    <td>nuzhang(张弩)</td>
+<td><a href="javascript:void(0)" onclick="changeIframe2('7quality_show.html')">详情
+    </td>    </tr>
+  <tr>
+    <td>roco_2011p0002</td>
+    <td><a href="#">洛克王国玩具开发申请</a></td>
+    <td>林立</td>
+    <td>2011.3.18</td>
+    <td>甲壳虫动漫</td>
+    <td>已完成</td>
+    <td>dorisqiu(邱晨)</td>
+<td><a href="javascript:void(0)" onclick="changeIframe2('7quality_show.html')">详情
+    </td>    </tr>
+</table>
+
+<table id="display2" style="display:none" width="100%" border="0" cellspacing="0" cellpadding="0" class="info_tab1">
+  <tr>
+    <th width="15%">产品编号</th>
+    <th width="15%">产品名称</th>
+    <th width="10%">申请人</th>
+    <th width="10%">申请时间</th>
+    <th width="15%">申请公司</th>
+    <th>状态</th>
+    <th>审批人</th>
+    <th>操作</th>
+  </tr>
+  
+  <tr>
+    <td>roco_2011p0001</td>
+    <td><a href="#">洛克王国儿童开发申请</a></td>
+    <td>安琪</td>
+    <td>2011.3.18</td>
+    <td>阿迪达斯</td>
+    <td>已完成</td>
+    <td>dorisqiu(邱晨)</td><td><a href="javascript:void(0)" onclick="changeIframe2('7quality_show.html')">详情 
+    </td>    </tr>
+  <tr>
+    <td>roco_2011p0002</td>
+    <td><a href="#">洛克王国玩具开发申请</a></td>
+    <td>林立</td>
+    <td>2011.3.18</td>
+    <td>甲壳虫动漫</td>
+    <td>已完成</td>
+    <td>nuzhang(张弩)</td><td><a href="javascript:void(0)" onclick="changeIframe2('7quality_show.html')">详情 
+    </td>
+    </tr>
+  <tr>
+    <td>roco_2011p0001</td>
+    <td><a href="#">洛克王国儿童开发申请</a></td>
+    <td>安琪</td>
+    <td>2011.3.18</td>
+    <td>阿迪达斯</td>
+    <td>已完成</td>
+    <td>dorisqiu(邱晨)</td><td><a href="javascript:void(0)" onclick="changeIframe2('7quality_show.html')">详情 
+    </td>
+    </tr>
+  <tr>
+    <td>roco_2011p0002</td>
+    <td><a href="#">洛克王国玩具开发申请</a></td>
+    <td>林立</td>
+    <td>2011.3.18</td>
+    <td>甲壳虫动漫</td>
+    <td>已完成</td>
+    <td>nuzhang(张弩)</td><td><a href="javascript:void(0)" onclick="changeIframe2('7quality_show.html')">详情 
+    </td>
+   
+    </tr>
+  <tr>
+    <td>roco_2011p0001</td>
+    <td><a href="#">洛克王国儿童开发申请</a></td>
+    <td>安琪</td>
+    <td>2011.3.18</td>
+    <td>阿迪达斯</td>
+    <td>已完成</td>
+    <td>dorisqiu(邱晨)</td><td><a href="javascript:void(0)" onclick="changeIframe2('7quality_show.html')">详情
+    </td>
+    </tr>
+  <tr>
+    <td>roco_2011p0002</td>
+    <td><a href="#">洛克王国玩具开发申请</a></td>
+    <td>林立</td>
+    <td>2011.3.18</td>
+    <td>甲壳虫动漫</td>
+    <td>已完成</td>
+    <td>nuzhang(张弩)</td><td><a href="javascript:void(0)" onclick="changeIframe2('7quality_show.html')">详情 
+    </td>
+    </tr>
+  <tr>
+    <td>roco_2011p0001</td>
+    <td><a href="#">洛克王国儿童开发申请</a></td>
+    <td>安琪</td>
+    <td>2011.3.18</td>
+    <td>阿迪达斯</td>
+    <td>已完成</td>
+    <td>dorisqiu(邱晨)</td><td><a href="javascript:void(0)" onclick="changeIframe2('7quality_show.html')">详情
+    </td>    </tr>
+  <tr>
+    <td>roco_2011p0002</td>
+    <td><a href="#">洛克王国玩具开发申请</a></td>
+    <td>林立</td>
+    <td>2011.3.18</td>
+    <td>甲壳虫动漫</td>
+    <td>已完成</td>
+    <td>nuzhang(张弩)</td><td><a href="javascript:void(0)" onclick="changeIframe2('7quality_show.html')">详情
+    </td>    </tr>
+  <tr>
+    <td>roco_2011p0002</td>
+    <td><a href="#">洛克王国玩具开发申请</a></td>
+    <td>林立</td>
+    <td>2011.3.18</td>
+    <td>甲壳虫动漫</td>
+    <td>已完成</td>
+    <td>dorisqiu(邱晨)</td><td><a href="javascript:void(0)" onclick="changeIframe2('7quality_show.html')">详情
+    </td>    </tr>
+</table>
+<div class="page">共<span>4</span>页 <a href="#" class="p_last">上一页</a> <a href="#" class="on">1</a><a href="#">2</a><a href="#">3</a><a href="#">4</a> <a href="#" class="p_next">下一页</a></div>
+</div>
+
+<div id="reject" class="pop">
+<h2><p>打样驳回</p><a href="javascript:void(0)" onclick="closePop('reject')">[×] 关闭</a></h2>
+<table width="100%" border="0" cellspacing="0" cellpadding="0" class="info_tab5 mt10">
+  <tr>
+    <th>产品名称</th>
+    <td colspan="5"><span class="redf">
+      <input type="text" class="txt" size="64" value="洛克王国玩具开发申请" />
+    </span></td>
+    </tr>
+  <tr>
+    <th>受理人:</th>
+    <td><input type="text" class="txt" size="20" value="张一" /></td>
+    <th>驳回原因：</th>
+    <td><input type="text" class="txt" size="20" value="款式不合格" /></td>
+    <th>申请人：</th>
+    <td><input type="text" class="txt" size="20" value="张二" /></td>
+    </tr>
+  
+  <tr>
+    <th>备注</th>
+    <td colspan="5"><textarea name="textarea" id="textarea" cols="107" rows="3" class="longarea"></textarea></td>
+    </tr>
+  <tr>
+    <td>&nbsp;</td>
+    <td colspan="5" class="alignr"><input type="submit" name="button" id="button" value="驳回" class="btn_sorange" onclick="closePop('reject');show2('line9')" /></td>
+    </tr>
+</table>
+</div>
+
+<div id="pass" class="pop">
+<h2><p>打样审批</p><a href="javascript:void(0)" onclick="closePop('pass')">[×] 关闭</a></h2>
+<table width="100%" border="0" cellspacing="0" cellpadding="0" class="info_tab5 mt10">
+  <tr>
+    <th>产品名称</th>
+    <td colspan="5"><span class="redf">
+      <input type="text" class="txt" size="64" value="洛克王国玩具开发申请" />
+    </span></td>
+    </tr>
+  <tr>
+    <th>受理人:</th>
+    <td><input type="text" class="txt" size="20" value="张一" /></td>
+    <th>驳回原因：</th>
+    <td><input type="text" class="txt" size="20" value="款式不合格" /></td>
+    <th>申请人：</th>
+    <td><input type="text" class="txt" size="20" value="张二" /></td>
+    </tr>
+  
+  <tr>
+    <th>备注</th>
+    <td colspan="5"><textarea name="textarea" id="textarea" cols="107" rows="3" class="longarea"></textarea></td>
+    </tr>
+  <tr>
+    <td>&nbsp;</td>
+    <td colspan="5" class="alignr"><input type="submit" name="button" id="button" value="通过" class="btn_sorange" onclick="closePop('pinfo');show2('line9')" /></td>
+    </tr>
+</table>
+
+</div>
+
+<div id="terminate" class="pop">
+<h2><p>中止打样</p><a href="javascript:void(0)" onclick="closePop('terminate')">[×] 关闭</a></h2>
+<table width="100%" border="0" cellspacing="0" cellpadding="0" class="info_tab5 mt10">
+  <tr>
+    <th>产品名称</th>
+    <td colspan="5"><span class="redf">
+      <input type="text" class="txt" size="64" value="洛克王国玩具开发申请" />
+    </span></td>
+    </tr>
+  <tr>
+    <th>受理人:</th>
+    <td><input type="text" class="txt" size="20" value="张一" /></td>
+    <th>中止原因：</th>
+    <td><input type="text" class="txt" size="20" value="款式不合格" /></td>
+    <th>申请人：</th>
+    <td><input type="text" class="txt" size="20" value="张二" /></td>
+    </tr>
+  
+  <tr>
+    <th>备注</th>
+    <td colspan="5"><textarea name="textarea" id="textarea" cols="107" rows="3" class="longarea"></textarea></td>
+    </tr>
+  <tr>
+    <td>&nbsp;</td>
+    <td colspan="5" class="alignr"><input type="submit" name="button" id="button" value="中止" class="btn_sorange" onclick="closePop('terminate');show2('line9')" /></td>
+    </tr>
+</table>
+</div>
+<div id="mask"></div>
+<script type="text/javascript" src="js/main.js"></script>
+</body>
+</html>

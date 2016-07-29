@@ -1,0 +1,234 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>公司管理</title>
+<link href="css/main.css" rel="stylesheet" />
+<script>
+function do_search()
+{
+	s1.style.display='';
+	s2.style.display='';
+	s3.style.display='none';
+	s4.style.display='';
+	s5.style.display='';
+	s6.style.display='none';
+	s7.style.display='none';
+	s8.style.display='';
+	s9.style.display='none';
+	s10.style.display='none';
+	
+}
+</script>
+
+</head>
+
+<body>
+<div id="sub_content">
+
+<h2 class="search_t">防伪标签搜索<span class="sc_search"></span></h2>
+<div class="c_search">
+<input type="text" class="txt" value="腾讯游戏" size="60" /> <input class="btn_search" type="button" value="搜 索" onclick="do_search()"/>
+</div>
+<h2>
+防伪标签统计
+</h2>
+<div class="important_info">
+腾讯儿童防伪标总计生产：<span class="redf">170</span>万，腾讯游戏防伪标签总计生产：<span class="redf">60</span>万，总计费用：40万</div>
+<h2>防伪标签生产记录</h2>
+<table width="100%" border="0" cellspacing="0" cellpadding="0" class="info_tab1">
+  <tr>
+    <th>标签批次</th>
+    <th width="10%">标签类型</th>
+    <th width="10%">生产数量(万)</th>
+    <th width="10%">生产时间</th>
+    <th>到货时间</th>
+    <th width="10%">标签单价(分)</th>
+    <th>生产费用(元)</th>
+    <th>库存剩余</th>
+    <th>生产公司</th>
+    <th>申请人</th>
+    <th>礼包</th>
+    <th>备注</th>
+    <th>操作</th>
+  </tr>
+  <tr id="s1">
+    <td>2011D1</td>
+    <td>腾讯游戏</td>
+    <td>300000</td>
+    <td>2011.3.18</td>
+    <td>2011.5.18</td>
+    <td>3</td>
+    <td class="redf">9000</td>
+    <td class="redf">5600</td>
+    <td>台湾擎雷</td>
+    <td>dorisqiu(邱晨)</td>
+    <td>有</td>
+    <td class="redf"><a href="javascript:void(0)" title="123456789">备注</a></td>
+    <td><a href="javascript:void(0)" onclick="changeIframe2('9label_edit2.html')" target="_top">编辑</a></td>
+  </tr>
+  <tr id="s2">
+    <td>2011D2</td>
+    <td>腾讯游戏</td>
+    <td>310000</td>
+    <td>2011.3.18</td>
+    <td>2011.3.18</td>
+    <td>3</td>
+    <td class="redf">9300</td>
+    <td class="redf">15000</td>
+    <td>台湾擎雷</td>
+    <td>karenma(马白燕)</td>
+    <td>无</td>
+    <td class="redf"><a href="javascript:void(0)" title="123456789">备注</a></td>
+    <td><a href="javascript:void(0)" onclick="changeIframe2('9label_edit2.html')" target="_top">编辑</a></td>
+  </tr>
+  <tr id="s3">
+    <td>2011D1</td>
+    <td>腾讯儿童</td>
+    <td>300001</td>
+    <td>2011.3.18</td>
+    <td>2011.5.18</td>
+    <td>3</td>
+    <td class="redf">9000</td>
+    <td class="redf">3000</td>
+    <td>台湾擎雷</td>
+    <td>dorisqiu(邱晨)</td>
+    <td>有</td>
+    <td class="redf"><a href="javascript:void(0)"  title="123456789">备注</a></td>
+    <td><a href="javascript:void(0)" onclick="changeIframe2('9label_edit2.html')" target="_top">编辑</a></td>
+  </tr>
+  <tr id="s4">
+    <td>2011D2</td>
+    <td>腾讯游戏</td>
+    <td>310100</td>
+    <td>2011.3.18</td>
+    <td>2011.3.18</td>
+    <td>3</td>
+    <td class="redf">9300</td>
+    <td class="redf">1400</td>
+    <td>台湾擎雷</td>
+    <td>karenma(马白燕)</td>
+    <td>无</td>
+    <td class="redf"><a href="javascript:void(0)"  title="123456789">备注</a></td>
+    <td><a href="javascript:void(0)" onclick="changeIframe2('9label_edit2.html')" target="_top">编辑</a></td>
+  </tr>
+  <tr id="s5">
+    <td>2011D3</td>
+    <td>腾讯游戏</td>
+    <td>250000</td>
+    <td>2011.3.18</td>
+    <td>2011.3.18</td>
+    <td>3</td>
+    <td>9000</td>
+    <td>已用完</td>
+    <td>台湾擎雷</td>
+    <td>shmilywu(吴春玲)</td>
+    <td>有</td>
+    <td class="redf"><a href="javascript:void(0)"  title="123456789"">备注</a></td>
+    <td><a href="javascript:void(0)" onclick="changeIframe2('9label_edit2.html')" target="_top">编辑</a></td>
+    </tr>
+  <tr id="s6">
+    <td>2011D4</td>
+    <td>腾讯儿童</td>
+    <td>400000</td>
+    <td>2011.3.18</td>
+    <td>2011.3.18</td>
+    <td>3</td>
+    <td>9000</td>
+    <td>已用完</td>
+    <td>台湾擎雷</td>
+    <td>ponpeng(彭学勤)</td>
+    <td>无</td>
+    <td class="redf"><a href="javascript:void(0)"  title="123456789">备注</a></td>
+    <td><a href="javascript:void(0)" onclick="changeIframe2('9label_edit2.html')" target="_top">编辑</a></td>
+    </tr>
+  <tr id="s7">
+    <td>2011D5</td>
+    <td>腾讯儿童</td>
+    <td>300000</td>
+    <td>2011.3.18</td>
+    <td>2011.3.18</td>
+    <td>3</td>
+    <td>9000</td>
+    <td>已用完</td>
+    <td>台湾擎雷</td>
+    <td>dorisqiu(邱晨)</td>
+    <td>无</td>
+    <td class="redf"><a href="javascript:void(0)"  title="123456789"">备注</a></td>
+    <td><a href="javascript:void(0)" onclick="changeIframe2('9label_edit2.html')" target="_top">编辑</a></td>
+    </tr>
+  <tr id="s8">
+    <td>2011D3</td>
+    <td>腾讯游戏</td>
+    <td>250000</td>
+    <td>2011.3.18</td>
+    <td>2011.3.18</td>
+    <td>3</td>
+    <td>9000</td>
+    <td>已用完</td>
+    <td>台湾擎雷</td>
+    <td>shmilywu(吴春玲)</td>
+    <td>有</td>
+    <td class="redf"><a href="javascript:void(0)"  title="123456789"">备注</a></td>
+    <td><a href="javascript:void(0)" onclick="changeIframe2('9label_edit2.html')" target="_top">编辑</a></td>
+  </tr>
+  <tr id="s9">
+    <td>2011D4</td>
+    <td>腾讯儿童</td>
+    <td>400000</td>
+    <td>2011.3.18</td>
+    <td>2011.3.18</td>
+    <td>3</td>
+    <td>9000</td>
+    <td>已用完</td>
+    <td>台湾擎雷</td>
+    <td>ponpeng(彭学勤)</td>
+    <td>无</td>
+    <td class="redf"><a href="javascript:void(0)"  title="123456789">备注</a></td>
+    <td><a href="javascript:void(0)" onclick="changeIframe2('9label_edit2.html')" target="_top">编辑</a></td>
+  </tr>
+  <tr id="s10">
+    <td>2011D5</td>
+    <td>腾讯儿童</td>
+    <td>300000</td>
+    <td>2011.3.18</td>
+    <td>2011.3.18</td>
+    <td>3</td>
+    <td>9000</td>
+    <td>已用完</td>
+    <td>台湾擎雷</td>
+    <td>dorisqiu(邱晨)</td>
+    <td>无</td>
+    <td class="redf"><a href="javascript:void(0)" title="123456789">备注</a></td>
+    <td><a href="javascript:void(0)" onclick="changeIframe2('9label_edit2.html')" target="_top">编辑</a></td>
+  </tr>
+</table>
+<div class="page">共<span>4</span>页 <a href="#" class="p_last">上一页</a> <a href="#" class="on">1</a><a href="#">2</a><a href="#">3</a><a href="#">4</a> <a href="#" class="p_next">下一页</a></div>
+</div>
+<div class="noticeInfo">
+<h5>Notice 说明</h5>
+<p>【分页】10条数据一页</p>
+<p>【排序】规则一：状态有剩余的排上面；规则二：按生产时间顺序，生产时间越早的排越上面</p>
+<p>&nbsp;</p>
+</div>
+
+<div id="comment" class="pop">
+<h2><p>备注</p><a href="javascript:void(0)" onclick="closePop('comment')">[×] 关闭</a></h2>
+<table  border="0" cellspacing="0" cellpadding="0" class="info_tab5 mt10" width="80%" height="50%">
+  
+  <tr>
+    <th>标签备注</th>
+    <td ><textarea name="textarea" id="textarea" cols="107" rows="5" value="未付款" class="longarea"></textarea>
+    </td>
+    </tr>
+  <tr>
+    <td>&nbsp;</td>
+    <td colspan="5" class="alignr"><input type="submit" name="button" id="button" value="确定" class="btn_sorange" onclick="closePop('comment');show2('line9')" /></td>
+    </tr>
+</table>
+</div>
+<div id="mask"></div>
+
+<script type="text/javascript" src="js/main.js"></script>
+</body>
+</html>

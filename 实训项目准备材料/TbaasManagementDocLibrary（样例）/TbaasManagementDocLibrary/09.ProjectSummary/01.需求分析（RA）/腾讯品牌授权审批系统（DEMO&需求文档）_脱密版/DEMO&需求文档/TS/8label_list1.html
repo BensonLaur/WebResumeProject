@@ -1,0 +1,334 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>公司管理</title>
+<link href="css/main.css" rel="stylesheet" />
+<script>
+function pass()
+{
+	s1.style.display='none';
+}
+function changeRole(n){
+	/*
+	if(n == 1)
+	{
+		table1.style.display='';
+		table2.style.display='none';
+	}
+	if(n==2)
+	{
+		table1.style.display='none';
+		table2.style.display='';
+	}*/
+	
+}
+
+function do_search()
+{
+	
+	s1.style.display='';
+	s2.style.display='none';
+	s3.style.display='none';
+	s4.style.display='none';
+	s5.style.display='';
+}
+</script>
+</head>
+
+<body>
+<div id="sub_content">
+
+<h2 class="search_t">防伪标签搜索<span class="sc_search"></span></h2>
+<div class="c_search">
+<input type="text" class="txt" value="梦龙" size="60" /> <input class="btn_search" type="button" value="搜 索" onclick="do_search()" />
+</div>
+<h2>
+防伪标签统计
+</h2>
+<div class="important_info">
+剩余标签：<span class="redf">10</span>万，总生产量：<span class="redf">2000</span>万，总投放量：<span class="redf">1950</span>万
+
+</div>
+<h2><p>防伪标签投放列表</p><!--
+  <select name="change" id="change" onchange="changeRole(this.value)">
+  <option value="1">腾讯总负责人</option>
+  <option value="2">厂商负责人</option>
+</select>
+<a href="javascript:void(0)" onclick="show('fdiv','table')">显示全部</a>-->
+</h2>
+<table width="100%" border="0" cellspacing="0" cellpadding="0" class="info_tab1">
+  <tr>
+    <th>申请公司</th>
+    <th width="10%">品牌</th>
+    <th width="10%">申请时间</th>
+    <th width="10%">期望到货</th>
+    <th width="10%">申请数量(万)</th>
+    <th width="6%">单价(分)</th>
+    <th>总计</th>
+    <th>状态</th>
+    <th>付款情况</th>
+    <th>审批人</th>
+    <th>备注</th>
+    <th>操作</th>
+  </tr>
+  <tr id="s1">
+    <td>梦龙</td>
+    <td>洛克王国</td>
+    <td>2011.3.18</td>
+    <td>2011.5.20</td>
+    <td>30</td>
+    <td>3</td>
+    <td>9000</td>
+    <td class="redf">发起申请</td>
+    <td class="redf">未打款</td>
+    <td>dorisqiu(邱晨)</td>
+    <td><a href="javascript:void(0)" title="备注1&#10备注2.................&#10备注3...................................">备注</a></td>
+    <td><a href="javascript:void(0)" onclick="changeIframe2('8label_show1.html')">详情</a>
+    <a href="javascript:void(0)" onclick="pass()">审批</a> 
+   <a href="javascript:void(0)" onclick="showPop('reject')">驳回</a>
+  </tr>
+  <tr id="s2">
+    <td>甲壳虫动漫</td>
+    <td>洛克王国</td>
+    <td>2011.3.18</td>
+    <td>2011.5.20</td>
+    <td>31</td>
+    <td>3</td>
+    <td>9300</td>
+    <td class="redf">待投放</td>
+    <td class="redf">未打款</td>
+    <td>karenma(马白燕)</td>
+    <td>&nbsp;</td>
+    <td><a href="javascript:void(0)" onclick="changeIframe2('8label_show1.html')" target="_top">详情 </a>
+    <a href="javascript:void(0)" onclick="pass()">审批</a>
+    <a href="javascript:void(0)" onclick="showPop('reject')">驳回</a>
+    </tr>
+  <tr id="s3">
+    <td>阿迪达斯</td>
+    <td>洛克王国</td>
+    <td>2011.3.18</td>
+    <td>2011.5.20</td>
+    <td>30</td>
+    <td>3</td>
+    <td>9000</td>
+    <td class="redf">待投放</td>
+    <td class="redf">未打款</td>
+    <td>shmilywu(吴春玲)</td>
+    <td>&nbsp;</td>
+    <td><a href="javascript:void(0)"onclick="changeIframe2('8label_show1.html')" target="_top">详情 </a>
+    <a href="javascript:void(0)" onclick="pass()">审批</a>
+    <a href="javascript:void(0)" onclick="showPop('reject')">驳回</a>
+    </td>
+    </tr>
+  <tr id="s4">
+    <td>甲壳虫动漫</td>
+    <td>洛克王国</td>
+    <td>2011.3.18</td>
+    <td>2011.5.20</td>
+    <td>31</td>
+    <td>3</td>
+    <td>9300</td>
+    <td class="redf">待投放</td>
+    <td class="redf">未打款</td>
+    <td>ponpeng(彭学勤)</td>
+    <td><a href="javascript:void(0)" title="备注1&#10备注2.................&#10备注3...................................">备注</a></td>
+    <td><a href="javascript:void(0)" onclick="changeIframe2('8label_show1.html')" target="_top">详情</a>
+    <a href="javascript:void(0)" onclick="pass()">审批</a>
+   <a href="javascript:void(0)" onclick="showPop('reject')">驳回</a>
+   </td>
+    </tr>
+  <tr id="s5">
+    <td>梦龙</td>
+    <td>洛克王国</td>
+    <td>2011.3.18</td>
+    <td>2011.5.20</td>
+    <td>30</td>
+    <td>3</td>
+    <td>9000</td>
+    <td class="redf">待投放</td>
+    <td class="redf">未打款</td>
+    <td>dorisqiu(邱晨)</td>
+    <td>&nbsp;</td>
+    <td><a href="javascript:void(0)" onclick="changeIframe2('8label_show1.html')" target="_top">详情 </a>
+    <a href="javascript:void(0)" onclick="pass()">审批</a>
+    <a href="javascript:void(0)" onclick="showPop('reject')">驳回</a>
+    </td>
+    </tr>
+</table>
+
+
+
+
+<div id="reject" class="pop">
+<h2><p>申请驳回</p><a href="javascript:void(0)" onclick="closePop('reject')">[×] 关闭</a></h2>
+<table width="100%" border="0" cellspacing="0" cellpadding="0" class="info_tab5 mt10">
+  <tr>
+    <th>产品名称</th>
+    <td colspan="5"><span class="redf">
+      <input type="text" class="txt" size="64" value="洛克王国玩具开发申请" />
+    </span></td>
+    </tr>
+  <tr>
+    <th>受理人:</th>
+    <td><input type="text" class="txt" size="20" value="张一" /></td>
+    <th>驳回原因：</th>
+    <td><input type="text" class="txt" size="20" value="款式不合格" /></td>
+    <th>申请人：</th>
+    <td><input type="text" class="txt" size="20" value="张二" /></td>
+    </tr>
+  
+  <tr>
+    <th>备注</th>
+    <td colspan="5"><textarea name="textarea" id="textarea" cols="107" rows="3" class="longarea"></textarea></td>
+    </tr>
+  <tr>
+    <td>&nbsp;</td>
+    <td colspan="5" class="alignr"><input type="submit" name="button" id="button" value="驳回" class="btn_sorange" onclick="closePop('reject');show2('line9')" /></td>
+    </tr>
+</table>
+</div>
+
+</div><div id="terminate" class="pop">
+<h2><p>中止打样</p><a href="javascript:void(0)" onclick="closePop('terminate')">[×] 关闭</a></h2>
+<table width="100%" border="0" cellspacing="0" cellpadding="0" class="info_tab5 mt10">
+  <tr>
+    <th>产品名称</th>
+    <td colspan="5"><span class="redf">
+      <input type="text" class="txt" size="64" value="洛克王国玩具开发申请" />
+    </span></td>
+    </tr>
+  <tr>
+    <th>受理人:</th>
+    <td><input type="text" class="txt" size="20" value="张一" /></td>
+    <th>中止原因：</th>
+    <td><input type="text" class="txt" size="20" value="款式不合格" /></td>
+    <th>申请人：</th>
+    <td><input type="text" class="txt" size="20" value="张二" /></td>
+    </tr>
+  
+  <tr>
+    <th>备注</th>
+    <td colspan="5"><textarea name="textarea" id="textarea" cols="107" rows="3" class="longarea"></textarea></td>
+    </tr>
+  <tr>
+    <td>&nbsp;</td>
+    <td colspan="5" class="alignr"><input type="submit" name="button" id="button" value="中止" class="btn_sorange" onclick="closePop('terminate');show2('line9')" /></td>
+    </tr>
+</table>
+</div>
+<div id="comment" class="pop">
+<h2><p>备注</p><a href="javascript:void(0)" onclick="closePop('comment')">[×] 关闭</a></h2>
+<table  border="0" cellspacing="0" cellpadding="0" class="info_tab5 mt10" width="80%" height="50%">
+  
+  <tr>
+    <th>标签备注</th>
+    <td ><textarea name="textarea" id="textarea" cols="107" rows="5" value="未付款" class="longarea"></textarea>
+    </td>
+    </tr>
+  <tr>
+    <td>&nbsp;</td>
+    <td colspan="5" class="alignr"><input type="submit" name="button" id="button" value="确定" class="btn_sorange" onclick="closePop('comment');show2('line9')" /></td>
+    </tr>
+</table>
+</div>
+
+<div id="lableDetail" class="pop" style="font-size:12px">
+<h2><p>防伪标签申请详情</p><a href="javascript:void(0)" onclick="closePop('lableDetail')">[×] 关闭</a></h2>
+<table class="info_tab3 ctabt" width="600">
+  <tr>
+    <th width="15%">申请编号</th>
+    <td>roco_2011p001      </td>
+    <th>项目名称</th>
+    <td class="noborder">洛克王国周边衍生品授权
+    </td>
+  </tr>
+  <tr>
+    <th>公司名称</th>
+    <td><span class="noborder">
+      浙江甲壳虫动漫有限公司
+    </span></td>
+    <th>期望到货时间</th>
+    <td class="noborder">2012.4.15</td>
+  </tr>
+  <tr>
+    <th>申请人</th>
+    <td>李亚达</td>
+    <th>联系电话</th>
+    <td class="noborder">020-81019117</td>
+  </tr>
+  <tr>
+    <th>收件人</th>
+    <td>王小虎</td>
+    <th>联系电话</th>
+    <td class="noborder">020-81019117</td>
+  </tr>
+  <tr>
+    <th>快递地址</th>
+    <td>浙江XXXXX市XX路231号</td>
+    <th>邮编</th>
+    <td class="noborder">5467916</td>
+  </tr>
+  </table>
+  <h2 class="mt20">防伪标签信息</h2>
+<table border="0" cellspacing="0" cellpadding="0" class="info_tab1 mt10" width="860">
+      <tr>
+        <th width="5%">序号</th>
+        <th>产品名称</th>
+        <th>本期生产数量</th>
+        <th>申请张数</th>
+        <th>备注</th>
+        </tr>
+      <tr>
+        <td>1</td>
+        <td>
+        洛克王国金色童年系列-男装</td>
+        <td>
+        2000</td>
+        <td>2000</td>
+        <td>备注说明</td>
+        </tr>
+      <tr>
+        <td>2</td>
+        <td>洛克王国金色童年系列-男装</td>
+        <td>2000</td>
+        <td>2000</td>
+        <td>备注说明</td>
+        </tr>
+      <tr>
+        <td>3</td>
+        <td>洛克王国金色童年系列-男装</td>
+        <td>2000</td>
+        <td>2000</td>
+        <td>备注说明</td>
+      </tr>
+      <tr>
+        <td>4</td>
+        <td>洛克王国金色童年系列-男装</td>
+        <td>1000</td>
+        <td>1000</td>
+        <td>备注说明</td>
+      </tr>
+      <tr>
+        <td>5</td>
+        <td>洛克王国金色童年系列-男装</td>
+        <td>1000</td>
+        <td>1000</td>
+        <td>备注说明</td>
+      </tr>
+      <tr>
+        <td>&nbsp;</td>
+        <td align="right">总计</td>
+        <td>8000</td>
+        <td>8000</td>
+        <td>备注说明</td>
+      </tr>
+</table>
+</div>
+
+<div id="mask"> </div>
+
+
+<script type="text/javascript" src="js/main.js"></script>
+</body>
+</html>

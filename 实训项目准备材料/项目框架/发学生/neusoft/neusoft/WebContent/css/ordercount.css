@@ -1,0 +1,79 @@
+
+ul,li{list-style-type:none;margin:0;padding:0;}
+
+.bgwhite {background-color: #fff;}
+.bgblue1 {background-color: #9FD6FF;}
+.bgblue2 {background-color: #f2f9ff;}
+.bggreen1 {background-color: #97E490;}
+.bggreen2 {background-color: #fbfffa;}
+.bgyellow {background-color: #ffffcc;}
+
+
+/* 文字 */
+.txtred{color:#f00;}
+.txtred2{color:#ce3000;}
+.txtblue{color:#369;}
+.txtwhite{color:#fff;}
+.txtgreen{color:green;}
+.txtbold{font-weight:bold;}
+.txtno{color:#f00;font-family:arial;font-size:22px;font-weight:bold;font-style:italic;}
+.menu_title {cursor: pointer;padding-left: 8px;}
+.txttop {color: #8aade9; font-family:宋体;}
+.content1 {line-height:150%;padding-left:10px;padding-right:10px;}
+.content2 {line-height:150%;padding:5px 5px 5px 5px;border: #9fd6ff 1px solid;}
+.content3 {line-height:180%;}
+.content4 {line-height:180%;padding-left:8px;}
+.content5 {line-height:150%;}
+
+.none{display:none;}
+
+/* 标题字体大小以及颜色 */
+.title_txt {
+	font-size: 14px;
+	color: #333333;
+	font-weight: bold;
+}
+.title_wtxt {
+	font-size: 14px;
+	color: #ffffff;
+	font-weight: bold;
+}
+.stitle_txt {
+	font-size: 13px;
+	color: #333333;
+	line-height:150%;	
+}
+
+#rateout {width:120px; height:14px; border:#9FD6FF 1px solid; background-color:#fff; padding: 1px;}
+#ratein {height:14px; background-color:#9FD6FF;}
+
+#paper{width:350px;height:550px;border:1px solid #0065A7;overflow:hidden;}
+
+.divpre{filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(sizingMethod=scale);} /* 预览图片用 */
+
+.litpic_span{width:50px;overflow:hidden; height:21px; *vertical-align:3px;margin-left:-60px;cursor:pointer; }
+#litpic{width:85px; height:20px;margin-left: -20px;filter:alpha(opacity=00);-moz-opacity:.0;opacity:0.0; cursor:pointer;}
+
+.dlg {border: 2px solid #749F4D;background-color: #F0FAEB;padding: 2px;width: 360px;line-height:160%;} /* 数据库备份表结构用 */
+
+
+.meal{width:100%;}
+.meal input{width:35px;height:20px;}
+.meal li{float:left;width:30%;}
+.meal li span{float:left;line-height:25px;padding-right:10px;}
+.meal li span.t{width:120px;}
+.meal li strong{float:left;color:#E60000;font-family:arial;line-height:25px;}
+
+.bgline{background-color:#fff;border-top:1px #9FD6FF solid;border-bottom:1px #9FD6FF solid;padding:5px;}
+.cookmeal{width:100%;font-size:20px;}
+.cookmeal li{float:left;width:280px;padding:10px 0;}
+.cookmeal li span{float:left;font-family:'黑体';}
+.cookmeal li span.t{width:190px;}
+.cookmeal li strong{float:left;color:#E60000;font-family:arial;line-height:25px;font-size:30px;}
+.cookmen{color:#069;font-family:'黑体';font-size:20px;}
+
+.txt_time{font-family:arial;color:#069;font-size:15px;font-weight:bold;}
+.txt_menu{font-family:'黑体';font-size:20px;}
+.num_green{padding:2px 10px;background:#339900;color:#fff;font-family:arial;font-size:15px;font-weight:bold;}
+.num_red{padding:2px 10px;background:#E60000;color:#fff;font-family:arial;font-size:15px;font-weight:bold;}
+.num_gray{padding:2px 10px;background:#999999;color:#fff;font-family:arial;font-size:15px;font-weight:bold;}

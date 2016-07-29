@@ -1,0 +1,512 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>公司管理</title>
+<link href="css/main.css" rel="stylesheet" />
+</head>
+<script>
+function do_swap()
+{
+	s1.style.display='none';
+	swap1.style.display='';
+}
+
+function do_swap2()
+{
+	s11.style.display='none';
+	swap2.style.display='';
+}
+function do_search()
+{
+	s1.style.display='';
+	s2.style.display='';
+	s3.style.display='';
+	s4.style.display='';
+	s5.style.display='none';
+	s6.style.display='none';
+	s7.style.display='none';
+	s8.style.display='none';
+	s9.style.display='none';
+	s10.style.display='none';
+	s11.style.display='none';
+	s12.style.display='';
+	s13.style.display='none';
+	s14.style.display='';
+	s15.style.display='none';
+	s16.style.display='';
+	s17.style.display='none';
+	s18.style.display='';
+	s19.style.display='none';
+	s20.style.display='';
+}
+</script>
+
+<body>
+<div id="sub_content">
+
+<h2 class="search_t">未付款防伪标签搜索<span class="sc_search"></span></h2>
+<div class="c_search">
+<input type="text" class="txt" value="甲壳虫动漫" size="60" /> 
+  <label>
+    <input type="radio" name="RadioGroup1" checked="true" value="单选" id="RadioGroup1_0" />
+    全部</label>
+  <label>
+    <input type="radio" name="RadioGroup1" value="单选" id="RadioGroup1_1" />
+    未付款</label>
+     <input type="radio" name="RadioGroup1" value="单选" id="RadioGroup1_1" />
+    已付款</label>
+<input class="btn_search" type="button" value="搜 索" onclick="do_search()"/>
+</div>
+<h2>
+防伪标签统计
+</h2>
+<div class="important_info">
+腾讯儿童总计：46万，未到款：<span class="redf">10</span>万；腾讯游戏总计：35万，未到款：<span class="redf">1</span>万
+</div>
+<h2>防伪标签未付款</h2>
+<table width="100%" border="0" cellspacing="0" cellpadding="0" class="info_tab1">
+  <tr>
+    <th>申请公司</th>
+    <th width="10%">品牌</th>
+    <th width="10%">申请时间</th>
+    <th width="10%">发货时间</th>
+    <th>申请数量</th>
+    <th>发货数量</th>
+    <th width="6%">单价(分)</th>
+    <th>总计费用</th>
+    <th>审批人</th>
+    <th>备注</th>
+    <th>发票</th>
+    <th>付款登记</th>
+    </tr>
+  <tr id="s1">
+    <td>甲壳虫动漫</td>
+    <td>洛克王国</td>
+    <td>2011.3.18</td>
+    <td>2011.5.20</td>
+    <td>300000</td>
+    <td class="redf">301500</td>
+    <td>3</td>
+    <td>9000</td>
+    <td>dorisqiu(邱晨)</td>
+    <td><a href="javascript:void(0)" onclick="showPop('comment')">备注</a></td>
+    <td class="redf">未开票</td>
+    <td><a href="javascript:void(0)" onclick="showPop('regist')">登记</a></td>
+    </tr>
+  <tr id="s2">
+    <td>甲壳虫动漫</td>
+    <td>洛克王国</td>
+    <td>2011.3.18</td>
+    <td>2011.5.20</td>
+    <td>310000</td>
+    <td class="redf">311500</td>
+    <td>3</td>
+    <td>9300</td>
+    <td>karenma(马白燕)</td>
+    <td><a href="javascript:void(0)" onclick="showPop('comment')">备注</a></td>
+    <td class="redf">未开票</td>
+    <td><a href="javascript:void(0)" onclick="showPop('regist')">登记</a></td>
+    </tr>
+  <tr id="s3">
+    <td>甲壳虫动漫</td>
+    <td>洛克王国</td>
+    <td>2011.3.18</td>
+    <td>2011.5.20</td>
+    <td>300000</td>
+    <td class="redf">301500</td>
+    <td>3</td>
+    <td>9000</td>
+    <td>shmilywu(吴春玲)</td>
+    <td><a href="javascript:void(0)" onclick="showPop('comment')">备注</a></td>
+    <td class="redf">未开票</td>
+    <td><a href="javascript:void(0)" onclick="showPop('regist')">登记</a></td>
+    </tr>
+  <tr id="s4">
+    <td>甲壳虫动漫</td>
+    <td>洛克王国</td>
+    <td>2011.3.18</td>
+    <td>2011.5.20</td>
+    <td>310000</td>
+    <td class="redf">311500</td>
+    <td>3</td>
+    <td>9300</td>
+    <td>ponpeng(彭学勤)</td>
+    <td><a href="javascript:void(0)" onclick="showPop('comment')">备注</a></td>
+    <td class="redf">未开票</td>
+    <td><a href="javascript:void(0)" onclick="showPop('regist')">登记</a></td>
+    </tr>
+  <tr id="s5">
+    <td>梦龙</td>
+    <td>洛克王国</td>
+    <td>2011.3.18</td>
+    <td>2011.5.20</td>
+    <td>300000</td>
+    <td class="redf">301500</td>
+    <td>3</td>
+    <td>9000</td>
+    <td>dorisqiu(邱晨)</td>
+    <td><a href="javascript:void(0)" onclick="showPop('comment')">备注</a></td>
+   <td class="redf">未开票</td>
+    <td><a href="javascript:void(0)" onclick="showPop('regist')">登记</a></td>
+    </tr>
+  <tr id="s6">
+    <td>梦龙</td>
+    <td>洛克王国</td>
+    <td>2011.3.18</td>
+    <td>2011.5.20</td>
+    <td>310000</td>
+    <td class="redf">311500</td>
+    <td>3</td>
+    <td>9300</td>
+    <td>dorisqiu(邱晨)</td>
+    <td><a href="javascript:void(0)" onclick="showPop('comment')">备注</a></td>
+   <td class="redf">未开票</td>
+    <td><a href="javascript:void(0)" onclick="showPop('regist')">登记</a></td>
+    </tr>
+  <tr id="s7">
+    <td>梦龙</td>
+    <td>洛克王国</td>
+    <td>2011.3.18</td>
+    <td>2011.5.20</td>
+    <td>300000</td>
+    <td class="redf">301500</td>
+    <td>3</td>
+    <td>15000</td>
+    <td>karenma(马白燕)</td>
+    <td><a href="javascript:void(0)" onclick="showPop('comment')">备注</a></td>
+    <td class="redf">未开票</td>
+    <td><a href="javascript:void(0)" onclick="showPop('regist')">登记</a></td>
+    </tr>
+  <tr id="s8">
+    <td>梦龙</td>
+    <td>洛克王国</td>
+    <td>2011.3.18</td>
+    <td>2011.5.20</td>
+    <td>310000</td>
+    <td class="redf">311500</td>
+    <td>3</td>
+    <td>12000</td>
+    <td>shmilywu(吴春玲)</td>
+    <td><a href="javascript:void(0)" onclick="showPop('comment')">备注</a></td>
+    <td class="redf">未开票</td>
+    <td><a href="javascript:void(0)" onclick="showPop('regist')">登记</a></td>
+    </tr>
+  <tr id="s9">
+    <td>阿迪达斯</td>
+    <td>洛克王国</td>
+    <td>2011.3.18</td>
+    <td>2011.5.20</td>
+    <td>300000</td>
+    <td class="redf">301500</td>
+    <td>3</td>
+    <td>15000</td>
+    <td>ponpeng(彭学勤)</td>
+    <td><a href="javascript:void(0)" onclick="showPop('comment')">备注</a></td>
+    <td class="redf">未开票</td>
+    <td><a href="javascript:void(0)" onclick="showPop('regist')">登记</a></td>
+    </tr>
+  <tr id="s10">
+    <td>阿迪达斯</td>
+    <td>洛克王国</td>
+    <td>2011.3.18</td>
+    <td>2011.5.20</td>
+    <td>310000</td>
+    <td class="redf">311500</td>
+    <td>3</td>
+    <td>15000</td>
+    <td>dorisqiu(邱晨)</td>
+    <td><a href="javascript:void(0)" onclick="showPop('comment')">备注</a></td>
+    <td class="redf">未开票</td>
+    <td><a href="javascript:void(0)" onclick="showPop('regist')">登记</a></td>
+    </tr>
+</table>
+<h2 class="mt20">防伪标签已付款</h2>
+<table width="100%" border="0" cellspacing="0" cellpadding="0" class="info_tab1">
+  <tr>
+    <th>申请公司</th>
+    <th width="10%">品牌</th>
+    <th width="10%">申请时间</th>
+    <th width="10%">发货时间</th>
+    <th>申请数量</th>
+    <th>发货数量</th>
+    <th width="6%">单价(分)</th>
+    <th>总计费用</th>
+    <th>审批人</th>
+    <th>备注</th>
+    <th>操作</th>
+  </tr>
+  
+  <tr id="swap1" style="display:none">
+    <td>甲壳虫动漫</td>
+    <td>洛克王国</td>
+    <td>2011.3.18</td>
+    <td>2011.5.20</td>
+    <td>310000</td>
+    <td class="redf">311500</td>
+    <td>3</td>
+    <td>9300</td>
+    <td>karenma(马白燕)</td>
+    <td>&nbsp;</td>
+    <td>
+    <a href="javascript:void(0)" onclick="showPop('delivery')">发快递</a>
+    <a href="javascript:void(0)" onclick="showPop('info')">登记记录</a>    
+    </td>
+    </tr>
+  <tr id="s11">
+    <td>梦龙</td>
+    <td>洛克王国</td>
+    <td>2011.3.18</td>
+    <td>2011.5.20</td>
+    <td>300000</td>
+    <td class="redf">301500</td>
+    <td>3</td>
+    <td>9000</td>
+    <td>dorisqiu(邱晨)</td>
+    <td><a href="javascript:void(0)" onclick="showPop('comment')">备注</a></td>
+     <td>
+     <a href="javascript:void(0)" onclick="showPop('delivery')">发快递</a>
+     <a href="javascript:void(0)" onclick="showPop('info')">登记记录</a>
+     </td>
+    </tr>
+  <tr id="s12">
+    <td>甲壳虫动漫</td>
+    <td>洛克王国</td>
+    <td>2011.3.18</td>
+    <td>2011.5.20</td>
+    <td>310000</td>
+    <td class="redf">311500</td>
+    <td>3</td>
+    <td>9300</td>
+    <td>karenma(马白燕)</td>
+    <td>&nbsp;</td>
+    <td><a href="javascript:void(0)" onclick="showPop('delivery')">发快递</a>
+    <a href="javascript:void(0)" onclick="showPop('info')">登记记录</a>
+    </td>
+    </tr>
+  <tr id="s13">
+    <td>阿迪达斯</td>
+    <td>洛克王国</td>
+    <td>2011.3.18</td>
+    <td>2011.5.20</td>
+    <td>300000</td>
+    <td class="redf">301500</td>
+    <td>3</td>
+    <td>9000</td>
+    <td>shmilywu(吴春玲)</td>
+    <td>&nbsp;</td>
+    <td><a href="javascript:void(0)" onclick="showPop('delivery')">发快递</a>
+    <a href="javascript:void(0)" onclick="showPop('info')">登记记录</a>
+    </td>
+    </tr>
+  <tr id="s14">
+    <td>甲壳虫动漫</td>
+    <td>洛克王国</td>
+    <td>2011.3.18</td>
+    <td>2011.5.20</td>
+    <td>310000</td>
+    <td class="redf">311500</td>
+    <td>3</td>
+    <td>9300</td>
+    <td>ponpeng(彭学勤)</td>
+    <td><a href="javascript:void(0)" onclick="showPop('comment')">备注</a></td>
+    <td><a href="javascript:void(0)" onclick="showPop('delivery')">发快递</a>
+    <a href="javascript:void(0)" onclick="showPop('info')">登记记录</a>
+    </td>
+    </tr>
+  <tr id="s15">
+    <td>梦龙</td>
+    <td>洛克王国</td>
+    <td>2011.3.18</td>
+    <td>2011.5.20</td>
+    <td>300000</td>
+    <td class="redf">301500</td>
+    <td>3</td>
+    <td>9000</td>
+    <td>dorisqiu(邱晨)</td>
+    <td>&nbsp;</td>
+    <td><a href="javascript:void(0)" onclick="showPop('delivery')">发快递</a>
+    <a href="javascript:void(0)" onclick="showPop('info')">登记记录</a>
+    </td>
+    </tr>
+    
+    <tr id="swap2" style="display:none">
+    <td>梦龙</td>
+    <td>洛克王国</td>
+    <td>2011.3.18</td>
+    <td>2011.5.20</td>
+    <td>310000</td>
+    <td class="redf">311500</td>
+    <td>3</td>
+    <td>9300</td>
+    <td>dorisqiu(邱晨)</td>
+    <td>&nbsp;</td>
+    <td><a href="javascript:void(0)" onclick="showPop('view_receipt')">查看单号</a>
+    <a href="javascript:void(0)" onclick="showPop('info')">登记记录</a></td>
+    </tr>
+  <tr id="s16">
+    <td>甲壳虫动漫</td>
+    <td>洛克王国</td>
+    <td>2011.3.18</td>
+    <td>2011.5.20</td>
+    <td>310000</td>
+    <td class="redf">311500</td>
+    <td>3</td>
+    <td>9300</td>
+    <td>dorisqiu(邱晨)</td>
+    <td>&nbsp;</td>
+    <td><a href="javascript:void(0)" onclick="showPop('view_receipt')">查看单号</a>
+    <a href="javascript:void(0)" onclick="showPop('info')">登记记录</a></td>
+    </tr>
+  <tr id="s17">
+    <td>梦龙</td>
+    <td>洛克王国</td>
+    <td>2011.3.18</td>
+    <td>2011.5.20</td>
+    <td>300000</td>
+    <td class="redf">301500</td>
+    <td>3</td>
+    <td>15000</td>
+    <td>karenma(马白燕)</td>
+    <td>&nbsp;</td>
+    <td><a href="javascript:void(0)" onclick="showPop('view_receipt')">查看单号</a>
+    <a href="javascript:void(0)" onclick="showPop('info')">登记记录</a>
+    </td>   
+    </tr>
+  <tr id="s18">
+    <td>甲壳虫动漫</td>
+    <td>洛克王国</td>
+    <td>2011.3.18</td>
+    <td>2011.5.20</td>
+    <td>310000</td>
+    <td class="redf">311500</td>
+    <td>3</td>
+    <td>12000</td>
+    <td>shmilywu(吴春玲)</td>
+    <td>&nbsp;</td>
+    <td><a href="javascript:void(0)" onclick="showPop('view_receipt')">查看单号</a>
+    <a href="javascript:void(0)" onclick="showPop('info')">登记记录</a>
+    </td>    
+    </tr>
+  <tr id="s19">
+    <td>阿迪达斯</td>
+    <td>洛克王国</td>
+    <td>2011.3.18</td>
+    <td>2011.5.20</td>
+    <td>300000</td>
+    <td class="redf">301500</td>
+    <td>3</td>
+    <td>15000</td>
+    <td>ponpeng(彭学勤)</td>
+    <td>&nbsp;</td>
+    <td><a href="javascript:void(0)" onclick="showPop('view_receipt')">查看单号</a>
+    <a href="javascript:void(0)" onclick="showPop('info')">登记记录</a>
+    </td>
+    </tr>
+  <tr id="s20">
+    <td>甲壳虫动漫</td>
+    <td>洛克王国</td>
+    <td>2011.3.18</td>
+    <td>2011.5.20</td>
+    <td>310000</td>
+    <td class="redf">311500</td>
+    <td>3</td>
+    <td>15000</td>
+    <td>dorisqiu(邱晨)</td>
+    <td>&nbsp;</td>
+	<td><a href="javascript:void(0)" onclick="showPop('view_receipt')">查看单号</a>
+    <a href="javascript:void(0)" onclick="showPop('info')">登记记录</a>
+    </td>
+    </tr>
+</table>
+<div class="page">共<span>4</span>页 <a href="#" class="p_last">上一页</a> <a href="#" class="on">1</a><a href="#">2</a><a href="#">3</a><a href="#">4</a> <a href="#" class="p_next">下一页</a></div>
+<div class="noticeInfo">
+<h5>Notice 说明</h5>
+<p>【分页】10条数据一页</p>
+<p>【付款情况】未付款、已付款</p>
+<p>【发票】状态分：未开票、已快递，若是已快递，则需要用户填写下快递的单号信息</p>
+<p>【备注】备注一栏，在“防伪标签已付款”列表中，若没有备注信息，则不显示此项</p>
+</div>
+
+<div id="view_receipt" class="pop">
+<h2><p>查看订单</p><a href="javascript:void(0)" onclick="closePop('view_receipt')">[×] 关闭</a></h2>
+<table width="100%"  height="30px" border="0" cellspacing="0" cellpadding="0" class="info_tab5 mt10">
+  
+  <tr>
+    <td>订单号：</td>
+    <td>2232318237236</td>
+  <tr>
+    <td>&nbsp;</td>
+    <td class="alignr"><input type="submit" name="button" id="button" value="发送" class="btn_sorange" onclick="closePop('view_receipt');show2('line9')" />
+    </td>
+    </tr>
+</table>
+</div>
+
+<div id="delivery" class="pop">
+<h2><p>邮寄订单</p><a href="javascript:void(0)" onclick="closePop('delivery')">[×] 关闭</a></h2>
+<table width="100%"  height="30px" border="0" cellspacing="0" cellpadding="0" class="info_tab5 mt10">
+  
+  <tr>
+    <td>请输入单号：</td>
+    <td><input type="text" value="029123322321212"></td>
+  <tr>
+    <td>&nbsp;</td>
+    <td class="alignr"><input type="submit" name="button" id="button" value="发送" class="btn_sorange" onclick="closePop('delivery');do_swap2();show2('line9')" />
+    </td>
+    </tr>
+</table>
+</div>
+
+<div id="regist" class="pop">
+<h2><p>请输入登记信息</p><a href="javascript:void(0)" onclick="closePop('regist')">[×] 关闭</a></h2>
+<table width="100%"  height="30px" border="0" cellspacing="0" cellpadding="0" class="info_tab5 mt10">
+  
+  <tr>
+    <td>登记信息：</td>
+    <td><textarea name="textarea" id="textarea" cols="107" rows="5" value="未付款" class="longarea"></textarea>
+    </td>
+  <tr>
+    <td>&nbsp;</td>
+    <td class="alignr"><input type="submit" name="button" id="button" value="登记" class="btn_sorange" onclick="closePop('regist');do_swap();show2('line9')" />
+    </td>
+    </tr>
+</table>
+</div>
+
+<div id="comment" class="pop">
+<h2><p>备注</p><a href="javascript:void(0)" onclick="closePop('comment')">[×] 关闭</a></h2>
+<table  border="0" cellspacing="0" cellpadding="0" class="info_tab5 mt10" width="80%" height="50%">
+  
+  <tr>
+    <th>产品备注</th>
+    <td ><textarea name="textarea" id="textarea" cols="107" rows="5" value="未付款" class="longarea"></textarea>
+    </td>
+    </tr>
+  <tr>
+    <td>&nbsp;</td>
+    <td colspan="5" class="alignr"><input type="submit" name="button" id="button" value="确定" class="btn_sorange" onclick="closePop('comment');show2('line9')" /></td>
+    </tr>
+</table>
+</div>
+
+<div id="info" class="pop">
+<h2><p>登记信息</p><a href="javascript:void(0)" onclick="closePop('info')">[×] 关闭</a></h2>
+<table  border="0" cellspacing="0" cellpadding="0" class="info_tab5 mt10" width="80%" height="50%">
+  
+  <tr>
+    <th>登记单号</th>
+    <td >23123124234234</td>
+    </tr>
+  <tr>
+    <td>&nbsp;</td>
+    <td colspan="5" class="alignr"><input type="submit" name="button" id="button" value="确定" class="btn_sorange" onclick="closePop('info');show2('line9')" /></td>
+    </tr>
+</table>
+</div>
+
+
+<div id="mask"></div>
+<script type="text/javascript" src="js/main.js"></script>
+</body>
+</html>

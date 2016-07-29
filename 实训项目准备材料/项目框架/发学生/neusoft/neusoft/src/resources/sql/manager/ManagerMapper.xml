@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8" ?> 
+ <!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd"> 
+ <mapper namespace="com.neusoft.basis.manager.mapper.ManagerMapper"> 
+     <resultMap type="com.neusoft.basis.manager.entity.ManagerEntity" id="managerResultMap"> 
+	    <id property="managerId" column="managerId" javaType="java.lang.Integer"/>  
+	    <result property="managerName" column="managerName" javaType="java.lang.String"/> 
+	    <result property="managerSex" column="managerSex" javaType="java.lang.String"/> 
+	    <result property="managerAge" column="managerAge" javaType="java.lang.Integer"/> 
+	    <result property="managerPwd" column="managerPwd" javaType="java.lang.String"/> 
+	    <result property="isDel" column="isDel" javaType="java.lang.String"/> 
+	    <result property="createTime" column="createTime" javaType="java.util.Date"/> 
+	    <result property="createUser" column="createUser" javaType="java.lang.String"/> 
+	    <result property="lstModifyTime" column="lstModifyTime" javaType="java.util.Date"/> 
+	    <result property="lstModifyUser" column="lstModifyUser" javaType="java.lang.String"/> 
+	 </resultMap>
+	 <!-- 查询客户列表 -->
+ 	<select id="getAllManagerList" parameterType="com.neusoft.basis.manager.entity.ManagerEntity" resultMap="managerResultMap">
+       select * from manager;
+    </select>
+     <!-- 新增客户信息 -->
+    <insert id="insertManager" parameterType="com.neusoft.basis.manager.entity.ManagerEntity" > 
+	    insert into manager(managerName,managerSex,managerAge,managerPwd,createTime,createUser,lstModifyTime,lstModifyUser) 
+	                 values(#{managerName},#{managerSex},#{managerAge},#{managerPwd},now(),#{createUser},now(),#{lstModifyUser})
+	</insert>
+	 <!-- 根据id查询单个客户信息 -->
+    <select id="getManager" parameterType="java.lang.String" resultMap="managerResultMap"> 
+	   <![CDATA[ 
+	     	select * from manager t where t.managerId=#{managerId};
+	    ]]> 
+    </select>
+     <!-- 更新客户信息 -->
+	<update id="updateManager" parameterType="com.neusoft.basis.manager.entity.ManagerEntity" >
+	    update manager
+	       set managerName= #{managerName},
+	           managerSex = #{managerSex},
+	           managerAge = #{managerAge}
+	     WHERE managerId = #{managerId}
+	</update>
+	<!-- 删除客户信息 -->
+	<update id="deleteManager" parameterType="com.neusoft.basis.manager.entity.ManagerEntity" >
+	    update manager
+	       set isDel='T'
+	     WHERE managerId = #{managerId}
+	</update>
+ </mapper>

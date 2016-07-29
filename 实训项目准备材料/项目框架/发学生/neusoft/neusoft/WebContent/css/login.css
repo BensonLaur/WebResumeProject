@@ -1,0 +1,72 @@
+@charset "utf-8";
+/* CSS Document */
+body
+{
+margin:0px;
+padding:0px;
+font-size:12px;
+color:#323232;
+background:url(../images/bg.jpg) no-repeat;
+}
+.loginbg
+{
+width:579px;
+height:357px;
+background:url(../images/bg_login.jpg) no-repeat;
+margin:auto;
+margin-top:140px;
+}
+#jr_login_input1
+{
+*background:url(../images/login_input1.gif) no-repeat;
+}
+.login_input1
+{
+width:165px;
+height:22px;
+line-height:22px;
+background:url(../images/login_input1.gif) no-repeat;
+*background:none;
+padding-left:10px;
+padding-right:10px;
+border:none;
+}
+#jr_login_input2
+{
+*background:url(../images/login_input2.gif) no-repeat;
+}
+.login_input2
+{
+width:46px;
+height:22px;
+line-height:22px;
+background:url(../images/login_input2.gif) no-repeat;
+*background:none;
+padding-left:10px;
+padding-right:10px;
+border:none;
+}
+.login_but
+{
+width:95px;
+height:92px;
+background:url(../images/login_but.gif) no-repeat;
+cursor:pointer;
+border:none;
+}
+.errorMessage{
+    font-family: Arial, Helvetica, sans-serif;
+	font-size: 12px;
+	line-height: 25px;
+	font-weight: bold;
+	color:#d00;
+}
+ul{
+   padding:0px;
+   margin:0px;
+   list-style-type:none
+}
+li{
+   padding:0px;
+   margin:0px;
+}

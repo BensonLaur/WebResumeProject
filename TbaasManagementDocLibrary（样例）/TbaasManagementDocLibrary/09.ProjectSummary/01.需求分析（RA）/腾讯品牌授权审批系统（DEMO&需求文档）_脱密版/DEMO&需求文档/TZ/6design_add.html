@@ -1,0 +1,95 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=gb2312" />
+<title>添加产品设计</title>
+<link href="css/main.css" rel="stylesheet" />
+<script>
+function  displayAll()
+{
+	select_display.style.display= '';
+	select_invise.style.display= 'none';
+
+}
+</script>
+
+</head>
+<body>
+<div id="sub_content">
+
+<h2 class="search_t">
+<p>新增设计</p>
+</h2>
+<table id="select_invise" width="860" class="info_tab3 ctabt">
+  <tr>
+    <th width="11%">产品审批编号</th>
+    <td width="15%">ROCO2011-0001-0005</td>
+    <th width="11%">产品名称</th>
+    <td width="15%">
+    <select  onchange="displayAll()">
+	<option value="0">-请选择-</option>
+    <option>洛克王国拼图玩具</option>
+    <option>qq洛克王国拼图玩具</option>
+    </select>    
+    </td>
+  </tr>
+  <tr>
+    <th width="11%">所属项目</th>
+    <td width="15%"> </td>
+    <th width="11%">申请公司</th>
+    <td width="15%" class="noborder"> </td>
+  </tr>
+  <tr>
+    <th width="11%">设计师</th>
+    <td width="15%"> </td>
+    <th width="11%">联系方式</th>
+    <td width="15%" class="noborder"> </td>
+  </tr>
+</table>
+
+<table id="select_display" style="display:none"  width="860" class="info_tab3 ctabt">
+  <tr>
+    <th width="11%">产品审批编号</th>
+    <td width="15%">ROCO2011-0001-0005</td>
+    <th width="11%">产品名称</th>
+    <td width="15%">
+    <select>
+    <option>洛克王国拼图玩具</option>
+    <option>qq洛克王国拼图玩具</option>
+    </select>   
+    </td> 
+  </tr>
+  <tr>
+    <th width="11%">所属项目</th>
+    <td width="15%">洛克王国周边衍生品授权</td>
+    <th width="11%">申请公司</th>
+    <td width="15%" class="noborder">浙江甲壳虫动漫有限公司</td>
+  </tr>
+  <tr>
+    <th width="11%">设计师</th>
+    <td width="15%">李奚丹</td>
+    <th width="11%">联系方式</th>
+    <td width="15%" class="noborder">13578189416</td>
+  </tr>
+</table>
+
+<table width="100%" border="0" cellspacing="0" cellpadding="0" class="info_tab3 ctabt mt10">
+  <tr>
+    <th>设计图</th>
+    <th width="15%">设计说明</th>
+    </tr>
+  <tr>
+    <td width="40%"><p>显示产品缩略图（宽度不超过500px），支持多张图片</p>
+      <p>点击弹出层显示产品全图</p>
+      <div class=""><input type="file" class="btn_orage" value="请上传产品图片" size="30" /> <input type="button" class="btn_orange" value="上传图片" onclick="window.location='6design_addmoreline.html'"/>
+</div></td>
+    <td><textarea name="textarea2" id="textarea2" cols="40" rows="5">此设计体现时尚、新潮特色</textarea></td>
+    </tr>
+</table>
+<div class="alignc pb20 pt20">
+	<input type="button" value="提 交" class="btn_sub" onclick="location.href('opResult.html?msg=产品设计提交成功！&url=6design_list.html')"/>
+        <a href="javascript:void(0)" onclick="location.href('opResult.html?msg=产品设计保存成功！&url=6design_list.html')" class="link14">保存草稿</a>
+</div>
+</div>
+</body>
+</html>

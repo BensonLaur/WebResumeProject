@@ -1,0 +1,108 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=gb2312" />
+<title>腾讯品牌授权审批及报表系统</title>
+<link href="css/main.css" type="text/css" rel="stylesheet" />
+</head>
+<body>
+<div id="header">
+	<div class="header_bg">
+	<h1>腾讯品牌授权审批及报表系统</h1>
+    <div class="top_menu">
+    	<a href="">系统帮助</a>
+        <a href="">问题反馈</a>
+    </div>
+    <div class="top_info">
+    	欢迎您，[<span id="">总项目负责人</span>] <span>张弩</span> ，您共有[ <a  href="#"><strong class="redf">3</strong></a> ]件待办事宜<a href="0login.html">[注销]</a>
+    </div>
+    </div>
+</div>
+<table id="content">
+<tr>
+	<th id="main_nav">
+    	<h2 class="nav_link"><a href="javascript:void(0)" onclick="changeIframe('0info.html')">系统首页</a></h2>
+        <h2>个人工作台</h2>
+        <ul>
+        <li><a href="javascript:void(0)" onclick="changeIframe('0task_mustdo.html')">我的待办</a></li>
+        <li><a href="javascript:void(0)" onclick="changeIframe('0task_over.html')">我的已办</a></li>
+        <li><a href="javascript:void(0)" onclick="changeIframe('4user_edit.html')">个人资料</a></li>
+        <li><a href="javascript:void(0)" onclick="changeIframe('4key_edit.html')">修改密码</a></li>
+        <li><a href="javascript:void(0)" onclick="changeIframe('16project_search.html')">项目查询</a></li>
+        <li><a href="javascript:void(0)" onclick="changeIframe('4user_search.html')">用户查询</a></li>
+        <li><a href="javascript:void(0)" onclick="changeIframe('18notice_add.html')">新建提醒</a></li>
+        <li><a href="javascript:void(0)" onclick="changeIframe('18notice_list.html')">提醒列表</a></li>
+        </ul>
+        <h2>产品审核流程</h2>
+        <ul>
+        <li><a href="javascript:void(0)" onclick="changeIframe('1product_add.html')">新建开发计划</a></li>
+        <li><a href="javascript:void(0)" onclick="changeIframe('1product_list.html')">开发计划列表</a></li>
+        <li><a href="javascript:void(0)" onclick="changeIframe('2book_edit.html')">新建出版计划</a></li>
+        <li><a href="javascript:void(0)" onclick="changeIframe('2book_list.html')">出版计划列表</a></li>
+        <li><a href="javascript:void(0)" onclick="changeIframe('3promotion_add.html')">新建促销计划</a></li>
+        <li><a href="javascript:void(0)" onclick="changeIframe('3promotion_list.html')">促销计划列表</a></li>
+        <li><a href="javascript:void(0)" onclick="changeIframe('6design_add.html')">新建产品设计</a></li>
+        <li><a href="javascript:void(0)" onclick="changeIframe('6design_list.html')">产品设计列表</a></li>
+        <li><a href="javascript:void(0)" onclick="changeIframe('7quality_add.html')">新建打样申请</a></li>
+        <li><a href="javascript:void(0)" onclick="changeIframe('7quality_list.html')">打样申请列表</a></li>
+        </ul>
+        <h2>防伪标签</h2>
+        <ul>
+        <li><a href="javascript:void(0)" onclick="changeIframe('8label_new.html')">新建防伪标申请</a></li>
+        <li><a href="javascript:void(0)" onclick="changeIframe('8label_list1.html')">防伪标申请列表</a></li>
+        <li><a href="javascript:void(0)" onclick="changeIframe('9label_edit2.html')">防伪标生产记录</a></li>
+        <li><a href="javascript:void(0)" onclick="changeIframe('9label_list2.html')">防伪标生产列表</a></li>
+        <li><a href="javascript:void(0)" onclick="changeIframe('8label_list3.html')">防伪标发货记录</a></li>
+        <li><a href="javascript:void(0)" onclick="changeIframe('8label_list4.html')">防伪标付款&amp;发票</a></li>
+		</ul>
+    <h2>StyleGuide&amp;素材</h2>
+        <ul>
+        <li><a href="javascript:void(0)" onclick="changeIframe('11sg_add.html')">添加图片</a></li>
+        <li><a href="javascript:void(0)" onclick="changeIframe('11sg_add2.html')">添加压缩包</a></li>
+        <li><a href="javascript:void(0)" onclick="changeIframe('11sg_list.html')">素材列表</a></li>
+        <!--<li><a href="javascript:void(0)" onclick="changeIframe('11sg_type_list.html')">素材类别</a></li>-->
+        <li><a href="javascript:void(0)" onclick="changeIframe('11sg_permission.html')">批量设置权限</a></li>
+        <li><a href="javascript:void(0)" onclick="changeIframe('11sg_apply.html')">素材申请</a></li>
+        <li><a href="javascript:void(0)" onclick="changeIframe('11sg_applylist.html')">申请列表</a></li>
+        </ul>
+        <h2>授权经理</h2>
+        <ul>
+        <li><a href="javascript:void(0)" onclick="changeIframe('16project_edit.html')">新建项目</a></li>
+        <li><a href="javascript:void(0)" onclick="changeIframe('16project_list.html')">项目列表</a></li>
+        <li><a href="javascript:void(0)" onclick="changeIframe('15company_edit.html')">新建公司</a></li>
+        <li><a href="javascript:void(0)" onclick="changeIframe('15company_list.html')">公司列表</a></li>
+        <li><a href="javascript:void(0)" onclick="changeIframe('4user_add.html')">新建用户</a></li>
+        <li><a href="javascript:void(0)" onclick="changeIframe('4user_list.html')">用户列表</a></li>
+        <li><a href="javascript:void(0)" onclick="changeIframe('4user_lock.html')">锁定&amp;解锁用户</a></li>
+        <li><a href="javascript:void(0)" onclick="changeIframe('4user_key.html')">用户密码重置</a></li>
+        <li><a href="javascript:void(0)" onclick="changeIframe('17game_list.html')">游戏列表</a></li>
+        </ul>
+        <h2>系统管理</h2>
+      <ul>
+        <li><a href="javascript:void(0)" onclick="changeIframe('19role_add.html')">新建角色</a></li>
+        <li><a href="javascript:void(0)" onclick="changeIframe('19role_list.html')">角色列表</a></li>
+        <li><a href="javascript:void(0)" onclick="changeIframe('17game_list.html')">游戏管理</a></li>
+        <li><a href="javascript:void(0)" onclick="changeIframe('20mail_list.html')">邮件提醒列表</a></li>
+        <li><a href="javascript:void(0)" onclick="changeIframe('20mail_add.html')">新建邮件提醒</a></li>
+        <li><a href="javascript:void(0)" onclick="changeIframe('20log_list.html')">操作日志</a></li>
+        </ul>
+    </th>
+    <td id="right_content">
+    	<div class="sub_nav" style="display:none">
+        	<ul class="sn_list">
+            <li class="on"><h3>系统首页</h3><a href="">×</a></li>
+            <li><h3>产品开发</h3><a href="">×</a></li>
+            <li><h3>公司管理</h3><a href="">×</a></li>
+            <li><h3>项目管理</h3><a href="">×</a></li>
+            <li></li>
+            </ul>
+        </div>
+        <div class="nav_address">当前位置：系统首页</div>
+        <iframe id="subpage" allowtransparency="true" frameborder="0" scrolling="no" src="0info.html" width="100%"></iframe>
+    </td>
+</tr>
+</table>
+<div id="footer">COPYRIGHT &copy; 1998 – 2011 TENCENT. ALL RIGHTS RESERVED. 腾讯公司 版权所有</div>
+<script type="text/javascript" src="js/main.js"></script>
+</body>
+</html>

@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE struts PUBLIC 
+    "-//Apache Software Foundation//DTD Struts Configuration 2.0//EN"
+    "http://struts.apache.org/dtds/struts-2.0.dtd">
+<struts>	
+	<package name="param" namespace="/param" extends="struts-default">
+		<interceptors>
+			<!-- 定义AuthenticationInterceptor拦截器 -->
+			<interceptor name="auth"
+				class="com.neusoft.comon.interceptor.AuthenticationInterceptor" />
+		</interceptors>
+		<global-results>
+			<result name="login">/comm/autherror.jsp</result>
+			<result name="error">/comm/error.jsp</result>
+			<result name="input">/login.jsp</result>
+			<result name="invalid.token">/comm/resubmiterror.jsp</result>
+		</global-results>		
+		<action name="getAllParameter" method="getAllParameter" class="com.neusoft.basis.parameter.action.ParameterAction" >
+			<exception-mapping result="error" exception="java.lang.Exception" />
+			<result name="success">/parameter/parameterMgt.jsp</result>
+			<interceptor-ref name="defaultStack" />
+			<interceptor-ref name="auth" />
+		</action>
+        <action name="getParameter" method="getParameter" class="com.neusoft.basis.parameter.action.ParameterAction" >
+			<exception-mapping result="error" exception="java.lang.Exception" />
+			<result name="success">/parameter/parameterUpdate.jsp</result>
+	        <interceptor-ref name="defaultStack" />
+	        <interceptor-ref name="auth" />
+		</action>
+        <action name="updateParameter" method="updateParameter" class="com.neusoft.basis.parameter.action.ParameterAction" >
+			<exception-mapping result="error" exception="java.lang.Exception" />
+	        <result name="success" type="redirectAction">  
+                <param name="actionName">getAllParameter</param>  
+                <param name="namespace">/param</param>
+                <param name="sessionId">${sessionId}</param>
+            </result>  
+			<interceptor-ref name="defaultStack" />
+			<interceptor-ref name="auth" />
+		</action>
+	</package>
+</struts>

@@ -1,0 +1,26 @@
+<?xml version='1.0' encoding='utf-8'?>
+<quartz>
+ <job>
+　　 <job-detail>
+	  　　<name>test</name>
+	  　　<group>DEFAULT</group>
+	  　　<description>testJobhere</description>
+	  　　<job-class>com.neusoft.comon.quartz.TestJob</job-class>
+	  　　<job-data-map allows-transient-data="true">
+	   　　<entry>
+		　　<key>name</key>
+	   　　 <value>test</value>
+	   　　</entry>
+		 </job-data-map>
+ 　　</job-detail>
+　　 <trigger>
+         <cron>
+            <name>testCron</name>
+            <group>DEFAULT</group>
+            <job-name>test</job-name>
+            <job-group>DEFALUT</job-group>
+			<cron-expression>0 35 23 ? * *</cron-expression>
+          </cron>
+       </trigger>
+　 </job>
+</quartz>

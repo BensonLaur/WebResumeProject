@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE struts PUBLIC 
+    "-//Apache Software Foundation//DTD Struts Configuration 2.0//EN"
+    "http://struts.apache.org/dtds/struts-2.0.dtd">
+<struts>	
+	<package name="group" namespace="/group" extends="struts-default">
+		<interceptors>
+			<!-- 定义AuthenticationInterceptor拦截器 -->
+			<interceptor name="auth"
+				class="com.neusoft.comon.interceptor.AuthenticationInterceptor" />
+		</interceptors>
+		<global-results>
+			<result name="login">/comm/autherror.jsp</result>
+			<result name="error">/comm/error.jsp</result>
+			<result name="input">/login.jsp</result>
+			<result name="invalid.token">/comm/resubmiterror.jsp</result>
+		</global-results>		
+	   <action name="insertGroup" method="insertGroup" class="com.neusoft.basis.group.action.GroupAction" >
+			<exception-mapping result="error" exception="java.lang.Exception" /> 
+            <result name="success" type="redirectAction">  
+                <param name="actionName">getAllGroup</param>  
+                <param name="namespace">/group</param>
+                <param name="sessionId">${sessionId}</param>
+            </result>  
+			<interceptor-ref name="defaultStack" />
+			<interceptor-ref name="auth" />
+		</action>
+		<action name="getAllGroup" method="getAllGroup" class="com.neusoft.basis.group.action.GroupAction" >
+			<exception-mapping result="error" exception="java.lang.Exception" />
+			<result name="success">/group/groupMgt.jsp</result>
+			<interceptor-ref name="defaultStack" />
+			<interceptor-ref name="auth" />
+		</action>
+        <action name="getGroup" method="getGroup" class="com.neusoft.basis.group.action.GroupAction" >
+			<exception-mapping result="error" exception="java.lang.Exception" />
+			<result name="success">/group/groupUpdate.jsp</result>
+	        <interceptor-ref name="defaultStack" />
+	        <interceptor-ref name="auth" />
+		</action>
+        <action name="updateGroup" method="updateGroup" class="com.neusoft.basis.group.action.GroupAction" >
+			<exception-mapping result="error" exception="java.lang.Exception" />
+	        <result name="success" type="redirectAction">  
+                <param name="actionName">getAllGroup</param>  
+                <param name="namespace">/group</param>
+                <param name="sessionId">${sessionId}</param>
+            </result>  
+			<interceptor-ref name="defaultStack" />
+			<interceptor-ref name="auth" />
+		</action>
+		
+		<action name="getAllMenuItem" method="getAllMenuItem" class="com.neusoft.basis.group.action.GroupAction" >
+			<exception-mapping result="error" exception="java.lang.Exception" />
+			<result name="success">/group/groupItem.jsp</result>
+			<interceptor-ref name="defaultStack" />
+			<interceptor-ref name="auth" />
+		</action>
+		
+	   <action name="updateGroupItem" method="updateGroupItem" class="com.neusoft.basis.group.action.GroupAction" >
+			<exception-mapping result="error" exception="java.lang.Exception" />
+	        <result name="success" type="redirectAction">  
+                <param name="actionName">getAllGroup</param>  
+                <param name="namespace">/group</param>
+                <param name="sessionId">${sessionId}</param>
+            </result>  
+			<interceptor-ref name="defaultStack" />
+			<interceptor-ref name="auth" />
+		</action>
+	</package>
+</struts>

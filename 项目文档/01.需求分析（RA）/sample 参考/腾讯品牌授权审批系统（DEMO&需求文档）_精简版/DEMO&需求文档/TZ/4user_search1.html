@@ -1,0 +1,61 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=gb2312" />
+<title>人员管理</title>
+<link href="css/main.css" rel="stylesheet" />
+<script type="text/javascript" src="js/main.js"></script>
+</head>
+
+<body>
+<div id="sub_content">
+
+<h2 class="search_t">人员搜索<span class="sc_search"></span></h2>
+<div class="c_search">
+用户ID:<input type="text" class="txt" value="" size="20" />名称:<input type="text" class="txt" value="" size="20" />公司: <input type="text" class="txt" value="" size="20" /> <input class="btn_search" type="button" onclick="show2('search')" value="搜 索" />
+</div>
+<div class="notice" id="search" style="display:none"><h3>搜索结果</h3><p>总共搜索到【<b class="redf">3</b>】名用户符合搜索条件</p></div>
+<h2>
+  <p>人员列表</p></h2>
+<table width="100%" border="0" cellspacing="0" cellpadding="0" class="info_tab1">
+  <tr>
+    <th width="8%">编号</th>
+    <th width="15%">中文名</th>
+    <th width="10%">英文名</th>
+    <th width="20%">所属公司</th>
+    <th width="10%">所属类型</th>
+    <th>联系电话</th>
+    <th>操作</th>
+  </tr>
+  <tr>
+    <td>T0001</td>
+    <td>余则生</td>
+    <td>uzecheng</td>
+    <td><a href="javascript:void(0)" onclick="changeIframe2('15company_show.html')" target="_top">优扬传媒</a></td>
+    <td>授权经理、系统管理员</td>
+    <td>15810644610</td>
+    <td><a href="4user_show.html">详情</a> <a href="4user_edit1.html">编辑</a></td>
+  </tr>
+  <tr>
+    <td>A0002</td>
+    <td>李达</td>
+    <td>dali</td>
+    <td><a href="javascript:void(0)" onclick="changeIframe2('15company_show.html')" target="_top">梦龙</a></td>
+    <td>授权经理</td>
+    <td>15810644610</td>
+    <td><a href="4user_show.html">详情</a> <a href="4user_edit1.html">编辑</a></td>
+  </tr>
+  <tr>
+    <td>C0003</td>
+    <td>王重新</td>
+    <td>chognxin</td>
+    <td><a href="javascript:void(0)" onclick="changeIframe2('15company_show.html')" target="_top">新乐新</a></td>
+    <td>系统管理员</td>
+    <td>15810644610</td>
+    <td><a href="4user_show.html">详情</a> <a href="4user_edit1.html">编辑</a></td>
+    </tr>
+</table>
+</div>
+
+</body>
+</html>

@@ -1,0 +1,148 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>腾讯-品牌授权审批及报表系统</title>
+<style>
+body,div,ul,li,ol,p,img,h1,h2,h3,h4,a,dl,dt,dd,span,table,tr,th,td{ margin:0;padding:0}
+ul,ol,li{list-style:none;padding:0;margin:0}
+textarea,input{font-size:12px}
+img{border:none} 
+a{ text-decoration:none;}
+a:hover{text-decoration:underline}
+label{cursor:pointer}
+body{background:url(images/login_bg.jpg) repeat-x 0 0}
+.alignr{text-align:right}
+.login_title{width:454px;height:22px;background:url(images/login_title.jpg) no-repeat;text-indent:-999em;overflow:hidden;margin:0 auto;margin-top:100px}
+.login_div{width:510px;height:305px;margin:0 auto;margin-top:40px;background:url(images/login_pic.jpg) no-repeat;}
+.login_div h2{height:112px;text-indent:-999em;overflow:hidden}
+.login_div dl{width:190px;margin:0 auto;color:#fff;font-weight:bold;font-size:12px;line-height:39px;height:39px}
+.login_div dt{width:70px;float:left}
+.login_div .txt{width:110px;border:0;background:none}
+.btn_login{width:79px;height:31px;padding-top:31px;overflow:hidden;cursor:pointer;background:url(images/login_btn.jpg) no-repeat;border:0}
+.copyright{width:510px;font-family:verdana;color:#999;font-size:11px;margin:0 auto;padding-top:8px;line-height:18px;text-align:center}
+.pop{width:880px;min-height:500px;height:auto !important;height:500px;overflow:visible;padding:1px;background:#fff;border:1px solid #ccc;position:absolute;z-index:80;left:50%;margin-left:-440px;top:50%;margin-top:-250px;display:none}
+.pop table{margin-left:20px}
+	.pop h2{height:14px;padding:10px 0 10px 20px;font-size:14px;background:#f1f1f1;border-bottom:1px solid #ccc}
+	.pop h2 p{width:780px;float:left}
+	.pop h2 a{font-size:12px;font-weight:normal;color:#666}
+	.pop h2 a:hover{color:#039}
+	.pop .btn_close{display:block;width:19px;height:19px;position:absolute;margin-top:-15px;margin-left:460px;text-indent:-999em;overflow:hidden}
+	.pop .page{text-align:center}
+	.pop .page a{display:inline-block;height:21px;width:47px;text-align:center;line-height:21px;color:#E4BB9A}
+.search_t{margin-top:6px;font-family:Verdana}
+.info_tab3{line-height:34px;width:100%;color:#396296;border-collapse:collapse;font-family:verdana}
+.info_tab3 th{font-size:14px;background:#ECF4FB;border-right:1px solid #BFD1DD;border-bottom:1px solid #BFD1DD}
+.info_tab3 td{padding-top:3px;padding-bottom:3px;border-bottom:1px solid #BFD1DD;padding-left:14px}
+.info_tab3 td.noborder{border-right:0}
+.info_tab3 th.noborder{line-height:34px;border-right:0}
+.info_tab3 td.itab1{padding-left:0}
+.info_tab3 td.itab1 table{border:0}
+.info_tab3 td.itab1 .notabb td{border:0}
+.info_tab3 td.itab1 .subtab{margin:10px}
+.info_tab3 td.itab1 .subtab td,.info_tab3 td.itab1 .subtab th{line-height:22px;height:22px}
+.info_tab3 th .sfont{font-size:12px;color:#999;font-weight:normal}
+.info_tab3 a{padding-left:5px;color:#06C;text-decoration:underline}
+.info_tab3 a:hover{color:#F60}
+.ctabt{border-top:2px solid #BFD1DD;margin-top:10px}
+.ctabb{border-bottom:2px solid #BFD1DD;margin-bottom:10px}
+.ctabtb{border-top:2px solid #BFD1DD;margin-top:10px;border-bottom:2px solid #BFD1DD;margin-bottom:10px}
+.txt{background:url(../images/main_pic.gif) repeat-x 0 -213px;border-left:1px solid #666;border-top:1px solid #666;border-bottom:1px solid #CCC;border:1px solid #CCC;height:18px;line-height:18px;padding-left:4px;color:#333;vertical-align:middle;font-family:verdana}
+.btn_sub{border:0;color:#fff;font-weight:bold;font-size:14px;width:134px;padding-left:6px;height:37px;cursor:pointer;background:url(images/main_pic.gif) no-repeat 0 -76px;vertical-align:middle}
+.alignc{text-align:center}
+.alignr{text-align:right}
+.pt20{padding-top:20px}
+.pb20{padding-bottom:20px}
+.ptd10{padding-top:10px;padding-bottom:10px}
+.pad10{padding:10px}
+.mt20{margin-top:20px}
+.mt10{margin-top:10px}
+.ml20{margin-left:20px}
+.redf{color:#C00}
+.greenf{color:#390}
+.orangef{color:#F90}
+.grayf{color:#999}
+.f14{font-size:14px}
+.link14{font-size:14px;color:#06C;text-decoration:underline}
+.link14:link{}
+#mask{width:100%;height:100%;background:#000;filter:Alpha(Opacity=70);-ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=70)";
+opacity:.7;position:absolute;left:0;top:0;z-index:79;display:none}
+.info_tab1{border-collapse:collapse;text-align:center;font-family:verdana}
+.info_tab1 tr:hover{background:#FFFFCC}
+.info_tab1 th{background:#ECF4FB;border-bottom:1px solid #BFD1DD;height:28px;line-height:28px;font-weight:normal;color:#009900}
+.info_tab1 td{border-bottom:1px solid #BFD1DD;height:28px;line-height:28px;color:#666}
+.info_tab1 td.minfo{line-height:20px;text-align:left}
+.info_tab1 th.sline{width:35px}
+.info_tab1 td a{color:#396296}
+.info_tab1 td a:hover{color:#06F}
+.info_tab1 td.redf,.info_tab1 td.redf a{color:#C00}
+.info_tab1 td.greenf,.info_tab1 td.greenf a{color:#390}
+.info_tab1 td.orangef,.info_tab1 td.orangef a{color:#F90}
+.info_tab1 td.grayf,.info_tab1 td.grayf a{color:#999;text-decoration:line-through}
+.info_tab1 td.mline{line-height:18px;padding-top:5px;padding-bottom:5px;text-align:left}
+.info_tab2{border-collapse:collapse;text-align:center;width:100%}
+.info_tab2 tr:hover{background:#FFFFCC}
+.info_tab2 th{background:#ECF4FB;border-bottom:1px solid #BFD1DD;height:28px;line-height:28px;font-weight:normal;color:#666;text-align:left;padding-left:14px}
+.info_tab2 td{border-bottom:1px solid #BFD1DD;height:28px;line-height:28px;color:#666}
+.info_tab2 td a{color:#396296}
+.info_tab2 td a:hover{color:#06F}
+.info_tab3{line-height:34px;width:80%;color:#396296;border-collapse:collapse;font-family:verdana}
+.info_tab3 th{font-size:14px;background:#ECF4FB;border-right:1px solid #BFD1DD;border-bottom:1px solid #BFD1DD}
+.info_tab3 td{padding-top:3px;padding-bottom:3px;border-bottom:1px solid #BFD1DD;padding-left:14px}
+.info_tab3 td.noborder{border-right:0}
+.info_tab3 th.noborder{line-height:34px;border-right:0}
+.info_tab3 td.itab1{padding-left:0}
+.info_tab3 td.itab1 table{border:0}
+.info_tab3 td.itab1 .notabb td{border:0}
+.info_tab3 td.itab1 .subtab{margin:10px}
+.info_tab3 td.itab1 .subtab td,.info_tab3 td.itab1 .subtab th{line-height:22px;height:22px}
+.info_tab3 th .sfont{font-size:12px;color:#999;font-weight:normal}
+.info_tab3 a{padding-left:5px;color:#06C;text-decoration:underline}
+.info_tab3 a:hover{color:#F60}
+.info_tab3 textarea{border-left:1px solid #666;border-top:1px solid #666;border-bottom:1px solid #CCC;border:1px solid #CCC;color:#666}
+</style>
+</head>
+<script>
+  function find()
+  {
+    alert("将发密码发致邮箱telnet@qq.com与手机...发送成功。");
+  }
+</script>
+<body>
+<h1 class="login_title">腾讯品牌授权审批及报表系统</h1>
+<div class="login_div">
+<h2>系统登录</h2>
+<dl class="info">
+<dt>用户</dt><dd><input type="text" class="txt" value= "admin"/></dd>
+<dt>密码</dt><dd><input type="password" class="txt" value="admin"/></dd>
+
+<dd class="alignr"><a href="javascript:void(0)" onclick="showPop('pass111')">密码找回</a>  <input type="button" value="登录" class="btn_login" onclick="window.location='0index.html'"/></dd>
+</dl>
+</ul>
+</div>
+  <div id="pass111" class="pop">
+    <h2 class="search_t" >密码找回</h2>
+    <table class="info_tab3 ctabt" >
+      <tr>
+        <th width="15%">邮箱</th>
+        <td><input type="text" class="txt" value="neusoft@neusoft.com" size="30" /></td>
+        </tr>
+     <tr>
+        <th>用户名</th>
+        <td>
+          <input type="text" class="txt" value="anru" size="30" /></td>
+        </tr>
+    </table>
+    <div class="alignc pb20 pt20">
+    	<input type="button" value="提交" class="btn_sub" onclick="find()"/> 
+      <input type="button" value="关闭" class="btn_sub" onclick="closePop('pass111')"/> 
+    </div>
+  </div>
+<div class="copyright">
+<p>COPYRIGHT &copy; 1998 – 2011 TENCENT. ALL RIGHTS RESERVED.</p>
+<p>腾讯公司 版权所有</p>
+</div>
+</body>
+<div id="mask"></div>
+<script type="text/javascript" src="js/main.js"></script>
+</html>

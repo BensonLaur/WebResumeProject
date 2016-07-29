@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8" ?> 
+ <!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd"> 
+ <mapper namespace="com.neusoft.basis.branch.mapper.BranchMapper"> 
+     <resultMap type="com.neusoft.basis.branch.entity.BranchEntity" id="branchResultMap"> 
+	    <id property="id" column="id" javaType="java.lang.String"/>  
+	    <result property="name" column="name" javaType="java.lang.String"/> 
+	    <result property="address" column="address" javaType="java.lang.String"/> 
+	    <result property="isDel" column="is_del" javaType="java.lang.String"/> 
+	    <result property="insertUserId" column="insert_user_id" javaType="java.lang.String"/> 
+	    <result property="insertDate" column="insert_date" javaType="java.util.Date"/> 
+	    <result property="lastModifyUserId" column="last_modify_user_id" javaType="java.lang.String"/> 
+	    <result property="lastModifyDate" column="last_modify_date" javaType="java.util.Date"/> 
+	 </resultMap> 
+ 
+    <insert id="insertBranch" parameterType="com.neusoft.basis.branch.entity.BranchEntity" > 
+	    insert into branch(id,name,address,is_del,insert_user_id,insert_date) values(#{id}, #{name},#{address},'0',#{insertUserId},#{insertDate})
+	</insert> 
+	
+	<select id="getAllBranch" resultMap="branchResultMap">
+       SELECT * from branch; 
+    </select>
+    
+    <select id="getUserBranchList" parameterType="com.neusoft.basis.user.entity.UserEntity" resultMap="branchResultMap">
+        <if test="branchId == null or branchId == ''">
+		    select '' id,'请选择' name
+		    union	    
+	    </if>
+       SELECT id,name from branch 
+         where 1 = 1
+        <if test="branchId != '' and branchId != null">
+			        and id = #{branchId}
+	    </if>
+    </select>
+    
+    <select id="getBranch" parameterType="java.lang.String" resultMap="branchResultMap"> 
+	   <![CDATA[ 
+	     SELECT * from branch b
+	     WHERE b.id = #{id}
+	    ]]> 
+    </select> 
+	
+	<update id="updateBranch" parameterType="com.neusoft.basis.branch.entity.BranchEntity" > 
+	    update branch
+	       set name= #{name},
+	           address= #{address},
+	           is_del = #{isDel},
+	           last_modify_user_id =  #{lastModifyUserId} ,
+	           last_modify_date =  #{lastModifyDate}       
+	     WHERE id = #{id}
+	</update> 
+ 
+ </mapper>

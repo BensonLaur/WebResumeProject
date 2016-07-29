@@ -1,0 +1,183 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=gb2312" />
+<title>人员管理</title>
+<link href="css/main.css" rel="stylesheet" />
+<script type="text/javascript">
+    function change() {
+        //alert("测试");
+        document.getElementById("source").options.add(new option("梦龙动漫", "梦龙动漫"));
+        alert("测试1");
+        sl.options.add(new option("梦龙动漫", "梦龙动漫"));
+        sl.options.add(new option("凤凰文艺", "凤凰文艺"));
+        alert("测试2");
+    }
+</script>
+</head>
+
+<body>
+<div id="sub_content">
+
+<h2 class="search_t">选择公司</h2>
+<h3></h3>
+<table class="info_tab3 ctabt">
+  <tr>
+    <th width="15%">开放权限的公司</th>
+    <td>
+    游戏品牌<br />
+    <select id="gType" onchange="change();">
+	<option>请选择</option>
+    <option>洛克王国</option>
+    <option>QQ飞车</option>
+    <option>QQ炫舞</option>
+    </select>
+    </td>
+    <td class="noborder"><select name="select4" size="5" id="source" ondblclick="MoveTo(this.selectedIndex)">
+      <option>梦龙动漫</option>
+      <option>凤凰文艺</option>
+      <option>台湾擎雷</option>
+      <option>甲壳虫动漫</option>
+      </select>
+    《 双击选择公司 》
+      <select name="select4" size="5" id="distinct" ondblclick="MoveBack(this.selectedIndex)">
+        <option>阿迪达斯</option>
+      </select></td>
+  </tr>
+</table>
+<h2 class="search_t mt10">素材包列表</h2>
+<table width="100%" border="0" cellpadding="0" cellspacing="0" class="info_tab1">
+  <tr>
+    <th width="10%">选择</th>
+    <th width="15%">素材包名称</th>
+    <th>素材包说明</th>
+    <th width="10%">类型</th>
+    <th width="10%">品牌</th>
+    <th width="10%">上传时间</th>
+    <th width="8%">上传人</th>
+    <th width="8%">包含图片</th>
+    <th>操作</th>
+  </tr>
+  <tr>
+    <td><input type="checkbox" name="checkbox8" id="checkbox8" /></td>
+    <td><a href="11sg_list2.html" target="_self">洛克王国2011年热门宠物</a></td>
+    <td>包括2月宠物矢量图</td>
+    <td>基础包</td>
+    <td>洛克王国</td>
+    <td>2012.1.14</td>
+    <td>ruifeng(林锐丰)</td>
+    <td>30</td>
+    <td><a href="javascript:void(0)" onclick="changeIframe2('11sg_list2.html')" target="_top">详情</a></td>
+  </tr>
+  <tr>
+    <td><input type="checkbox" name="checkbox9" id="checkbox9" /></td>
+    <td><a href="11sg_list2.html">洛克王国2012年2月素材</a></td>
+    <td>包括2月宠物矢量图</td>
+    <td>基础包</td>
+    <td>洛克王国</td>
+    <td>2012.3.5</td>
+    <td>huali(李华)</td>
+    <td>11</td>
+    <td><a href="javascript:void(0)" onclick="changeIframe2('11sg_list2.html')" target="_top">详情</a></td>
+  </tr>
+  <tr>
+    <td><input type="checkbox" name="checkbox9" id="checkbox11" /></td>
+    <td><a href="11sg_list2.html" target="_self">洛克王国2011年热门宠物</a></td>
+    <td>包括2月宠物矢量图</td>
+    <td>基础包</td>
+    <td>洛克王国</td>
+    <td>2012.1.14</td>
+    <td>ruifeng(林锐丰)</td>
+    <td>20</td>
+    <td><a href="javascript:void(0)" onclick="changeIframe2('11sg_list2.html')" target="_top">详情</a></td>
+  </tr>
+  <tr>
+    <td><input type="checkbox" name="checkbox9" id="checkbox10" /></td>
+    <td><a href="11sg_list2.html">洛克王国2012年2月素材</a></td>
+    <td>包括2月宠物矢量图</td>
+    <td class="redf">扩展包</td>
+    <td>洛克王国</td>
+    <td>2012.3.5</td>
+    <td>huali(李华)</td>
+    <td>30</td>
+    <td><a href="javascript:void(0)" onclick="changeIframe2('11sg_list2.html')" target="_top">详情</a></td>
+  </tr>
+  <tr>
+    <td><input type="checkbox" name="checkbox9" id="checkbox15" /></td>
+    <td><a href="11sg_list2.html" target="_self">洛克王国2011年热门宠物</a></td>
+    <td>包括热门宠物相应三面图</td>
+    <td class="redf">扩展包</td>
+    <td>洛克王国</td>
+    <td>2012.1.14</td>
+    <td>ruifeng(林锐丰)</td>
+    <td>26</td>
+    <td><a href="javascript:void(0)" onclick="changeIframe2('11sg_list2.html')" target="_top">详情</a></td>
+  </tr>
+  <tr>
+    <td><input type="checkbox" name="checkbox9" id="checkbox14" /></td>
+    <td><a href="11sg_list2.html">洛克王国2012年2月素材</a></td>
+    <td>包括热门宠物相应三面图</td>
+    <td>基础包</td>
+    <td>洛克王国</td>
+    <td>2012.3.5</td>
+    <td>huali(李华)</td>
+    <td>11</td>
+    <td><a href="javascript:void(0)" onclick="changeIframe2('11sg_list2.html')" target="_top">详情</a></td>
+  </tr>
+  <tr>
+    <td><input type="checkbox" name="checkbox9" id="checkbox13" /></td>
+    <td><a href="11sg_list2.html" target="_self">洛克王国2011年热门宠物</a></td>
+    <td>包括热门宠物相应三面图</td>
+    <td>基础包</td>
+    <td>洛克王国</td>
+    <td>2012.1.14</td>
+    <td>ruifeng(林锐丰)</td>
+    <td>15</td>
+    <td><a href="javascript:void(0)" onclick="changeIframe2('11sg_list2.html')" target="_top">详情</a></td>
+  </tr>
+  <tr>
+    <td><input type="checkbox" name="checkbox9" id="checkbox12" /></td>
+    <td><a href="11sg_list2.html">洛克王国2012年2月素材</a></td>
+    <td>包括热门宠物相应三面图</td>
+    <td>基础包</td>
+    <td>洛克王国</td>
+    <td>2012.3.5</td>
+    <td>huali(李华)</td>
+    <td>11</td>
+    <td><a href="javascript:void(0)" onclick="changeIframe2('11sg_list2.html')" target="_top">详情</a></td>
+  </tr>
+  <tr>
+    <td><input type="checkbox" name="checkbox9" id="checkbox17" /></td>
+    <td><a href="11sg_list2.html" target="_self">洛克王国2011年热门宠物</a></td>
+    <td>包括热门宠物相应三面图</td>
+    <td>基础包</td>
+    <td>洛克王国</td>
+    <td>2012.1.14</td>
+    <td>ruifeng(林锐丰)</td>
+    <td>26</td>
+    <td><a href="javascript:void(0)" onclick="changeIframe2('11sg_list2.html')" target="_top">详情</a></td>
+  </tr>
+  <tr>
+    <td><input type="checkbox" name="checkbox9" id="checkbox16" /></td>
+    <td><a href="11sg_list2.html">洛克王国2012年2月素材</a></td>
+    <td>包括热门宠物相应三面图</td>
+    <td>基础包</td>
+    <td>洛克王国</td>
+    <td>2012.3.5</td>
+    <td>huali(李华)</td>
+    <td>11</td>
+    <td><a href="javascript:void(0)" onclick="changeIframe2('11sg_list2.html')" target="_top">详情</a></td>
+  </tr>
+</table>
+<div class="page">共<span>4</span>页 <a href="11sg_permission.html" class="p_last">上一页</a> <a href="11sg_permission.html" class="on">1</a><a href="11sg_permission2.html">2</a><a href="11sg_permission3.html">3</a><a href="11sg_permission4.html">4</a> <a href="11sg_permission2.html" class="p_next">下一页</a></div>
+<div class="gray_info alignr">批处理：<a href="javascript:void(0)" onclick="checkAll()">全选</a> | <a href="javascript:void(0)" onclick="oppCheck()">反选 </a> | <a href="javascript:void(0)" onclick="uncheckAll()">取消选择</a></div>
+<div class="alignc pb20 pt20">
+	<input type="button" value="设 置" class="btn_sub"  onclick="location.href('opResult.html?msg=素材权限设置成功！&url=11sg_permission.html')"/>
+</div>
+</div>
+<div class="noticeInfo"><h5>Notice 说明</h5>
+<p>【是否重复】选择"每周提醒"，则出现一个选择框，选择是周几提醒；选择"每月提醒"则需要选择每月哪天进行提醒，并需要进行日期判断，若不是工作日顺延1~2天；若选择"按季度提醒"，则出现四个日期、时间框，进行输入</p>
+</div>
+<script type="text/javascript" src="js/main.js"></script>
+</body>
+</html>

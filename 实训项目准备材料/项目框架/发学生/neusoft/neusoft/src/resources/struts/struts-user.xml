@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE struts PUBLIC 
+    "-//Apache Software Foundation//DTD Struts Configuration 2.0//EN"
+    "http://struts.apache.org/dtds/struts-2.0.dtd">
+<struts>	
+	<package name="user" namespace="/user" extends="struts-default">
+		<interceptors>
+			<!-- 定义AuthenticationInterceptor拦截器 -->
+			<interceptor name="auth"
+				class="com.neusoft.comon.interceptor.AuthenticationInterceptor" />
+		</interceptors>
+		<global-results>
+			<result name="login">/comm/autherror.jsp</result>
+			<result name="error">/comm/error.jsp</result>
+			<result name="input">/login.jsp</result>
+			<result name="invalid.token">/comm/resubmiterror.jsp</result>
+		</global-results>		
+	   <action name="login" class="com.neusoft.basis.user.action.LoginAction">
+			<exception-mapping result="error" exception="java.lang.Exception" />
+			<result name="success">/main.jsp</result>
+			<interceptor-ref name="defaultStack" />
+		</action>
+	    <action name="loginOff" class="com.neusoft.basis.user.action.LoginOffAction">
+			<exception-mapping result="error" exception="java.lang.Exception" />
+			<result name="success">/login.jsp</result>
+	        <interceptor-ref name="defaultStack" />
+		</action>
+	   <action name="topBar" class="com.neusoft.basis.user.action.TopBarAction">
+			<exception-mapping result="error" exception="java.lang.Exception" />
+			<result name="success">/topBar.jsp</result>
+			<interceptor-ref name="defaultStack" />
+			<interceptor-ref name="auth" />
+		</action>
+	   <action name="getMenu" class="com.neusoft.basis.user.action.GetMenuAction">
+			<exception-mapping result="error" exception="java.lang.Exception" />
+			<result name="success">/leftmenu.jsp</result>
+			<interceptor-ref name="defaultStack" />
+			<interceptor-ref name="auth" />
+		</action>
+	    <action name="getScoreMenu" class="com.neusoft.basis.user.action.GetScoreMenuAction">
+			<exception-mapping result="error" exception="java.lang.Exception" />
+			<result name="success">/rightmenu.jsp</result>
+			<interceptor-ref name="defaultStack" />
+			<interceptor-ref name="auth" />
+		</action>
+	    <action name="index" class="com.neusoft.basis.index.action.IndexAction">
+		    <exception-mapping result="error" exception="java.lang.Exception" />
+			<result name="success">/home.jsp</result>
+			<interceptor-ref name="defaultStack" />
+			<interceptor-ref name="auth" />
+		</action>
+		 <action name="insertUser" method="insertUser" class="com.neusoft.basis.user.action.UserAction" >
+			<exception-mapping result="error" exception="java.lang.Exception" /> 
+            <result name="success" type="redirectAction">  
+                <param name="actionName">getAllUser</param>  
+                <param name="namespace">/user</param>
+                <param name="sessionId">${sessionId}</param>
+            </result>  
+			<interceptor-ref name="defaultStack" />
+			<interceptor-ref name="auth" />
+		</action>
+		<action name="getAllUser" method="getAllUser" class="com.neusoft.basis.user.action.UserAction" >
+			<exception-mapping result="error" exception="java.lang.Exception" />
+			<result name="success">/user/userMgt.jsp</result>
+			<interceptor-ref name="defaultStack" />
+			<interceptor-ref name="auth" />
+		</action>
+        <action name="getUser" method="getUser" class="com.neusoft.basis.user.action.UserAction" >
+			<exception-mapping result="error" exception="java.lang.Exception" />
+			<result name="success">/user/userUpdate.jsp</result>
+	        <interceptor-ref name="defaultStack" />
+	        <interceptor-ref name="auth" />
+		</action>
+        <action name="updateUser" method="updateUser" class="com.neusoft.basis.user.action.UserAction" >
+			<exception-mapping result="error" exception="java.lang.Exception" />
+	        <result name="success" type="redirectAction">  
+                <param name="actionName">getAllUser</param>  
+                <param name="namespace">/user</param>
+                <param name="sessionId">${sessionId}</param>
+            </result>  
+			<interceptor-ref name="defaultStack" />
+			<interceptor-ref name="auth" />
+		</action>
+	<action name="updateUserPassword" method="updateUserPassword" class="com.neusoft.basis.user.action.UserAction" >
+			<exception-mapping result="error" exception="java.lang.Exception" />
+	        <result name="success" type="redirectAction">  
+                <param name="actionName">getAllUser</param>  
+                <param name="namespace">/user</param>
+                <param name="sessionId">${sessionId}</param>
+            </result>
+            <result name="self" type="redirectAction">  
+                <param name="actionName">index</param>  
+                <param name="namespace">/user</param>
+                <param name="sessionId">${sessionId}</param>
+            </result>
+              
+			<interceptor-ref name="defaultStack" />
+			<interceptor-ref name="auth" />
+		</action>
+	</package>
+</struts>

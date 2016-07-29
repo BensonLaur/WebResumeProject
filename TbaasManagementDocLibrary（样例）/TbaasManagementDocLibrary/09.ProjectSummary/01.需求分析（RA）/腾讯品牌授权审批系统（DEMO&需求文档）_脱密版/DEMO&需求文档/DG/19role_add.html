@@ -1,0 +1,106 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=gb2312" />
+<title>人员管理</title>
+<link href="css/main.css" rel="stylesheet" />
+<script type="text/javascript" src="js/main.js"></script>
+</head>
+
+<body>
+<div id="sub_content">
+
+<h2 class="search_t">新增角色</h2>
+<h3></h3>
+<table class="info_tab3 ctabt">
+  <tr>
+    <th width="15%">角色名称</th>
+    <td><input class="txt" value="防伪标管理员" size="35" /></td>
+  </tr>
+  <tr>
+    <th>所属公司</th>
+    <td><strong>
+      <select name="select2" id="select2">
+	  <option value="0">-请选择-</option>
+        <option value="1">深圳市腾讯计算机系统有限公司</option>
+        <option value="2">腾讯科技(深圳)有限公司</option>
+        </select>
+      </strong></td>
+  </tr>
+  <tr>
+    <th>是否对普通用户可见</th>
+    <td><span class="noborder">
+      <input name="checkbox5" type="checkbox" id="checkbox5" checked />
+      </span>不可见</td>
+  </tr>
+  <tr>
+    <th>角色说明</th>
+    <td class="noborder"><textarea name="textarea" id="textarea" cols="55" rows="5"></textarea></td>
+  </tr>
+</table>
+<h2 class="search_t">角色权限</h2>
+<table class="info_tab3 ctabt">
+  <tr>
+    <th width="15%">产品审批流程</th>
+    <td><input type="checkbox" name="func-1[]" value="1" />
+      新建开发计划  
+        <input type="checkbox" name="func-1[]" value="2" />
+        查看开发计划列表  
+        <input type="checkbox" name="func-1[]" value="3" />设置系统项目角色  <input type="checkbox" name="func-1[]" value="4" />查看产品开发申请列表 <br /><input type="checkbox" name="func-1[]" value="5" />搜索产品开发申请列表  <input type="checkbox" name="func-1[]" value="6" />查看产品开发申请内容  <input type="checkbox" name="func-1[]" value="7" />发起产品开发申请单  <input type="checkbox" name="func-1[]" value="8" />发起产品开发申请单草 <br /><input type="checkbox" name="func-1[]" value="9" />修改产品开发申请单  <input type="checkbox" name="func-1[]" value="10" />查看产品列表  <input type="checkbox" name="func-1[]" value="11" />删除产品  <input type="checkbox" name="func-1[]" value="12" />产品代理商审核 <br /><input type="checkbox" name="func-1[]" value="13" />产品授权经理审核  <input type="checkbox" name="func-1[]" value="14" />产品项目组审核  <input type="checkbox" name="func-1[]" value="15" />终止产品  <input type="checkbox" name="func-1[]" value="16" />恢复产品 <br /><input type="checkbox" name="func-1[]" value="17" />查看产品设计列表  <input type="checkbox" name="func-1[]" value="18" />删除财务角色  <input type="checkbox" name="func-1[]" value="19" />搜索产品设计列表  
+        <p><input name="" type="button" value="全选" onClick="chkAllClick('func-1[]')"/></p></td>
+  </tr>
+  <tr>
+    <th>防伪标签</th>
+    <td><input name="func2" type="checkbox" value="1" checked="checked" />
+新建防伪标签申请
+  <input name="func2" type="checkbox" value="2" checked="checked" />
+查看防伪标签申请列表
+<input name="func2" type="checkbox" value="3" checked="checked" />
+防伪标签生产记录
+<input name="func2" type="checkbox" value="4" checked="checked" />
+新建生产记录
+<br />
+<input name="func2" type="checkbox" value="5" checked="checked" />
+发货记录
+<input type="checkbox" name="func2" value="6" />
+付款&amp;发票
+<p><input name="chkAll" type="button" value="全选" onClick="chkAllClick('func2')" /></p></td>
+  </tr>
+  <tr>
+    <th>Styleguide&amp;素材</th>
+    <td><input type="checkbox" name="func-1[]3" value="1" />
+添加图片
+  <input type="checkbox" name="func-1[]3" value="2" />
+添加压缩包
+<input type="checkbox" name="func-1[]3" value="3" />
+查看素材列表
+<input type="checkbox" name="func-1[]3" value="4" />
+批量设置权限 <br />
+<input type="checkbox" name="func-1[]3" value="5" />
+素材申请
+<input type="checkbox" name="func-1[]3" value="6" />
+查看申请列表
+<input type="checkbox" name="func-1[]3" value="7" />
+审核素材申请
+<p><input name="" type="button" value="全选" onClick="chkAllClick('func-1[]3')"/></p></td>
+  </tr>
+  <tr>
+    <th>用户管理</th>
+    <td class="noborder"><input type="checkbox" name="func-1[]4" value="1" />
+添加用户
+  <input type="checkbox" name="func-1[]4" value="2" />
+  锁定&amp;解锁用户
+  <input type="checkbox" name="func-1[]4" value="3" />
+用户密码重置</td>
+  </tr>
+</table>
+<div class="alignc pb20 pt20">
+	<input type="button" value="提 交" class="btn_sub" onclick="window.open('opResult.html?msg=提交成功&url=19role_list.html','_self')"/>
+</div>
+<div class="noticeInfo"><h5>Notice 说明</h5>
+<p>【不可见】有些角色不需要参与授权审批流程，不需要所有用户都可见，例如防伪标签管理员、领导</p>
+<p>【授权经理、系统管理员权限】授权经理、系统管理员权限设定好就不修改了，所以不在此处体现</p>
+</div>
+</div>
+</body>
+</html>

@@ -1,0 +1,125 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=gb2312" />
+<title>人员管理</title>
+<link href="css/main.css" rel="stylesheet" />
+<SCRIPT LANGUAGE="JavaScript" TYPE="text/javascript">
+//选择提醒方式
+function changeMode(mode) 
+{
+	if (mode == 1) {
+		document.getElementById("uni").style.display = "none";
+		document.getElementById("week").style.display = "block";
+		document.getElementById("month").style.display = "none";
+		document.getElementById("season").style.display = "none";
+		document.getElementById("season2").style.display = "none";
+	}
+	else if (mode == 2) {
+		document.getElementById("uni").style.display = "none";
+		document.getElementById("week").style.display = "none";
+		document.getElementById("month").style.display = "block";
+		document.getElementById("season").style.display = "none";
+		document.getElementById("season2").style.display = "none";
+		}
+	else if (mode == 3) {
+		document.getElementById("uni").style.display = "none";
+		document.getElementById("week").style.display = "none";
+		document.getElementById("month").style.display = "none";
+		document.getElementById("season").style.display = "block";
+		document.getElementById("season2").style.display = "block";
+		}
+	else {
+		document.getElementById("uni").style.display = "block";
+		document.getElementById("week").style.display = "none";
+		document.getElementById("month").style.display = "none";
+		document.getElementById("season").style.display = "none";
+		document.getElementById("season2").style.display = "none";
+		}
+}
+</SCRIPT>
+
+</head>
+
+<body>
+<div id="sub_content">
+
+<h2 class="search_t">新建提醒</h2>
+<h3></h3>
+<table class="info_tab3 ctabt">
+  <tr>
+    <th width="15%">提醒名称</th>
+    <td><input class="txt" value="DNF合同快递提醒" size="55" /></td>
+  </tr>
+  <tr>
+    <th>是否重复</th>
+    <td class="noborder"><select name="select3" id="select4" onchange="changeMode(this.value)">
+      <option value="0" selected>不重复</option>
+      <option value="1" >每周提醒</option>
+      <option value="2">每月提醒</option>
+      <option value="3">每季度提醒</option>
+    </select></td>
+  </tr>
+  <tr>
+    <th>提醒日期</th>
+    <td><span class="noborder">
+      <input class="txt" value="2011-4-3" size="55" name="uni" id="uni" />
+      <select name="week" id="week" style="display:none">
+      <option value="7" selected>周日</option>
+      <option value="1" >周一</option>
+      <option value="2">周二</option>
+      <option value="3">周三</option>
+      <option value="4" >周四</option>
+      <option value="5">周五</option>
+      <option value="6">周六</option>
+    </select>
+    </span>
+    <img name="month" id="month" style="display:none" src="images/date.gif">
+    <span name="season" id="season" style="display:none">
+    	<img src="images/date.gif"><img src="images/date.gif"><img src="images/date.gif"><img src="images/date.gif">
+    	</span>
+    </td>
+    </tr>
+ <tr>
+    <th>提醒时间</th>
+    <td>
+      <input class="txt" value="14：30" size="20" /><span name="season2" id="season2" style="display:none"><input class="txt" value="14：30" size="20" /><input class="txt" value="14：30" size="20" /><input class="txt" value="14：30" size="20" />
+      	</span>
+      </td>
+    </tr>
+  <tr>
+    <th>提前提醒</th>
+    <td><input type="text" />&nbsp;&nbsp;
+	<select name="select" id="select">
+      <option value="1">天</option>
+      <option value="2" selected="selected">小时</option>
+      <option value="3">分钟</option>
+    </select></td>
+    </tr>
+  <tr>
+    <th>提醒形式</th>
+    <td><select name="select2" id="select2">
+        <option value="0">系统内提醒</option>
+        <option value="1" selected="selected">邮件提醒</option>
+        <option value="2">手机短信</option>
+    </select></td>
+    </tr>
+  <tr>
+    <th>提醒人员</th>
+    <td class="noborder"><textarea name="textarea2" id="textarea2" cols="55" rows="3">atomywu,dorisqiu,ponpeng</textarea>      
+      <span class="grayf">可以设置多人</span></td>
+  </tr>
+  <tr>
+    <th>说明</th>
+    <td class="noborder"><textarea name="textarea" id="textarea" cols="55" rows="5">对DNF合同快递的提醒</textarea></td>
+  </tr>
+</table>
+<div class="alignc pb20 pt20">
+	<input type="button" value="新 建" onclick="window.open('opResult.html?msg=新建成功&url=18notice_list.html','_self')" class="btn_sub" />
+</div>
+</div>
+<div class="noticeInfo"><h5>Notice 说明</h5>
+<p>【是否重复】选择“每周提醒”，则出现一个选择框，选择是周几提醒；选择“每月提醒”则需要选择每月哪天进行提醒，并需要进行日期判断，若不是工作日顺延1~2天；若选择“按季度提醒”，则出现四个日期、时间框，进行输入</p>
+</div>
+</body>
+</html>

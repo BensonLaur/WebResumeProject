@@ -1,0 +1,105 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=gb2312" />
+<title>人员管理</title>
+<link href="css/main.css" rel="stylesheet" />
+<script type="text/javascript" src="js/main.js"></script>
+</head>
+
+<body>
+<div id="sub_content">
+  <h2 class="search_t">图片素材搜索<span class="sc_search"></span></h2>
+  <div class="c_search">
+    <input type="text" class="txt" value="请输入名称或者申请单号" size="60" />
+    <input class="btn_search" type="button" value="搜 索"  onclick="location.href('11sg_list2_query.html')"/>
+  </div>
+  <h2 class="search_t">洛克王国2011年热门宠物</h2>
+  <table width="100%" border="0" cellpadding="0" cellspacing="0" class="info_tab1">
+    <tr>
+      <th width="15%">素材包名称</th>
+      <th>素材包说明</th>
+      <th width="10%">品牌</th>
+      <th width="10%">上传时间</th>
+      <th width="8%">上传人</th>
+      <th width="8%">包含图片</th>
+      <th>操作</th>
+    </tr>
+    <tr>
+      <td class="redf">洛克王国2011年热门宠物</td>
+      <td>包括热门宠物相应三面图</td>
+      <td>洛克王国</td>
+      <td>2012.1.14</td>
+      <td>ruifeng(林锐丰)</td>
+      <td>26</td>
+      <td><a href="pict1.rar" target="_blank">下载</a></td>
+    </tr>
+  </table>
+  <table width="100%" border="0" cellspacing="0" cellpadding="0" class="sgtable">
+    <tr>
+      <td><a href="javascript:void(0)" onclick="showPop('sg_zoom_pic')"><img src="images/temp_sg1.jpg" width="235" height="235"/></a></td>
+      <td><a href="javascript:void(0)" onclick="showPop('sg_zoom_pic')"><img src="images/temp_sg2.jpg" width="235" height="235" /></a></td>
+      <td><a href="javascript:void(0)" onclick="showPop('sg_zoom_pic')"><img src="images/temp_sg3.jpg" width="235" height="235" /></a></td>
+      <td><a href="javascript:void(0)" onclick="showPop('sg_zoom_pic')"><img src="images/temp_sg4.jpg" width="235" height="235" /></a></td>
+    </tr>
+    <tr>
+      <th> ROCO-2012S001 水蓝蓝</th>
+      <th>ROCO-2012S002 喵喵</th>
+      <th>ROCO-2012S003 火苗</th>
+      <th>ROCO-2012S004 小火龙</th>
+    </tr>
+    <tr>
+      <td><a href="javascript:void(0)" onclick="showPop('sg_zoom_pic')"><img src="images/temp_sg5.jpg" width="235" height="235" /></a></td>
+      <td><a href="javascript:void(0)" onclick="showPop('sg_zoom_pic')"><img src="images/temp_sg6.jpg" width="235" height="235" /></a></td>
+      <td><a href="javascript:void(0)" onclick="showPop('sg_zoom_pic')"><img src="images/temp_sg7.jpg" width="235" height="235" /></a></td>
+      <td>&nbsp;</td>
+    </tr>
+    <tr>
+      <th>ROCO-2012S005 小地鼠</th>
+      <th>ROCO-2012S006 蹦蹦种子</th>
+      <th>ROCO-2012S007 板版壳</th>
+      <th>&nbsp;</th>
+    </tr>
+  </table>
+  <div class="alignc pb20 pt20">
+    <input type="button" value="下 载" class="btn_sub" onclick="showPop('sg_batch_download')"/>
+    <a href="javascript:void(0)" onclick="javascript:history.back()" target="_top">返回上一页</a> </div>
+</div>
+<div id="sg_batch_download" class="pop">
+  <h2>
+    <p>批量下载</p>
+    <a href="javascript:void(0)" onclick="closePop('sg_batch_download')">[×] 关闭</a></h2>
+  <table width="100%" border="0" cellspacing="0" cellpadding="0" class="info_tab5 mt10">
+    <tr>
+      <th>请输入验证码</th>
+      <td colspan="5">
+        <input type="text" class="txt" size="50" value="" />
+        </td>
+    </tr>
+    
+      <td></td>
+      <td colspan="5">      
+      <input type="submit" name="button" id="button" value="提 交" class="btn_sorange" onclick="location.href('pict1.rar'); closePop('sg_batch_download')"/></td>
+    </tr>
+  </table>
+</div>
+
+<div id="sg_zoom_pic" class="pop">
+  <h2>
+    <p>查看素材</p>
+    <a href="javascript:void(0)" onclick="closePop('sg_zoom_pic')">[×] 关闭</a></h2>
+  <table width="100%" border="0" cellspacing="0" cellpadding="0" class="info_tab5 mt10">
+    <tr>
+      <th></th>
+      <td colspan="5"><img src="images/temp_sg1.jpg" width="500" height="500" /></td>
+    </tr>
+  </table>
+</div>
+<div class="noticeInfo">
+  <h5>Notice 说明</h5>
+  <p>【是否重复】选择"每周提醒"，则出现一个选择框，选择是周几提醒；选择"每月提醒"则需要选择每月哪天进行提醒，并需要进行日期判断，若不是工作日顺延1~2天；若选择"按季度提醒"，则出现四个日期、时间框，进行输入</p>
+</div>
+<div id="mask"></div>
+<script type="text/javascript" src="js/main.js"></script>
+</body>
+</html>

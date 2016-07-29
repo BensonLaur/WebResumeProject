@@ -1,0 +1,177 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=gb2312" />
+<title>产品开发申请</title>
+<link href="css/main.css" rel="stylesheet" />
+<script src="js/main.js"></script>
+<script>
+	function listshow(tag){
+	 $(tag).style.display = "";
+   }
+   
+   function listdelete(tag){
+	 $(tag).style.display = "none";
+   }
+   
+   
+    function ListSave(tag1,tag2){
+		$(tag1).style.display = "none";
+		$(tag2).style.display = "";
+	}
+</script>
+</head>
+
+<body>
+<div id="sub_content">
+
+<h2>书籍出版申请</h2>
+<table width="860" class="info_tab3 ctabt">
+  <tr>
+    <th width="15%">申请编号</th>
+    <td>roco_2011p001</td>
+    <th>申请单名称</th>
+    <td class="noborder">
+      <select name="select3" id="select4">
+	  <option value="0">-请选择-</option>
+        <option value="1">洛克王国周边衍生品授权</option>
+        <option value="2">QQ飞车</option>
+      </select></td>
+  </tr>
+  <tr>
+    <th>公司名称</th>
+    <td>
+      <input type="text" class="txt" size="35" value="江苏凤凰文艺出版社" />
+    </td>
+    <th>项目时间</th>
+    <td class="noborder"><input type="text" class="txt" size="15" value="2011.4.15" /> 
+    - <input type="text" class="txt" size="15" value="2013.4.15" /></td>
+  </tr>
+  <tr>
+    <th>申请人</th>
+    <td>
+      <input type="text" class="txt" size="35" value="李亚达" />
+    </td>
+    <th>联系电话</th>
+    <td class="noborder"><input type="text" class="txt" size="35" value="020-81019117" /></td>
+  </tr>
+  </table>
+<h2 class="mt20">产品资料</h2>
+<table border="0" cellspacing="0" cellpadding="0" class="info_tab1 mt10" width="860">
+      <tr>
+        <th width="5%">序号</th>
+        <th>腾讯审批编号</th>
+        <th>产品名称</th>
+        <th>简介</th>
+        <th>开本</th>
+        <th>页数</th>
+        <th>定价</th>
+        <th>印数(万册)</th>
+        <th>删除</th>
+        </tr>
+      <tr id="list1">
+        <td>1</td>
+        <td>ROCO2011P001001</td>
+        <td class="redf">
+        <input type="text" class="txt" size="35" value="洛克王国系列故事" /></td>
+        <td><span class="redf">
+          <input type="text" class="txt" size="20" value="图书内容简介" />
+        </span></td>
+        <td><select name="select" id="select">
+          <option value="0">请选择</option>
+          <option value="1">8开</option>
+          <option value="1">16开</option>
+          <option value="2">24开</option>
+          <option value="3">32开</option>
+          <option value="5">64开</option>
+        </select></td>
+        <td>
+        <input type="text" class="txt" size="5" value="128" /></td>
+        <td>
+        <input type="text" class="txt" size="5" value="16.8" /></td>
+        <td>
+        <input type="text" class="txt" size="5" value="3" /></td>
+        <td><a onclick="listdelete('list1')">删除</a></td>
+        </tr>
+      <tr id="list2" style="display:none">
+        <td>2</td>
+        <td>ROCO2011P001002</td>
+        <td class="redf">
+        <input type="text" class="txt" size="35" value="洛克王国初级攻略" /></td>
+        <td><span class="redf">
+          <input type="text" class="txt" size="20" value="图书内容简介" />
+        </span></td>
+        <td><select name="select2" id="select2">
+          <option value="0">请选择</option>
+          <option value="1">8开</option>
+          <option value="1">16开</option>
+          <option value="2">24开</option>
+          <option value="3">32开</option>
+          <option value="5">64开</option>
+        </select></td>
+        <td><input type="text" class="txt" size="5" value="120" /></td>
+        <td>
+        <input type="text" class="txt" size="5" value="18" /></td>
+        <td>
+        <input type="text" class="txt" size="5" value="2" /></td>
+        <td><a onclick="listdelete('list2')">删除</a></td>
+        </tr>
+</table>
+<div class="boperation">操作：<select name="">
+  <option value="1">1</option>
+  <option value="2">2</option>
+  <option value="3">3</option>
+  <option value="4">4</option>
+  <option value="5">5</option>
+</select>
+  <a onclick="listshow('list2')"> 增加行</a></div>
+ <h2 class="mt10">出版计划计划</h2>
+<div class="boperation">
+<div id= "cbjh" style="display:none ">
+	<tr>
+  	<td>
+	<a href="images/洛克王国图书出版计划.xls">洛克王国图书渠道规划.xls</a>
+	</td>
+	<td><a onclick="ListSave('cbjh','button4'),ListShow('cbjhsc1')">[X]</a></td>
+  </tr>
+</div>
+  <input type="file" size="55" name="button2" id="button4" value="浏览文件..."  /> <input type="button" size="35" value="上传" class="btn_orange" id="cbjhsc1"  onclick="ListSave('button4','cbjh'),listdelete('cbjhsc1')"/></div>
+<h2 class="mt10">销售渠道计划</h2>
+<div class="boperation">
+<div id= "cbjh1" style="display:none ">
+	<tr>
+  	<td>
+	<a href="images/洛克王国图书出版计划.xls">洛克王国图书渠道规划.xls</a>
+	</td>
+	<td><a onclick="ListSave('cbjh1','button41'),ListShow('cbjhsc2')">[X]</a></td>
+  </tr>
+</div>
+ <input type="file" size="55" name="button3" id="button41" value="浏览文件..."  /> <input type="button" value="上传" class="btn_orange" id="cbjhsc2"  onclick="ListSave('button41','cbjh1'),listdelete('cbjhsc2')"/></div>
+<h2 class="mt10">产品开发许可证</h2>
+
+<table border="0" cellspacing="0" cellpadding="0" class="info_tab1 mt10" width="860">
+      <tr>
+        <th width="8%">序号</th>
+        <th>许可证名称</th>
+    </tr>
+      <tr>
+        <td>1</td>
+        <td>
+        <input type="file" class="txt" size="60" value="图书出版许可证" /> 
+    </tr>
+      <tr>
+        <td>2</td>
+        <td><input type="file" class="txt" size="60" value="" />
+    
+    </tr>
+      <tr>
+        <td>3</td>
+        <td><input type="file" class="txt" size="60" value="" />
+      </tr>
+</table>
+<div class="alignc pb20 pt20">
+	<input type="button" value="提  交" class="btn_sub" onclick="changeIframe2('opResult.html?msg=提交成功&url=2book_show.html')"  />
+</div>
+</div>
+</body>
+</html>

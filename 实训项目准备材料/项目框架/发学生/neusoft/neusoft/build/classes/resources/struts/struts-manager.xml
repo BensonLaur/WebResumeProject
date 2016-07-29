@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE struts PUBLIC 
+    "-//Apache Software Foundation//DTD Struts Configuration 2.0//EN"
+    "http://struts.apache.org/dtds/struts-2.0.dtd">
+<struts>	
+	<package name="manager" namespace="/manager" extends="struts-default">
+		<interceptors>
+			<!-- 定义AuthenticationInterceptor拦截器 -->
+			<interceptor name="auth"
+				class="com.neusoft.comon.interceptor.AuthenticationInterceptor" />
+		</interceptors>
+		<global-results>
+			<result name="login">/comm/autherror.jsp</result>
+			<result name="error">/comm/error.jsp</result>
+			<result name="input">/login.jsp</result>
+			<result name="invalid.token">/comm/resubmiterror.jsp</result>
+		</global-results>		
+	   <action name="insertManager" method="insertManager" class="com.neusoft.basis.manager.action.ManagerAction" >
+			<exception-mapping result="error" exception="java.lang.Exception" /> 
+            <result name="success" type="redirectAction">  
+                <param name="actionName">getAllManagerList</param>  
+                <param name="namespace">/manager</param>
+                <param name="sessionId">${sessionId}</param>
+            </result>  
+			<interceptor-ref name="defaultStack" />
+			<interceptor-ref name="auth" />
+		</action>
+		<action name="getAllManagerList" method="getAllManagerList" class="com.neusoft.basis.manager.action.ManagerAction" >
+			<exception-mapping result="error" exception="java.lang.Exception" />
+			<result name="success">/manager/managerMgt.jsp</result>
+			<interceptor-ref name="defaultStack" />
+			<interceptor-ref name="auth" />
+		</action>
+		<action name="insertManagerInit" method="insertManagerInit" class="com.neusoft.basis.manager.action.ManagerAction" >
+			<exception-mapping result="error" exception="java.lang.Exception" />
+			<result name="success">/manager/managerAdd.jsp</result>
+			<interceptor-ref name="defaultStack" />
+			<interceptor-ref name="auth" />
+		</action>
+        <action name="getManager" method="getManager" class="com.neusoft.basis.manager.action.ManagerAction" >
+			<exception-mapping result="error" exception="java.lang.Exception" />
+			<result name="success">/manager/managerUpdate.jsp</result>
+	        <interceptor-ref name="defaultStack" />
+	        <interceptor-ref name="auth" />
+		</action>
+        <action name="updateManager" method="updateManager" class="com.neusoft.basis.manager.action.ManagerAction" >
+			<exception-mapping result="error" exception="java.lang.Exception" />
+	        <result name="success" type="redirectAction">  
+                <param name="actionName">getAllManagerList</param>  
+                <param name="namespace">/manager</param>
+                <param name="sessionId">${sessionId}</param>
+            </result>  
+			<interceptor-ref name="defaultStack" />
+			<interceptor-ref name="auth" />
+		</action>
+	</package>
+</struts>

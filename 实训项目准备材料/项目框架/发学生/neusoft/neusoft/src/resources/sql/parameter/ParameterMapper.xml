@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8" ?> 
+ <!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd"> 
+ <mapper namespace="com.neusoft.basis.parameter.mapper.ParameterMapper"> 
+     <resultMap type="com.neusoft.basis.parameter.entity.ParameterEntity" id="parameterResultMap"> 
+	    <result property="paramKey" column="param_key" javaType="java.lang.String"/>  
+	    <result property="paramValue" column="param_value" javaType="java.lang.String"/> 
+	    <result property="description" column="description" javaType="java.lang.String"/> 
+	 </resultMap> 
+ 
+	<select id="getAllParameter" resultMap="parameterResultMap">
+       SELECT param_key,param_value,description from parameter; 
+    </select>
+    
+    <select id="getParameter" parameterType="java.lang.String" resultMap="parameterResultMap"> 
+	   <![CDATA[ 
+	     SELECT t.param_key,t.param_value,t.description from parameter t
+	     WHERE t.param_key = #{paramKey}
+	    ]]> 
+    </select> 
+	
+	<update id="updateParameter" parameterType="com.neusoft.basis.parameter.entity.ParameterEntity" > 
+	    update parameter
+	       set param_value= #{paramValue}     
+	     WHERE param_key = #{paramKey}
+	</update> 
+ </mapper>

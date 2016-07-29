@@ -1,0 +1,289 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>公司管理</title>
+<link href="css/main.css" rel="stylesheet" />
+</head>
+<script>
+	function show111()
+	{
+	    document.getElementById("111").style.display= ""; 
+	}
+	function deltr(trid)
+	{  
+    if(confirm("是否要删除该账户?"))
+    {
+        
+		var tab=document.getElementById("game");
+		var row=document.getElementById(trid);    
+		var index=row.rowIndex;//rowIndex属性为tr的索引值，从0开始   
+		tab.deleteRow(index);  //从table中删除
+
+
+
+     }
+    else
+    {
+    }	
+		
+	}
+	function showObject(obj,obj1) {
+     document.getElementById(obj).style.display= ""; 
+     document.getElementById(obj1).style.display= "none"; 
+ } 
+
+</script>
+<body>
+<div id="sub_content">
+<h2>添加授权品牌</h2>
+<div class="c_search">所属品牌：
+  <select name="select21" id="select21">
+    <option value="0">请选择</option>
+    <option value="1">腾讯游戏</option>
+    <option value="2" selected="selected">腾讯儿童</option>
+  </select> 
+  游戏代码：
+<input type="text" class="txt" value="BEAR" size="30" /> 
+  游戏名称： 
+  <input type="text" class="txt" value="小熊梦工厂" size="30" />&nbsp; 
+<input class="btn_orange" type="button" value="添  加" onclick="show111()"/>
+</div>
+<h2>腾讯授权品牌列表</h2>
+<table width="100%" border="0" cellspacing="0" cellpadding="0" class="info_tab1" id="game">
+  <tr>
+    <th width="15%">序号</th>
+    <th>所属品牌</th>
+    <th>游戏代码</th>
+    <th>游戏名称</th>
+    <th>操作</th>
+  </tr>
+  
+	<tr id="21">
+		<td>1</td>
+		<td><select name="select" id="select">
+	      <option value="0">请选择</option>
+	      <option value="1">腾讯游戏</option>
+	      <option value="2" selected="selected">腾讯儿童</option>
+        </select></td>
+		<td><input name="input" type="text" class="txt" value="ROCO" /></td>
+		<td><input name="" type="text" class="txt" value="洛克王国" /></td>
+		<td><a href="javascript:showObject('22','21')">确认</a></td>
+	</tr>
+
+    <tr id="22" style="display:none">
+	  <td>1</td>
+	  <td><select name="select2" id="select2">
+	    <option value="0">请选择</option>
+	    <option value="1">腾讯游戏</option>
+	    <option value="2">腾讯儿童</option>
+      </select></td>
+	  <td>ROCO</td>
+	  <td>洛克王国</td>
+	  <td><a href="javascript:showObject('21','22')">编辑 </a><a href="javascript:deltr('22')">删除</a></td>
+	</tr>
+	<tr id="31" style="display:none">
+		<td>2</td>
+		<td><select name="select3" id="select3">
+		  <option value="0">请选择</option>
+		  <option value="1" selected="selected">腾讯游戏</option>
+		  <option value="2">腾讯儿童</option>
+	    </select></td>
+		<td><input name="input" type="text" class="txt" value="SPEED" /></td>
+		<td><input name="" type="text" class="txt" value="QQ飞车" /></td>
+		<td><a href="javascript:showObject('32','31')">确认</a></td>
+	</tr>
+  <tr id="32">
+    <td>2</td>
+    <td><select name="select4" id="select4">
+      <option value="0">请选择</option>
+      <option value="1" selected="selected">腾讯游戏</option>
+      <option value="2">腾讯儿童</option>
+    </select></td>
+    <td>SPEED</td>
+    <td>QQ飞车</td>
+    <td><a href="javascript:showObject('31','32')">编辑 </a><a href="javascript:deltr('32')">删除</a></td>
+  </tr>
+  <tr id="41" style="display:none">
+		<td>3</td>
+		<td><select name="select5" id="select5">
+		  <option value="0">请选择</option>
+		  <option value="1">腾讯游戏</option>
+		  <option value="2">腾讯儿童</option>
+	    </select></td>
+		<td><input name="input" type="text" class="txt" value="X5" /></td>
+		<td><input name="" type="text" class="txt" value="QQ炫舞" /></td>
+		<td><a href="javascript:showObject('42','41')">确认</a></td>
+	</tr>
+  <tr id="42">
+    <td>3</td>
+    <td><select name="select6" id="select6">
+      <option value="0">请选择</option>
+      <option value="1">腾讯游戏</option>
+      <option value="2">腾讯儿童</option>
+    </select></td>
+    <td>X5</td>
+    <td>QQ炫舞</td>
+    <td><a href="javascript:showObject('41','42')">编辑 </a><a href="javascript:deltr('42')">删除</a></td>
+    </tr>
+  <tr id="51" style="display:none">
+		<td>4</td>
+		<td><select name="select7" id="select7">
+		  <option value="0">请选择</option>
+		  <option value="1">腾讯游戏</option>
+		  <option value="2">腾讯儿童</option>
+	    </select></td>
+		<td><input name="input" type="text" class="txt" value="DNF" /></td>
+		<td><input name="" type="text" class="txt" value="地下城与勇士" /></td>
+		<td><a href="javascript:showObject('52','51')">确认</a></td>
+	</tr>
+  <tr id="52">
+    <td>4</td>
+    <td><select name="select8" id="select8">
+      <option value="0">请选择</option>
+      <option value="1">腾讯游戏</option>
+      <option value="2">腾讯儿童</option>
+    </select></td>
+    <td>DNF</td>
+    <td>地下城与勇士</td>
+    <td><a href="javascript:showObject('51','52')">编辑 </a><a href="javascript:deltr('52')">删除</a></td>
+    </tr>
+   <tr id="61" style="display:none">
+		<td>5</td>
+		<td><select name="select9" id="select9">
+		  <option value="0">请选择</option>
+		  <option value="1">腾讯游戏</option>
+		  <option value="2">腾讯儿童</option>
+	    </select></td>
+		<td><input name="input" type="text" class="txt" value="YXS" /></td>
+		<td><input name="" type="text" class="txt" value="英雄杀" /></td>
+		<td><a href="javascript:showObject('62','61')">确认</a></td>
+	</tr>
+  <tr id="62">
+    <td>5</td>
+    <td><select name="select10" id="select10">
+      <option value="0">请选择</option>
+      <option value="1">腾讯游戏</option>
+      <option value="2">腾讯儿童</option>
+    </select></td>
+    <td>YXS</td>
+    <td>英雄杀</td>
+    <td><a href="javascript:showObject('61','62')">编辑 </a><a href="javascript:deltr('62')">删除</a></td>
+    </tr>
+	<tr id="71" style="display:none">
+		<td>6</td>
+		<td><select name="select11" id="select11">
+		  <option value="0">请选择</option>
+		  <option value="1">腾讯游戏</option>
+		  <option value="2">腾讯儿童</option>
+	    </select></td>
+		<td><input name="input" type="text" class="txt" value="XY" /></td>
+		<td><input name="" type="text" class="txt" value="QQ西游" /></td>
+		<td><a href="javascript:showObject('72','71')">确认</a></td>
+	</tr>
+  <tr id="72">
+    <td>6</td>
+    <td><select name="select12" id="select12">
+      <option value="0">请选择</option>
+      <option value="1">腾讯游戏</option>
+      <option value="2">腾讯儿童</option>
+    </select></td>
+    <td>XY</td>
+    <td>QQ西游</td>
+    <td><a href="javascript:showObject('71','72')">编辑 </a><a href="javascript:deltr('72')">删除</a></td>
+    </tr>
+	<tr id="81" style="display:none">
+		<td>7</td>
+		<td><select name="select13" id="select13">
+		  <option value="0">请选择</option>
+		  <option value="1">腾讯游戏</option>
+		  <option value="2">腾讯儿童</option>
+	    </select></td>
+		<td><input name="input" type="text" class="txt" value="CF" /></td>
+		<td><input name="" type="text" class="txt" value="穿越火线" /></td>
+		<td><a href="javascript:showObject('82','81')">确认</a></td>
+	</tr>
+  <tr id="82">
+    <td>7</td>
+    <td><select name="select14" id="select14">
+      <option value="0">请选择</option>
+      <option value="1">腾讯游戏</option>
+      <option value="2">腾讯儿童</option>
+    </select></td>
+    <td>CF</td>
+    <td>穿越火线</td>
+    <td><a href="javascript:showObject('81','82')">编辑 </a><a href="javascript:deltr('82')">删除</a></td>
+    </tr>
+	<tr id="91" style="display:none">
+		<td>8</td>
+		<td><select name="select15" id="select15">
+		  <option value="0">请选择</option>
+		  <option value="1">腾讯游戏</option>
+		  <option value="2">腾讯儿童</option>
+	    </select></td>
+		<td><input name="input" type="text" class="txt" value="AVA" /></td>
+		<td><input name="" type="text" class="txt" value="战地之王" /></td>
+		<td><a href="javascript:showObject('92','91')">确认</a></td>
+	</tr>
+  <tr id="92">
+    <td>8</td>
+    <td><select name="select16" id="select16">
+      <option value="0">请选择</option>
+      <option value="1">腾讯游戏</option>
+      <option value="2">腾讯儿童</option>
+    </select></td>
+    <td>AVA</td>
+    <td>战地之王</td>
+    <td><a href="javascript:showObject('91','92')">编辑 </a><a href="javascript:deltr('92')">删除</a></td>
+    </tr>
+	<tr id="101" style="display:none">
+		<td>9</td>
+		<td><select name="select17" id="select17">
+		  <option value="0">请选择</option>
+		  <option value="1">腾讯游戏</option>
+		  <option value="2">腾讯儿童</option>
+	    </select></td>
+		<td><input name="input" type="text" class="txt" value="XXZ" /></td>
+		<td><input name="" type="text" class="txt" value="QQ仙侠传" /></td>
+		<td><a href="javascript:showObject('102','101')">确认</a></td>
+	</tr>
+  <tr id="102">
+    <td>9</td>
+    <td><select name="select18" id="select18">
+      <option value="0">请选择</option>
+      <option value="1">腾讯游戏</option>
+      <option value="2">腾讯儿童</option>
+    </select></td>
+    <td>XXZ</td>
+    <td>QQ仙侠传</td>
+    <td><a href="javascript:showObject('101','102')">编辑 </a><a href="javascript:deltr('102')">删除</a></td>
+    </tr>
+  <tr id ="112" style="display:none">
+    <td>10</td>
+    <td><select name="select19" id="select19">
+      <option value="0">请选择</option>
+      <option value="1">腾讯游戏</option>
+      <option value="2">腾讯儿童</option>
+    </select></td>
+    <td>BEAR</td>
+    <td>小熊梦工厂</td>
+    <td><a href="javascript:showObject('111','112')">编辑 </a><a href="javascript:deltr('112')">删除</a></td>
+  </tr>
+  <tr id ="111" style="display:none">
+    <td>10</td>
+    <td><select name="select20" id="select20">
+      <option value="0">请选择</option>
+      <option value="1">腾讯游戏</option>
+      <option value="2">腾讯儿童</option>
+    </select></td>
+    <td><input name="input" type="text" class="txt" value="BEAR" /></td>
+    <td><input name="" type="text" class="txt" value="小熊梦工厂" /></td>
+    <td><a href="javascript:showObject('112','111')">确认</a></td>
+  </tr>
+  
+</table>
+<div class="page">共<span>1</span>页<a class="p_last">上一页</a> <a class="on">1</a><a  class="p_next">下一页</a></div>
+</div>
+<script type="text/javascript" src="js/main.js"></script>
+</body>
+</html>

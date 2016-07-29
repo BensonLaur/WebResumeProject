@@ -1,0 +1,741 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>公司管理</title>
+<link href="css/main.css" rel="stylesheet" />
+<script src="js/main.js"></script>
+</head>
+
+<body>
+<div id="sub_content">
+
+<h2 class="search_t">图书出版申请搜索<span class="sc_search"></span></h2>
+<div class="c_search">
+<input type="text" class="txt" value="洛克王国玩具开发申请" size="60" /> <input class="btn_search" type="button" value="搜 索" />
+</div>
+
+<h2>
+  <p>图书出版申请列表</p>
+  <select name="change" id="change" onchange="changeDiv(this.value)">
+  <option value="1">腾讯总负责人</option>
+  <option value="2">腾讯授权经理</option>
+  <option value="3">腾讯项目组</option>
+  <option value="4">代理商负责人</option>
+  <option value="5">代理商授权经理</option>
+  <option value="6">厂商负责人</option>
+  <option value="7">厂商项目经理</option>
+</select>
+<a href="javascript:void(0)" onclick="show('fdiv','table')">显示全部</a>
+  </h2>
+<div id="fdiv">
+<!--腾讯总项目负责人-->
+<table width="100%" border="0" cellspacing="0" cellpadding="0" class="info_tab1">
+<caption>腾讯总项目负责人</caption>
+  <tr>
+    <th width="15%">申请单号</th>
+    <th width="15%">产品名称</th>
+    <th width="10%">活动时间</th>
+    <th width="10%">品牌</th>
+    <th width="10%">申请公司</th>
+    <th width="10%">申请时间</th>
+    <th width="8%">申请人</th>
+    <th width="8%">状态</th>
+    <th width="12%">审批人</th>
+    <th>操作</th>
+  </tr>
+  <tr>
+    <td>roco_2011p0002</td>
+    <td><a href="3promotion_project_show.html">洛克王国玩具开发申请</a></td>
+    <td>2011年6月-8月</td>
+    <td>洛克王国</td>
+    <td>甲壳虫动漫</td>
+    <td>2011.3.18</td>
+    <td>huali(李华)</td>
+    <td>已审批</td>
+    <td>通过</td>
+    <td><a href="3promotion_show.html">详情</a></td>
+  </tr>
+  <tr>
+    <td>roco_2011p0002</td>
+    <td><a href="3promotion_project_show.html">洛克王国玩具开发申请</a></td>
+    <td>2011年6月-8月</td>
+    <td>洛克王国</td>
+    <td>甲壳虫动漫</td>
+    <td>2011.3.18</td>
+    <td>huali(李华)</td>
+    <td>已审批</td>
+    <td>通过</td>
+    <td><a href="3promotion_show.html">详情</a></td>
+    </tr>
+  <tr>
+    <td>roco_2011p0002</td>
+    <td class="grayf"><a href="3promotion_project_show.html">洛克王国玩具开发申请</a></td>
+    <td>2011年6月-8月</td>
+    <td>洛克王国</td>
+    <td>甲壳虫动漫</td>
+    <td>2011.3.18</td>
+    <td>huali(李华)</td>
+    <td class="grayf">终止</td>
+    <td>无</td>
+    <td><a href="3promotion_show.html">详情</a></td>
+  </tr>
+</table>
+<!--腾讯授权经理-->
+<table width="100%" border="0" cellspacing="0" cellpadding="0" class="info_tab1" style="display:none">
+<caption>腾讯授权经理</caption>
+  <tr>
+    <th width="15%">申请单号</th>
+    <th width="15%">产品名称</th>
+    <th width="10%">活动时间</th>
+    <th width="8%">品牌</th>
+    <th width="10%">申请公司</th>
+    <th width="8%">申请时间</th>
+    <th width="10%">申请人</th>
+    <th width="6%">状态</th>
+    <th>审批人</th>
+    <th width="5%">操作</th>
+  </tr>
+  <tr>
+    <td>roco_2011p0001</td>
+    <td class="redf"><a href="3promotion_project_show.html" target="_self">洛克王国衍生服装</a></td>
+    <td>2011年6月-8月</td>
+    <td>洛克王国</td>
+    <td>阿迪达斯</td>
+    <td>2011.3.18</td>
+    <td>ruifeng(林锐丰)</td>
+    <td class="redf">待审核</td>
+    <td>腾讯：dorisqiu(邱晨)</td>
+    <td><a href="3promotion_show.html">详情 </a></td>
+  </tr>
+  <tr>
+    <td>roco_2011p0002</td>
+    <td class="redf"><a href="3promotion_project_show.html">洛克王国卡牌项目</a></td>
+    <td>2011年6月-8月</td>
+    <td>洛克王国</td>
+    <td>甲壳虫动漫</td>
+    <td>2011.3.18</td>
+    <td>huali(李华)</td>
+    <td class="redf">待审核</td>
+    <td>腾讯：dorisqiu(邱晨)</td>
+    <td><a href="3promotion_show.html">详情</a></td>
+  </tr>
+  <tr>
+    <td>roco_2011p0001</td>
+    <td class="orangef"><a href="3promotion_project_show.html">洛克王国卡牌-大版</a></td>
+    <td>2011年6月-8月</td>
+    <td>洛克王国</td>
+    <td>阿迪达斯</td>
+    <td>2011.3.18</td>
+    <td>ruifeng(林锐丰)</td>
+    <td class="orangef">审批中</td>
+    <td>腾讯：upsonliang(梁叶春)</td>
+    <td><a href="3promotion_show.html">详情</a></td>
+    </tr>
+  <tr>
+    <td>roco_2011p0001</td>
+    <td><a href="3promotion_project_show.html">洛克王国儿童开发申请</a></td>
+    <td>2011年6月-8月</td>
+    <td>洛克王国</td>
+    <td>阿迪达斯</td>
+    <td>2011.3.18</td>
+    <td>ruifeng(林锐丰)</td>
+    <td>已审批</td>
+    <td>腾讯：dorisqiu(邱晨)</td>
+    <td><a href="3promotion_show.html">详情</a></td>
+  </tr>
+  <tr>
+    <td>roco_2011p0002</td>
+    <td><a href="3promotion_project_show.html">洛克王国玩具开发申请</a></td>
+    <td>2011年6月-8月</td>
+    <td>洛克王国</td>
+    <td>甲壳虫动漫</td>
+    <td>2011.3.18</td>
+    <td>huali(李华)</td>
+    <td>已审批</td>
+    <td>腾讯：nuzhang(张弩)</td>
+    <td><a href="3promotion_show.html">详情</a></td>
+    </tr>
+  <tr>
+    <td>roco_2011p0001</td>
+    <td><a href="3promotion_project_show.html">洛克王国儿童开发申请</a></td>
+    <td>2011年6月-8月</td>
+    <td>洛克王国</td>
+    <td>阿迪达斯</td>
+    <td>2011.3.18</td>
+    <td>ruifeng(林锐丰)</td>
+    <td>已审批</td>
+    <td>通过</td>
+    <td><a href="3promotion_show.html">详情</a></td>
+  </tr>  
+  <tr>
+    <td>roco_2011p0002</td>
+    <td><a href="3promotion_project_show.html">洛克王国玩具开发申请</a></td>
+    <td>2011年6月-8月</td>
+    <td>洛克王国</td>
+    <td>甲壳虫动漫</td>
+    <td>2011.3.18</td>
+    <td>huali(李华)</td>
+    <td>已审批</td>
+    <td>通过</td>
+    <td><a href="3promotion_show.html">详情</a></td>
+  </tr>
+  <tr>
+    <td>roco_2011p0001</td>
+    <td class="grayf"><a href="3promotion_project_show.html">洛克王国儿童开发申请</a></td>
+    <td>2011年6月-8月</td>
+    <td>洛克王国</td>
+    <td>阿迪达斯</td>
+    <td>2011.3.18</td>
+    <td>ruifeng(林锐丰)</td>
+    <td class="grayf">终止</td>
+    <td>无</td>
+    <td><a href="3promotion_show.html">详情</a></td>
+  </tr>
+</table>
+<!--腾讯项目组-->
+<table width="100%" border="0" cellspacing="0" cellpadding="0" class="info_tab1" style="display:none">
+<caption>腾讯项目组</caption>
+  <tr>
+    <th width="15%">申请单号</th>
+    <th width="13%">产品名称</th>
+    <th width="10%">活动时间</th>
+    <th width="8%">品牌</th>
+    <th width="10%">申请公司</th>
+    <th width="10%">申请时间</th>
+    <th width="10%">申请人</th>
+    <th width="5%">状态</th>
+    <th>审批人</th>
+    <th width="5%">操作</th>
+  </tr>
+  <tr>
+    <td>roco_2011p0001</td>
+    <td class="redf"><a href="3promotion_project_show.html" target="_self">洛克王国衍生服装</a></td>
+    <td>2011年6月-8月</td>
+    <td>洛克王国</td>
+    <td>阿迪达斯</td>
+    <td>2011.3.18</td>
+    <td>ruifeng(林锐丰)</td>
+    <td class="redf">待审核</td>
+    <td>腾讯：upsonliang(梁叶春)</td>
+    <td><a href="3promotion_show.html">详情 </a></td>
+  </tr>
+  <tr>
+    <td>roco_2011p0002</td>
+    <td class="redf"><a href="3promotion_project_show.html">洛克王国卡牌项目</a></td>
+    <td>2011年6月-8月</td>
+    <td>洛克王国</td>
+    <td>甲壳虫动漫</td>
+    <td>2011.3.18</td>
+    <td>huali(李华)</td>
+    <td class="redf">待审核</td>
+    <td>腾讯：upsonliang(梁叶春)</td>
+    <td><a href="3promotion_show.html">详情</a></td>
+  </tr>
+  <tr>
+    <td>roco_2011p0001</td>
+    <td class="orangef"><a href="3promotion_project_show.html">洛克王国卡牌-大版</a></td>
+    <td>2011年6月-8月</td>
+    <td>洛克王国</td>
+    <td>阿迪达斯</td>
+    <td>2011.3.18</td>
+    <td>ruifeng(林锐丰)</td>
+    <td class="orangef">审批中</td>
+    <td>腾讯：dorisqiu(邱晨)</td>
+    <td><a href="3promotion_show.html">详情</a></td>
+    </tr>
+  <tr>
+    <td>roco_2011p0001</td>
+    <td><a href="3promotion_project_show.html">洛克王国儿童开发申请</a></td>
+    <td>2011年6月-8月</td>
+    <td>洛克王国</td>
+    <td>阿迪达斯</td>
+    <td>2011.3.18</td>
+    <td>ruifeng(林锐丰)</td>
+    <td>已审批</td>
+    <td>通过</td>
+    <td><a href="3promotion_show.html">详情</a></td>
+  </tr>
+  <tr>
+    <td>roco_2011p0002</td>
+    <td><a href="3promotion_project_show.html">洛克王国玩具开发申请</a></td>
+    <td>2011年6月-8月</td>
+    <td>洛克王国</td>
+    <td>甲壳虫动漫</td>
+    <td>2011.3.18</td>
+    <td>huali(李华)</td>
+    <td>已审批</td>
+    <td>通过</td>
+    <td><a href="3promotion_show.html">详情</a></td>
+    </tr>
+  <tr>
+    <td>roco_2011p0001</td>
+    <td><a href="3promotion_project_show.html">洛克王国儿童开发申请</a></td>
+    <td>2011年6月-8月</td>
+    <td>洛克王国</td>
+    <td>阿迪达斯</td>
+    <td>2011.3.18</td>
+    <td>ruifeng(林锐丰)</td>
+    <td>已审批</td>
+    <td>通过</td>
+    <td><a href="3promotion_show.html">详情</a></td>
+  </tr>
+  <tr>
+    <td>roco_2011p0001</td>
+    <td><a href="3promotion_project_show.html">洛克王国儿童开发申请</a></td>
+    <td>2011年6月-8月</td>
+    <td>洛克王国</td>
+    <td>阿迪达斯</td>
+    <td>2011.3.18</td>
+    <td>ruifeng(林锐丰)</td>
+    <td>已审批</td>
+    <td>通过</td>
+    <td><a href="3promotion_show.html">详情</a></td>
+  </tr>
+  <tr>
+    <td>roco_2011p0002</td>
+    <td><a href="3promotion_project_show.html">洛克王国玩具开发申请</a></td>
+    <td>2011年6月-8月</td>
+    <td>洛克王国</td>
+    <td>甲壳虫动漫</td>
+    <td>2011.3.18</td>
+    <td>huali(李华)</td>
+    <td>已审批</td>
+    <td>通过</td>
+    <td><a href="3promotion_show.html">详情</a></td>
+  </tr>
+    <tr>
+    <td>roco_2011p0001</td>
+    <td class="grayf"><a href="3promotion_project_show.html">洛克王国儿童开发申请</a></td>
+    <td>2011年6月-8月</td>
+    <td>洛克王国</td>
+    <td>阿迪达斯</td>
+    <td>2011.3.18</td>
+    <td>ruifeng(林锐丰)</td>
+    <td class="grayf">终止</td>
+    <td>无</td>
+    <td><a href="3promotion_show.html">详情</a></td>
+  </tr>
+</table>
+<!--代理公司负责人-->
+<table width="100%" border="0" cellspacing="0" cellpadding="0" class="info_tab1" style="display:none">
+<caption>代理公司负责人</caption>
+  <tr>
+    <th width="15%">申请单号</th>
+    <th width="15%">产品名称</th>
+    <th width="10%">活动时间</th>
+    <th width="10%">品牌</th>
+    <th width="10%">申请公司</th>
+    <th width="10%">申请时间</th>
+    <th width="10%">申请人</th>
+    <th width="5%">状态</th>
+    <th>审批人</th>
+    <th width="5%">操作</th>
+  </tr>
+  <tr>
+    <td>roco_2011p0002</td>
+    <td class="orangef"><a href="3promotion_project_show.html">洛克王国卡牌项目</a></td>
+    <td>2011年6月-8月</td>
+    <td>洛克王国</td>
+    <td>甲壳虫动漫</td>
+    <td>2011.3.18</td>
+    <td>huali(李华)</td>
+    <td class="orangef">审核中</td>
+    <td>腾讯：nuzhang(张弩)</td>
+    <td><a href="3promotion_show.html">详情</a></td>
+  </tr>
+  <tr>
+    <td>roco_2011p0002</td>
+    <td><a href="3promotion_project_show.html">洛克王国玩具开发申请</a></td>
+    <td>2011年6月-8月</td>
+    <td>洛克王国</td>
+    <td>甲壳虫动漫</td>
+    <td>2011.3.18</td>
+    <td>huali(李华)</td>
+    <td>已审批</td>
+    <td>通过</td>
+    <td><a href="3promotion_show.html">详情</a></td>
+  </tr>
+  <tr>
+    <td>roco_2011p0001</td>
+    <td><a href="3promotion_project_show.html">洛克王国儿童开发申请</a></td>
+    <td>2011年6月-8月</td>
+    <td>洛克王国</td>
+    <td>阿迪达斯</td>
+    <td>2011.3.18</td>
+    <td>ruifeng(林锐丰)</td>
+    <td>已审批</td>
+    <td>通过</td>
+    <td><a href="3promotion_show.html">详情</a></td>
+  </tr>
+  <tr>
+    <td>roco_2011p0001</td>
+    <td><a href="3promotion_project_show.html">洛克王国儿童开发申请</a></td>
+    <td>2011年6月-8月</td>
+    <td>洛克王国</td>
+    <td>阿迪达斯</td>
+    <td>2011.3.18</td>
+    <td>ruifeng(林锐丰)</td>
+    <td>已审批</td>
+    <td>通过</td>
+    <td><a href="3promotion_show.html">详情</a></td>
+  </tr>
+  <tr>
+    <td>roco_2011p0002</td>
+    <td><a href="3promotion_project_show.html">洛克王国玩具开发申请</a></td>
+    <td>2011年6月-8月</td>
+    <td>洛克王国</td>
+    <td>甲壳虫动漫</td>
+    <td>2011.3.18</td>
+    <td>huali(李华)</td>
+    <td>已审批</td>
+    <td>通过</td>
+    <td><a href="3promotion_show.html">详情</a></td>
+  </tr>
+  <tr>
+    <td>roco_2011p0002</td>
+    <td><a href="3promotion_project_show.html">洛克王国玩具开发申请</a></td>
+    <td>2011年6月-8月</td>
+    <td>洛克王国</td>
+    <td>甲壳虫动漫</td>
+    <td>2011.3.18</td>
+    <td>huali(李华)</td>
+    <td>已审批</td>
+    <td>通过</td>
+    <td><a href="3promotion_show.html">详情</a></td>
+  </tr>
+    <tr>
+    <td>roco_2011p0001</td>
+    <td class="grayf"><a href="3promotion_project_show.html">洛克王国儿童开发申请</a></td>
+    <td>2011年6月-8月</td>
+    <td>洛克王国</td>
+    <td>阿迪达斯</td>
+    <td>2011.3.18</td>
+    <td>ruifeng(林锐丰)</td>
+    <td class="grayf">终止</td>
+    <td>无</td>
+    <td><a href="3promotion_show.html">详情</a></td>
+  </tr>
+</table>
+<!--代理项目负责人-->
+<table width="100%" border="0" cellspacing="0" cellpadding="0" class="info_tab1" style="display:none">
+<caption>代理项目负责人</caption>
+  <tr>
+    <th width="15%">申请单号</th>
+    <th width="15%">产品名称</th>
+    <th width="10%">活动时间</th>
+    <th width="8%">品牌</th>
+    <th width="10%">申请公司</th>
+    <th width="10%">申请时间</th>
+    <th width="10%">申请人</th>
+    <th width="5%">状态</th>
+    <th>审批人</th>
+    <th width="5%">操作</th>
+  </tr>
+  <tr>
+    <td>roco_2011p0002</td>
+    <td class="redf"><a href="3promotion_project_show.html">洛克王国卡牌项目</a></td>
+    <td>2011年6月-8月</td>
+    <td>洛克王国</td>
+    <td>甲壳虫动漫</td>
+    <td>2011.3.18</td>
+    <td>huali(李华)</td>
+    <td class="redf">待审批</td>
+    <td>优扬：ningcheng(宁成)</td>
+    <td><a href="3promotion_show.html">详情</a></td>
+  </tr>
+  <tr>
+    <td>roco_2011p0002</td>
+    <td class="orangef"><a href="3promotion_project_show.html">洛克王国玩具开发申请</a></td>
+    <td>2011年6月-8月</td>
+    <td>洛克王国</td>
+    <td>甲壳虫动漫</td>
+    <td>2011.3.18</td>
+    <td>huali(李华)</td>
+    <td class="orangef">审批中</td>
+    <td>腾讯：upsonliang(梁叶春)</td>
+    <td><a href="3promotion_show.html">详情</a></td>
+  </tr>
+  <tr>
+    <td>roco_2011p0001</td>
+    <td><a href="3promotion_project_show.html">洛克王国儿童开发申请</a></td>
+    <td>2011年6月-8月</td>
+    <td>洛克王国</td>
+    <td>阿迪达斯</td>
+    <td>2011.3.18</td>
+    <td>ruifeng(林锐丰)</td>
+    <td>已审批</td>
+    <td>通过</td>
+    <td><a href="3promotion_show.html">详情</a></td>
+  </tr>
+  <tr>
+    <td>roco_2011p0001</td>
+    <td><a href="3promotion_project_show.html">洛克王国儿童开发申请</a></td>
+    <td>2011年6月-8月</td>
+    <td>洛克王国</td>
+    <td>阿迪达斯</td>
+    <td>2011.3.18</td>
+    <td>ruifeng(林锐丰)</td>
+    <td>已审批</td>
+    <td>通过</td>
+    <td><a href="3promotion_show.html">详情</a></td>
+  </tr>
+  <tr>
+    <td>roco_2011p0002</td>
+    <td><a href="3promotion_project_show.html">洛克王国玩具开发申请</a></td>
+    <td>2011年6月-8月</td>
+    <td>洛克王国</td>
+    <td>甲壳虫动漫</td>
+    <td>2011.3.18</td>
+    <td>huali(李华)</td>
+    <td>已审批</td>
+    <td>通过</td>
+    <td><a href="3promotion_show.html">详情</a></td>
+  </tr>
+  <tr>
+    <td>roco_2011p0002</td>
+    <td><a href="3promotion_project_show.html">洛克王国玩具开发申请</a></td>
+    <td>2011年6月-8月</td>
+    <td>洛克王国</td>
+    <td>甲壳虫动漫</td>
+    <td>2011.3.18</td>
+    <td>ruifeng(林锐丰)</td>
+    <td>已审批</td>
+    <td>通过</td>
+    <td><a href="3promotion_show.html">详情</a></td>
+  </tr>
+    <tr>
+    <td>roco_2011p0001</td>
+    <td class="grayf"><a href="3promotion_project_show.html">洛克王国儿童开发申请</a></td>
+    <td>2011年6月-8月</td>
+    <td>洛克王国</td>
+    <td>阿迪达斯</td>
+    <td>2011.3.18</td>
+    <td>ruifeng(林锐丰)</td>
+    <td class="grayf">终止</td>
+    <td>无</td>
+    <td><a href="3promotion_show.html">详情</a></td>
+  </tr>
+</table>
+<!--厂商负责人-->
+<table width="100%" border="0" cellspacing="0" cellpadding="0" class="info_tab1" style="display:none">
+<caption>厂商负责人</caption>
+  <tr>
+    <th width="15%">申请单号</th>
+    <th width="15%">产品名称</th>
+    <th width="10%">活动时间</th>
+    <th width="8%">品牌</th>
+    <th width="10%">申请公司</th>
+    <th width="8%">申请时间</th>
+    <th width="10%">申请人</th>
+    <th width="5%">状态</th>
+    <th>审批人</th>
+    <th width="5%">操作</th>
+  </tr>
+
+  <tr>
+    <td>roco_2011p0002</td>
+    <td class="orangef"><a href="3promotion_project_show.html">洛克王国卡牌项目</a></td>
+    <td>2011年6月-8月</td>
+    <td>洛克王国</td>
+    <td>甲壳虫动漫</td>
+    <td>2011.3.18</td>
+    <td>huali(李华)</td>
+    <td class="orangef">审核中</td>
+    <td>腾讯：nuzhang(张弩)</td>
+    <td><a href="3promotion_show.html">详情</a></td>
+  </tr>
+  <tr>
+    <td>roco_2011p0002</td>
+    <td class="redf"><a href="3promotion_project_show.html">洛克王国卡牌项目</a></td>
+    <td>2011年6月-8月</td>
+    <td>洛克王国</td>
+    <td>甲壳虫动漫</td>
+    <td>2011.3.18</td>
+    <td>huali(李华)</td>
+    <td class="redf">待审核</td>
+    <td>腾讯：nuzhang(张弩)</td>
+    <td><a href="3promotion_show.html">详情</a>|<a href="3promotion_edit.html">撤消</a></td>
+  </tr>
+  <tr>
+    <td>roco_2011p0002</td>
+    <td class="greenf"><a href="3promotion_project_show.html">洛克王国卡牌项目</a></td>
+    <td>2011年6月-8月</td>
+    <td>洛克王国</td>
+    <td>甲壳虫动漫</td>
+    <td>2011.3.18</td>
+    <td>huali(李华)</td>
+    <td class="greenf">草稿</td>
+    <td>腾讯：nuzhang(张弩)</td>
+    <td><a href="3promotion_show.html">详情</a>|<a href="3promotion_edit.html">修改</a></td>
+  </tr>
+
+  <tr>
+    <td>roco_2011p0002</td>
+    <td><a href="3promotion_project_show.html">洛克王国玩具开发申请</a></td>
+    <td>2011年6月-8月</td>
+    <td>洛克王国</td>
+    <td>甲壳虫动漫</td>
+    <td>2011.3.18</td>
+    <td>huali(李华)</td>
+    <td>已审批</td>
+    <td>通过</td>
+    <td><a href="3promotion_show.html">详情</a></td>
+  </tr>
+  <tr>
+    <td>roco_2011p0002</td>
+    <td><a href="3promotion_project_show.html">洛克王国玩具开发申请</a></td>
+    <td>2011年6月-8月</td>
+    <td>洛克王国</td>
+    <td>甲壳虫动漫</td>
+    <td>2011.3.18</td>
+    <td>ruifeng(林锐丰)</td>
+    <td>已审批</td>
+    <td>通过</td>
+    <td><a href="3promotion_show.html">详情</a></td>
+  </tr>
+  <tr>
+    <td>roco_2011p0002</td>
+    <td><a href="3promotion_project_show.html">洛克王国玩具开发申请</a></td>
+    <td>2011年6月-8月</td>
+    <td>洛克王国</td>
+    <td>甲壳虫动漫</td>
+    <td>2011.3.18</td>
+    <td>ruifeng(林锐丰)</td>
+    <td>已审批</td>
+    <td>通过</td>
+    <td><a href="3promotion_show.html">详情</a></td>
+  </tr>
+    <tr>
+    <td>roco_2011p0001</td>
+    <td class="grayf"><a href="3promotion_project_show.html">洛克王国儿童开发申请</a></td>
+    <td>2011年6月-8月</td>
+    <td>洛克王国</td>
+    <td>阿迪达斯</td>
+    <td>2011.3.18</td>
+    <td>ruifeng(林锐丰)</td>
+    <td class="grayf">终止</td>
+    <td>无</td>
+    <td><a href="3promotion_show.html">详情</a></td>
+  </tr>
+</table>
+<!--厂商项目经理-->
+<table width="100%" border="0" cellspacing="0" cellpadding="0" class="info_tab1" style="display:none">
+<caption>厂商项目经理</caption>
+  <tr>
+    <th width="15%">申请单号</th>
+    <th width="15%">产品名称</th>
+    <th width="10%">活动时间</th>
+    <th width="10%">品牌</th>
+    <th width="10%">申请公司</th>
+    <th width="10%">申请时间</th>
+    <th width="10%">申请人</th>
+    <th width="5%">状态</th>
+    <th>审批人</th>
+    <th width="5%">操作</th>
+  </tr>
+  <tr>
+    <td>roco_2011p0002</td>
+    <td class="orangef"><a href="3promotion_project_show.html">洛克王国卡牌项目</a></td>
+    <td>2011年6月-8月</td>
+    <td>洛克王国</td>
+    <td>甲壳虫动漫</td>
+    <td>2011.3.18</td>
+    <td>huali(李华)</td>
+    <td class="orangef">审核中</td>
+    <td>腾讯：nuzhang(张弩)</td>
+    <td><a href="3promotion_show.html">详情</a></td>
+  </tr>
+  <tr>
+    <td>roco_2011p0002</td>
+    <td class="redf"><a href="3promotion_project_show.html">洛克王国卡牌项目</a></td>
+    <td>2011年6月-8月</td>
+    <td>洛克王国</td>
+    <td>甲壳虫动漫</td>
+    <td>2011.3.18</td>
+    <td>huali(李华)</td>
+    <td class="redf">待审核</td>
+    <td>腾讯：nuzhang(张弩)</td>
+    <td><a href="3promotion_show.html">详情</a>|<a href="3promotion_edit.html">撤消</a></td>
+  </tr>
+  <tr>
+    <td>roco_2011p0002</td>
+    <td class="redf"><a href="3promotion_project_show.html">洛克王国卡牌项目</a></td>
+    <td>2011年6月-8月</td>
+    <td>洛克王国</td>
+    <td>甲壳虫动漫</td>
+    <td>2011.3.18</td>
+    <td>huali(李华)</td>
+    <td class="redf">驳回</td>
+    <td>腾讯：nuzhang(张弩)</td>
+    <td><a href="3promotion_show.html">详情</a>|<a href="3promotion_edit.html">修改</a></td>
+  </tr>
+  <tr>
+    <td>roco_2011p0002</td>
+    <td class="greenf"><a href="3promotion_project_show.html">洛克王国玩具开发申请</a></td>
+    <td>2011年6月-8月</td>
+    <td>洛克王国</td>
+    <td>甲壳虫动漫</td>
+    <td>2011.3.18</td>
+    <td>huali(李华)</td>
+    <td class="greenf">草稿</td>
+    <td>无</td>
+    <td><a href="3promotion_show.html">详情</a>|<a href="3promotion_edit.html">修改</a></td>
+  </tr>
+    <tr>
+    <td>roco_2011p0001</td>
+    <td class="grayf"><a href="3promotion_project_show.html">洛克王国儿童开发申请</a></td>
+    <td>2011年6月-8月</td>
+    <td>洛克王国</td>
+    <td>阿迪达斯</td>
+    <td>2011.3.18</td>
+    <td>ruifeng(林锐丰)</td>
+    <td class="grayf">终止</td>
+    <td>无</td>
+    <td><a href="3promotion_show.html">详情</a></td>
+  </tr>
+</table>
+</div>
+<div class="page">共<span>4</span>页 <a href="3promotion_list.html" class="p_last">上一页</a> <a href="3promotion_list.html" class="on">1</a><a href="3promotion_list_search.html">2</a><a href="3promotion_list.html">3</a><a href="3promotion_list_search.html">4</a> <a href="3promotion_list_search.html" class="p_next">下一页</a></div>
+</div>
+<div class="noticeInfo"><h4>[备注]</h4>
+<h5>权限</h5>
+<p>此页面只有以下用户可以看到，且看到列表不一样，通过右上角角色列表切换</p>
+<p>腾讯总项目负责人、腾讯授权经理、腾讯项目组、代理公司负责人、代理公司授权经理、厂商负责人、厂商项目经理</p>
+<ul>
+<li>腾讯总项目负责人<strong>：可以看到所有项目</strong></li>
+<li>腾讯授权经理：可以看到负责的项目</li>
+<li>腾讯项目组：可以看到负责的项目</li>
+<li>代理公司负责人<strong>：可以看到该公司下所有项目</strong></li>
+<li>代理公司授权经理：可以看到负责的项目</li>
+<li>厂商负责人：<strong>可以看到该公司下所有项目</strong></li>
+<li>厂商项目经理：可以看到负责项目</li>
+</ul>
+<h5>状态：草稿、待审批、审核中、已审批、驳回、终止</h5>
+<ul>
+<li>草稿：厂商项目经理填写项目申请，只是保存草稿，未提交进入流程 （绿色）&lt;<strong>只有申请人自己可以看到</strong>&gt;</li>
+<li>待审批：厂商已发起申请，申请进入到审批流程 （标红）&lt; 当前审批人可以看到，例如当前进入到代理商审批，则代理商相应授权经理显示此状态&gt;</li>
+<li>审批中：该审批人环节已过，进入下一个审批人 &lt; （橙色）<strong>除了当前审批人，都显示审批中</strong>&gt;</li>
+<li>已审批：完成所有审批流程 </li>
+<li>驳回：某个审批流程被驳回 （标红）</li>
+<li>终止：审批因特殊原因结束 （灰色）</li>
+</ul>
+<h5>排序</h5>
+<ul>
+<li>“待审批”排最上、其次“驳回”、再“审批中”、再“已审批”、最后“终止”</li>
+<li>同状态，时间越早排越上</li>
+</ul>
+<h5>操作</h5>
+<p>不同角色，不同申请状态显示操作项目不同，具体看页面中权限切换</p>
+<ul>
+<li>腾讯总项目负责人：详情</li>
+<li>腾讯授权经理：详情</li>
+<li>腾讯项目组：详情</li>
+<li>代理公司负责人：详情</li>
+<li>代理公司授权经理：详情</li>
+<li>厂商负责人：详情、修改(草稿、驳回时显示)</li>
+<li>厂商项目经理：详情、修改(草稿、驳回时显示)</li>
+</ul>
+</div>
+</body>
+</html>

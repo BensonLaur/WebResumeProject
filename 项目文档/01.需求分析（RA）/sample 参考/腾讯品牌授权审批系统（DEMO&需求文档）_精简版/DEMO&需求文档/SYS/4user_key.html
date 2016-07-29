@@ -1,0 +1,66 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=gb2312" />
+<title>人员管理</title>
+<link href="css/main.css" rel="stylesheet" />
+</head>
+<script>
+function showObject() {
+     document.getElementById("dis1").style.display= ""; 
+     document.getElementById("dis2").style.display= ""; 
+ }
+</script>
+<body>
+<div id="sub_content">
+
+<h2 class="search_t">人员搜索<span class="sc_search"></span></h2>
+<div class="c_search">
+<input type="text" class="txt" value="余" size="60" /> <input class="btn_search" type="button" value="搜 索" onclick="showObject()"/>
+</div>
+<div id="dis1" class="notice" style="display:none"><h3>搜索结果</h3>
+<p>总共搜索到【<b class="redf">2</b>】名用户符合搜索条件</p></div>
+<h2>
+  <p>人员列表</p></h2>
+    <div id="dis2" style="display:none">
+<table width="100%" border="0" cellspacing="0" cellpadding="0" class="info_tab1">
+  <tr>
+    <th width="8%">编号</th>
+    <th width="15%">中文名</th>
+    <th width="10%">英文名</th>
+    <th width="20%">所属公司</th>
+    <th width="10%">所属类型</th>
+    <th>联系电话</th>
+    <th>状态</th>
+    <th>操作</th>
+  </tr>
+  <tr>
+    <td>T0001</td>
+    <td>余则生</td>
+    <td>uzecheng</td>
+    <td><a href="javascript:void(0)" onclick="changeIframe2('15company_show.html')">优扬传媒</a></td>
+    <td>余则生</td>
+    <td>15810644610</td>
+    <td>活动</td>
+    <td class="redf"><a href="opResult.html?msg=正在发送邮件致tencent@qq。com，请根据邮箱中链接可以重新设置一个密码。。。请稍候&url=4user_key.html">重置密码</a></td>
+  </tr>
+  <tr>
+    <td>A0002</td>
+    <td>余达</td>
+    <td>dali</td>
+    <td><a href="javascript:void(0)" onclick="changeIframe2('15company_show.html')">梦龙</a></td>
+    <td>李达</td>
+    <td>15810644610</td>
+    <td>已锁定</td>
+    <td class="redf"><a href="opResult.html?msg=正在发送邮件致tencent@qq。com，请根据邮箱中链接可以重新设置一个密码。。。请稍候&url=4user_key.html">重置密码</a></td>
+  </tr>
+</table>
+<div class="page">共<span>1</span>页<a class="p_last">上一页</a> <a class="on">1</a><a  class="p_next">下一页</a></div>
+</div>
+</div>
+<div class="noticeInfo"><h5>Notice 说明</h5>
+<p>【密码重置】密码重置以后，发送一个邮件到用户邮箱，用户根据邮箱中链接可以重新设置一个密码</p>
+</div>
+<script type="text/javascript" src="js/main.js"></script>
+</body>
+</html>

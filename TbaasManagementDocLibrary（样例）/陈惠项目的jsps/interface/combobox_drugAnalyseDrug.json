@@ -1,0 +1,186 @@
+[
+    {
+        "id": 1,
+        "text": "AMK"
+    },
+    {
+        "id": 2,
+        "text": "AMP"
+    },
+    {
+        "id": 3,
+        "text": "APR"
+    },
+    {
+        "id": 4,
+        "text": "AZM"
+    },
+    {
+        "id": 5,
+        "text": "CAZ"
+    },
+    {
+        "id": 6,
+        "text": "CFZ"
+    },
+    {
+        "id": 7,
+        "text": "CHL"
+    },
+    {
+        "id": 8,
+        "text": "CIP"
+    },
+    {
+        "id": 9,
+        "text": "CL"
+    },
+    {
+        "id": 10,
+        "text": "CLI"
+    },
+    {
+        "id": 11,
+        "text": "CQM"
+    },
+    {
+        "id": 12,
+        "text": "CRO"
+    },
+    {
+        "id": 13,
+        "text": "CTX"
+    },
+    {
+        "id": 14,
+        "text": "DOX"
+    },
+    {
+        "id": 15,
+        "text": "ERY"
+    },
+    {
+        "id": 16,
+        "text": "FEP"
+    },
+    {
+        "id": 17,
+        "text": "FFC"
+    },
+    {
+        "id": 18,
+        "text": "FOS"
+    },
+    {
+        "id": 19,
+        "text": "FOX"
+    },
+    {
+        "id": 20,
+        "text": "GEN"
+    },
+    {
+        "id": 21,
+        "text": "IMP"
+    },
+    {
+        "id": 22,
+        "text": "LEV"
+    },
+    {
+        "id": 23,
+        "text": "LZD"
+    },
+    {
+        "id": 24,
+        "text": "MEM"
+    },
+    {
+        "id": 25,
+        "text": "MIN"
+    },
+    {
+        "id": 26,
+        "text": "NAL"
+    },
+    {
+        "id": 27,
+        "text": "NEO"
+    },
+    {
+        "id": 28,
+        "text": "NET"
+    },
+    {
+        "id": 29,
+        "text": "NIT"
+    },
+    {
+        "id": 30,
+        "text": "NOR"
+    },
+    {
+        "id": 31,
+        "text": "OFX"
+    },
+    {
+        "id": 32,
+        "text": "OQX"
+    },
+    {
+        "id": 33,
+        "text": "OXA"
+    },
+    {
+        "id": 34,
+        "text": "PEN"
+    },
+    {
+        "id": 35,
+        "text": "PIP"
+    },
+    {
+        "id": 36,
+        "text": "RIF"
+    },
+    {
+        "id": 37,
+        "text": "STR"
+    },
+    {
+        "id": 38,
+        "text": "SXT"
+    },
+    {
+        "id": 39,
+        "text": "TEC"
+    },
+    {
+        "id": 40,
+        "text": "TET"
+    },
+    {
+        "id": 41,
+        "text": "TIA"
+    },
+    {
+        "id": 42,
+        "text": "TMP"
+    },
+    {
+        "id": 43,
+        "text": "TOB"
+    },
+    {
+        "id": 44,
+        "text": "TZP"
+    },
+    {
+        "id": 45,
+        "text": "VAL"
+    },
+    {
+        "id": 46,
+        "text": "VAN"
+    }
+]

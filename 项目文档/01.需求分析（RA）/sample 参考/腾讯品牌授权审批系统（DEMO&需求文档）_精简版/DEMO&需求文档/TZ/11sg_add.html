@@ -1,0 +1,108 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=gb2312" />
+<title>新增素材</title>
+<link href="css/main.css" rel="stylesheet" />
+<script src="js/main.js" type="text/javascript"></script>
+</head>
+
+<body>
+<div id="sub_content">
+
+<h2 class="search_t">新建图片素材</h2>
+<h3></h3>
+<table class="info_tab3 ctabt">
+  <tr>
+    <th width="15%">图片编号</th>
+    <td>roco-2011-001</td>
+  </tr>
+  <tr>
+    <th>图片名称</th>
+    <td class="noborder"><input class="txt" value="洛克王国-水蓝蓝" size="55" /></td>
+  </tr>
+  <tr>
+    <th>缩略图</th>
+    <td class="noborder" >
+      <p id="ind_pic1" style="display:none">
+          <img src="images/temp_sg1.jpg" width="235" height="235" /><a href="javascript:void(0)" onclick="hide('ind_pic1');hide('source_size');show2('upload1')">删除</a>
+      </p>
+      <p id="upload1"><input type="file" name="button4" id="button4" class="txt" />
+  <input type="button" value="上传" class="btn_orange" onclick="show2('ind_pic1');show2('source_size');hide('upload1')"/>
+      </p></td>
+  </tr>
+  <tr>
+    <th>源文件地址</th>
+    <td><p id="upload2">
+    <input type="file" name="button" id="button" class="txt"/>
+      <input type="button" value="上传" class="btn_orange" onclick="show2('txt_succ1');hide('upload2')"/>
+      </p>
+      <p id="txt_succ1" style="display:none" class="redf">source_file.rar  <a href="javascript:void(0)" onclick="hide('txt_succ1');show2('upload2')">[X]</a></p></td>
+  </tr>
+  <tr>
+    <th>时间戳地址</th>
+    <td>
+    <p id="upload3">
+    <input type="file" name="button2" id="button2" class="txt" />
+      <input type="button" value="上传" class="btn_orange" onclick="show2('txt_succ2');hide('upload3')"/>
+      </p>
+      <p id="txt_succ2" style="display:none" class="redf">timestamp.rar  <a href="javascript:void(0)" onclick="hide('txt_succ2');show2('upload3')">[X]</a></p></td>
+  </tr>
+  <tr>
+    <th>源文件大小</th>
+    <td><p id="source_size" style="display:none">3.2M</p></td>
+  </tr>
+  <tr>
+    <th>过期时间</th>
+    <td><input type="text"/></td>
+  </tr>
+  <tr>
+    <th>所属游戏</th>
+    <td><select name="select3" id="select3">
+      <option value="0">请选择游戏</option>
+      <option value="1" selected="selected">洛克王国</option>
+      <option value="2">地下城与勇士</option>
+    </select></td>
+  </tr>
+  <tr>
+    <th>关键词</th>
+    <td><span class="noborder">
+      <input class="txt" value="水蓝蓝,洛克王国" size="55" />
+    </span></td>
+    </tr>
+  <tr>
+    <th>所属分类</th>
+    <td><select name="select" id="select">
+      <option value="0">请选择分类</option>
+      <option value="1">基础包</option>
+      <option value="2">扩展包</option>
+    </select></td>
+  </tr>
+  <tr>
+    <th>图片说明</th>
+    <td class="noborder"><textarea name="textarea" id="textarea" cols="55" rows="5"></textarea></td>
+  </tr>
+  <tr>
+    <th>权限设置</th>
+    <td class="noborder"><select name="select4" size="5" id="source" ondblclick="MoveTo(this.selectedIndex)">
+      <option>梦龙动漫</option>
+      <option>凤凰文艺</option>
+      <option>台湾擎雷</option>
+      <option>甲壳虫动漫</option>
+      </select>
+    《 双击设置权限 》
+      <select name="select4" size="5" id="distinct" ondblclick="MoveBack(this.selectedIndex)">
+        <option>阿迪达斯</option>
+      </select>
+      </td>
+  </tr>
+</table>
+<div class="alignc pb20 pt20">
+	<input type="button" value="添 加" class="btn_sub" onclick="location.href('opResult.html?msg=添加素材成功！&url=11sg_list.html')"/>
+</div>
+</div>
+<div class="noticeInfo"><h5>Notice 说明</h5>
+<p>【权限设置】详细请咨询开发者！</p>
+</div>
+</body>
+</html>

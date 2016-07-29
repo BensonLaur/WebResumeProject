@@ -1,0 +1,45 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=gb2312" />
+<title>操作信息</title>
+<link href="css/main.css" rel="stylesheet" />
+<script language="javascript">
+//window.onload = url();
+
+var urls;
+function url()
+{
+  urlinfo=window.location.href;  //获取当前页面的url
+	len=urlinfo.length;//获取url的长度
+	offset=urlinfo.indexOf("?");//设置参数字符串开始的位置
+	newsidinfo=urlinfo.substr(offset,len)//取出参数字符串 这里会获得类似“id=1”这样的字符串
+	newsids1=newsidinfo.split("&");//对获得的参数字符串按照“&”进行分割
+	newsids=newsids1[0].split("=");//对获得的参数字符串按照“=”进行分割
+	msg=newsids[1];//得到参数值
+	newsids=newsids1[1].split("=");//对获得的参数字符串按照“=”进行分割
+	urls=newsids[1];//得到参数值	
+	
+	document.getElementById("msg1").innerText = msg;
+}
+</script>
+
+</head>
+
+<body onload = "url()">
+<div id="sub_content">
+
+<h2 class="search_t">操作信息</h2>
+<table class="info_tab3 ctabt">
+	<tr>
+    <td align="middle"><div class="notice" id="msg1" name="msg1">操作信息</div></td>
+    </tr>
+  
+</table>
+<div class="alignc pb20 pt20">	 
+	<input type="button" value="返 回" class="btn_sub" onclick="window.open(urls,'_self')" />
+	<!--a href="5role_list.html">返回</a-->
+</div>
+</div>
+</body>
+</html>

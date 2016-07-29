@@ -1,0 +1,303 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=gb2312" />
+<title>公司管理</title>
+<link href="css/main.css" rel="stylesheet" />
+</head>
+<script>
+function showObject(obj,obj1) {
+     document.getElementById(obj).style.display= ""; 
+     document.getElementById(obj1).style.display= "none"; 
+ } 
+function deltr(trid)
+{    //alert(trid);
+    var tab=document.getElementById("image");
+    var row=document.getElementById(trid);    
+    var index=row.rowIndex;//rowIndex属性为tr的索引值，从0开始   
+    tab.deleteRow(index);  //从table中删除
+
+    //重新排列序号，如果没有序号，这一步省略
+    var nextid;
+    for(i=index;i<tab.rows.length;i++){
+        tab.rows[i].cells[0].innerHTML = i.toString();
+        nextid=i+1;
+
+    }
+}
+</script>
+<body>
+<div id="pass1111" class="pop" align="center">
+<h2></h2>
+<table>
+<tr><td><img src="images/z6.jpg" width="500" height="366" /></td></tr>
+<tr><td><input type="button" value="关闭" class="btn_sub" onclick="closePop('pass1111')"/></td></tr>
+</table>
+</div>
+<div id="pass1112" class="pop" align="center">
+<h2></h2>
+<table>
+<tr><td><img src="images/z5.jpg" width="500" height="366" /></td></tr>
+<tr><td><input type="button" value="关闭" class="btn_sub" onclick="closePop('pass1112')"/> </td></tr>
+</table>
+</div>
+<div id="pass1113" class="pop" align="center">
+<h2></h2>
+<table>
+<tr><td><img src="images/z7.jpg" width="500" height="366" /></td></tr>
+<tr><td><input type="button" value="关闭" class="btn_sub" onclick="closePop('pass1113')"/> </td></tr>
+</table>
+</div>
+<div id="pass1114" class="pop" align="center">
+<h2></h2>
+<table>
+<tr><td><img src="images/p.jpg" width="500" height="366" /></td></tr>
+<tr><td><input type="button" value="关闭" class="btn_sub" onclick="closePop('pass1114')"/> </td></tr>
+</table>
+</div>
+
+<div id="sub_content">
+	<h2 class="search_t"><p>公司信息</p></h2>
+	
+	<table class="info_tab3 ctabt">
+	  <tr>
+		<th width="15%">公司名称</th>
+		<td colspan="3"><input type="text" class="txt" size="35" /></td>
+		<th>公司简称</th>
+		<td class="noborder"><input type="text" class="txt" size="10" value="甲壳虫动漫" />
+		  </td>
+	  </tr>
+	  <tr>
+		<th>主营产品</th>
+		<td colspan="3"><input type="text" class="txt" size="35" value="纸牌、纸卡、文具、拼图、纸制品" /></td>
+		<th>所属行业</th>
+		<td class="noborder"><input type="text" class="txt" size="10" value="纸制品玩具" />
+		  </td>
+	  </tr>
+	  <tr>
+		<th>成立时间</th>
+		<td><select name="year">
+		  <option value="0">请选择</option>
+		  <option value="1">2010</option>
+		  <option value="2">2009</option>
+		  <option value="3">2008</option>
+		  <option value="4">2007</option>
+		  <option value="5">2006</option>
+		  <option value="6">2005</option>
+		  <option value="7">2004</option>
+		  <option value="8">2003</option>
+		  <option value="9">2002</option>
+		  <option value="10">2001</option>
+		  <option value="11">2000</option>
+		  <option value="12">1999</option>
+		  <option value="13">1998</option>
+		  <option value="14">1997</option>
+		  <option value="15">1996</option>
+		  <option value="16">1995</option>
+		  <option value="17">1994</option>
+		  <option value="18">1993</option>
+		  <option value="19">1992</option>
+		  <option value="20">1991</option>
+		  <option value="21">1990</option>
+		</select>
+		年</td>
+		<th>注册资本</th>
+		<td><input type="text" class="txt" size="6" value="300" /> 
+		  万</td>
+		<th>营 业 额</th>
+		<td class="noborder"><input type="text" class="txt" size="6" value="300" /> 亿</td>
+	  </tr>
+	  <tr>
+		<th>员工数量</th>
+		<td><input type="text" class="txt" size="10" value="300-500" /></td>
+		<th>营业地点</th>
+		<td><input type="text" class="txt" size="12" value="浙江省衢州市" /></td>
+		<th>产品执行标准</th>
+		<td class="noborder"><select name="select" id="select">
+		  <option value="0">请选择</option>
+		  <option value="1">国家</option>
+		  <option value="2">部颁</option>
+		  <option value="3">行业</option>
+		  <option value="4">其他</option>
+		</select></td>
+	  </tr>
+	  <tr>
+		<th>产品定位</th>
+		<td><select name="select2" id="select2">
+		  <option value="0">请选择</option>
+		  <option value="1">低价位</option>
+		  <option value="2">中低档</option>
+		  <option value="3">中档</option>
+		  <option value="4">中高档</option>
+		  <option value="5">高档</option>
+		</select></td>
+		<th>价格范围</th>
+		<td><input type="text" class="txt" size="10" value="0.5-50" />
+		  元</td>
+		<th>产品风格</th>
+		<td class="noborder">
+		  <select name="select3" id="select3">
+			<option value="0">请选择</option>
+			<option value="1">卡通</option>
+			<option value="2">写实</option>
+			<option value="3">夸张</option>
+			<option value="4">其他</option>
+		  </select></td>
+	  </tr>
+	  <tr>
+		<th>联 系 人</th>
+		<td><input type="text" class="txt" size="10" value="李奇斌" />
+		  </td>
+		<th>联系方式</th>
+		<td><input type="text" class="txt" size="16" value="010-846941371" /></td>
+		<th>网     站</th>
+		<td class="noborder"><input type="text" class="txt" size="16" value="www.jiakechong.com" /></td>
+	  </tr>
+	</table>
+	<table class="info_tab3 ctabb" id="image">
+	  <tr>
+		<th>地 址</th>
+		<td colspan="4" class="noborder"><input type="text" class="txt" size="35" value="浙江省衢州市开化工业区茶厂片区" /></td>
+	  </tr>
+	  <tr>
+		<th width="15%">企业三证</th>
+		<td colspan="4" class="itab1 noborder"><table width="100%" border="0" cellspacing="0" cellpadding="0" class="notabb">
+		  <tr id="image11">
+			<td width="20%">营业执照注册号</td>
+			<td><input type="text" class="txt" size="35" value="330824000008560" /></td>
+			<td><div id="im1"> <img  src="images/temp_pic1.jpg" width="61" height="46" onclick="showPop('pass1111')"/><a href="javascript:void(0)" onclick="showObject('input1','im1')" >删除</a></div></td>
+			<td><div id="input1"  style="display:none"><input type="file" class="txt" size="20"/><input type="button" value="上传图片" class="btn_orange" onclick="javascript:showObject('im1','input1')"/></div>
+		  </td></tr>
+		  <tr id="image22">
+			<td>组织机构代码证号</td>
+			<td><input type="text" class="txt" size="35" value="55285444-2" />
+			  </td>
+			
+			<td><div id="im2"><img src="images/temp_pic2.jpg" width="61" height="46" onclick="showPop('pass1112')"/><a href="javascript:void(0)" onclick="javascript:showObject('input2','im2')" >删除</a></div></td>
+			<td><div id="input2"  style="display:none"><input type="file" class="txt" size="20"/><input type="button" value="上传图片" class="btn_orange" onclick="javascript:showObject('im2','input2')"/></div>
+		  
+		  </td></tr>
+		  <tr id="image33">
+			<td>地税/国税登记号</td>
+			<td><input type="text" class="txt" size="35" value="330824552854442" />
+			  </td>
+			<td><div id="im3"  style="display:none"><img src="images/temp_pic3.jpg" width="61" height="46" onclick="showPop('pass1113')"/><a href="javascript:void(0)" onclick="javascript:showObject('input3','im3')" >删除</a></div></td>
+			<td><div id="input3"><input type="file" class="txt" size="20"/><input type="button" value="上传图片" class="btn_orange" onclick="javascript:showObject('im3','input3')"/></div></td>
+		  </tr>
+		</table></td>
+	  </tr>
+	  <tr>
+		<th>生产资质证明和安全生产证书</th>
+		<td colspan="4" class="itab1 noborder"><table width="100%" border="0" cellspacing="0" cellpadding="0" class="notabb">
+	  <tr id="image44">
+		<td><span class="noborder">
+		  <input type="text" class="txt" size="35" value="iso9001、iso14000、iso18000" />
+		</span></td>
+		<td><div id="im4"  ><img src="images/temp_pic2.jpg" width="61" height="46" onclick="showPop('pass1114')"/> <a href="javascript:void(0)" onclick="javascript:showObject('input4','im4')" >删除</a></div></td>
+		<td> <div id="input4" style="display:none"><input type="file" class="txt" size="20"/><input type="button" value="上传图片" class="btn_orange" onclick="javascript:showObject('im4','input4')"/></div></td>
+
+	  </tr>
+	</table>
+	</td>
+	  </tr>
+	  <tr>
+		<th rowspan="3">经营品牌</th>
+		<th>&nbsp;</th>
+		<th>有/无</th>
+		<th colspan="2" class="noborder">品牌描述</th>
+		</tr>
+	  <tr>
+		<th>自有品牌</th>
+		<th><input type="text" class="txt" size="10" value="哈利路亚" /></th>
+		<td colspan="2" class="noborder"><input type="text" class="txt" size="30" value="品牌描述" /></td>
+		</tr>
+	  <tr>
+		<th>授权品牌</th>
+		<th><input type="text" class="txt" size="10" value="哈哈兔" /></th>
+		<td colspan="2" class="noborder"><input type="text" class="txt" size="30" value="品牌描述" /></td>
+		</tr>
+	  <tr>
+		<th rowspan="4">经营方式</th>
+		<th>&nbsp;</th>
+		<th>有/无</th>
+		<th>所占比例</th>
+		<th class="noborder">详细表述</th>
+	  </tr>
+	  <tr>
+		<th>出口</th>
+		<td><select name="select4" id="select4">
+			<option value="0">无</option>
+			<option value="1">有</option>
+		  </select></td>
+		<td><input type="text" class="txt" size="10" value="0" /></td>
+		<td class="noborder"><input type="text" class="txt" size="35" value="网络渠道建全，销售占比较大,批销为主" /></td>
+	  </tr>
+	  <tr>
+		<th>OEM</th>
+		<td><select name="select5" id="select5">
+			<option value="0">无</option>
+			<option value="1" selected="selected">有</option>
+		  </select></td>
+		<td>
+		  <input type="text" class="txt" size="10" value="90%" /></td>
+		<td class="noborder"><input type="text" class="txt" size="35" value="网络渠道建全，销售占比较大,批销为主" /></td>
+	  </tr>
+	  <tr>
+		<th>内销</th>
+		<td><select name="select6" id="select6">
+			<option value="0">无</option>
+			<option value="1" selected="selected">有</option>
+		  </select></td>
+		<td><input type="text" class="txt" size="10" value="10%" /></td>
+		<td class="noborder"><input type="text" class="txt" size="35" value="网络渠道建全，销售占比较大,批销为主" /></td>
+	  </tr>
+	  <tr>
+		<th>主要市场</th>
+		<td colspan="4" class="noborder"><label for="beijing"><input name="beijing" id="beijing" type="checkbox" value="" />北京</label>
+	<label for="tianjin"><input name="tianjin" id="tianjin" type="checkbox" value="" />天津</label>
+	<label for="chongqing"><input name="chongqing" id="chongqing" type="checkbox" value="" />重庆</label>
+	<label for="shanghai"><input name="shanghai" id="shanghai" type="checkbox" value="" />上海</label>
+	<label for="hebei"><input name="hebei" id="hebei" type="checkbox" value="" />河北</label>
+	<label for="shanxi"><input name="shanxi" id="shanxi" type="checkbox" value="" />山西</label>
+	<label for="jilin"><input name="jilin" id="jilin" type="checkbox" value="" />吉林</label>
+	<label for="heilongjiang"><input name="heilongjiang" id="beijing" type="checkbox" value="" />黑龙江</label>
+	<label for="liaoning"><input name="liaoning" id="liaoning" type="checkbox" value="" />辽宁</label>
+	<label for="jiangsu"><input name="jiangsu" id="jiangsu" type="checkbox" value="" />江苏</label>
+	<label for="zhejiang"><input name="zhejiang" id="zhejiang" type="checkbox" value="" />浙江</label>
+	<label for="anhui"><input name="anhui" id="beijing" type="checkbox" value="" />安徽</label>
+	<label for="fujian"><input name="fujian" id="fujian" type="checkbox" value="" />福建</label>
+	<label for="jiangxi"><input name="jiangxi" id="jiangxi" type="checkbox" value="" />江西</label>
+	<label for="shandong"><input name="shandong" id="shandong" type="checkbox" value="" />山东</label>
+	<label for="henan"><input name="henan" id="henan" type="checkbox" value="" />河南</label>
+	<label for="hubei"><input name="hubei" id="hubei" type="checkbox" value="" />湖北</label>
+	<label for="hunan"><input name="hunan" id="hunan" type="checkbox" value="" />湖南</label>
+	<label for="guangdong"><input name="guangdong" id="guangdong" type="checkbox" value="" />广东</label>
+	<label for="hainan"><input name="hainan" id="hainan" type="checkbox" value="" />海南</label>
+	<label for="sichuan"><input name="sichuan" id="sichuan" type="checkbox" value="" />四川</label>
+	<label for="guizhou"><input name="guizhou" id="guizhou" type="checkbox" value="" />贵州</label>
+	<label for="yunnan"><input name="yunnan" id="yunnan" type="checkbox" value="" />云南</label>
+	<label for="shanxi"><input name="shanxi" id="shanxi" type="checkbox" value="" />陕西</label>
+	<label for="gansu"><input name="gansu" id="gansu" type="checkbox" value="" />甘肃</label>
+	<label for="qinghai"><input name="qinghai" id="qinghai" type="checkbox" value="" />青海</label>
+	<label for="taiwan"><input name="taiwan" id="taiwan" type="checkbox" value="" />台湾</label>
+	</td>
+	  </tr>
+	  <tr>
+		<th>经销渠道</th>
+		<td colspan="4" class="noborder">
+		  <input type="text" class="txt" size="30" value="批发，商超" /></td>
+	  </tr>
+	  <tr>
+		<th height="29">特色信息</th>
+		<td colspan="4" class="noborder ptd10"><textarea name="textarea" id="textarea" cols="80" rows="5">自有浙江甲壳虫印刷包装有限公司，投资近亿元，拥有德国曼罗兰、瑞士博斯特、德国爱克发等国际先进印刷生产线</textarea></td>
+	  </tr>
+	</table>
+	<div class="alignc pb20">
+		<input type="button" value="提 交" class="btn_sub" onclick="changeIframe2('opResult.html?msg=公司已保存&url=15company_list.html')"/> <input type="button" value="打印资料" class="btn_print" onclick="changeIframe2('opResult.html?msg=正在打印。。。请稍候&url=15company_show.html')">
+	</div>
+</div>
+<div id="mask"></div>
+</body>
+
+<script type="text/javascript" src="js/main.js"></script>
+</html>

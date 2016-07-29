@@ -1,0 +1,106 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=gb2312" />
+<title>人员管理</title>
+<link href="css/main.css" rel="stylesheet" />
+</head>
+<script>
+function lock(id1，id2,id3)
+{   var i1 = arguments[0];
+    var i2 = arguments[1];
+	var i3 = arguments[2];
+    if(confirm("是否要锁定该账户?"))
+    {
+         alert("账户已锁定");
+		 
+         document.getElementById(i1).innerHTML = "已锁定";
+         document.getElementById(i2).innerHTML = "解锁";
+		 document.getElementById(i3).className="";
+     }
+    else
+    {
+    }	
+}
+function unlock(id1,id2,id3)
+{   var i1 = arguments[0];
+    var i2 = arguments[1];
+	var i3 = arguments[2];
+    if(confirm("是否要解锁该账户?"))
+    {
+         alert("账户已解锁");
+         document.getElementById(i1).innerHTML = "活动";
+         document.getElementById(i2).innerHTML = "锁定";
+		 document.getElementById(i3).className="redf";
+     }
+    else
+    {
+    }	
+}
+function showObject() {
+     document.getElementById("dis1").style.display= ""; 
+     document.getElementById("dis2").style.display= ""; 
+ }
+</script>
+<body>
+<div id="sub_content">
+
+<h2 class="search_t">人员搜索<span class="sc_search"></span></h2>
+<div class="c_search">
+<input type="text" class="txt" value="余" size="60" /> <input class="btn_search" type="button" value="搜 索" onclick="showObject()"/>
+</div>
+<div id="dis1" class="notice" style="display:none"><h3>搜索结果</h3><p>总共搜索到【<b class="redf">3</b>】名用户符合搜索条件</p></div>
+<h2>
+  <p>人员列表</p></h2>
+  <div id="dis2" style="display:none">
+<table width="100%" border="0" cellspacing="0" cellpadding="0" class="info_tab1">
+  <tr>
+    <th width="8%">编号</th>
+    <th width="15%">中文名</th>
+    <th width="10%">英文名</th>
+    <th width="20%">所属公司</th>
+    <th width="10%">所属类型</th>
+    <th>联系电话</th>
+    <th>状态</th>
+    <th>操作</th>
+  </tr>
+  <tr>
+    <td>T0001</td>
+    <td>余生</td>
+    <td>uzecheng</td>
+    <td><a href="javascript:void(0)" onclick="changeIframe2('15company_show.html')">优扬传媒</a></td>
+    <td>余则生</td>
+    <td>15810644610</td>
+    <td id="11">活动</td>
+    <td class="redf" id="13" ><a id="12" href="javascript:lock('11','12','13')">锁定</a></td>
+  </tr>
+  <tr>
+    <td>A0002</td>
+    <td>余达</td>
+    <td>dali</td>
+    <td><a href="javascript:void(0)" onclick="changeIframe2('15company_show.html')">梦龙</a></td>
+    <td>李达</td>
+    <td>15810644610</td>
+    <td id="21">已锁定</td>
+    <td class="" id="23"><a id="22" href="javascript:unlock('21','22','23')">解锁</a></td>
+  </tr>
+  <tr>
+    <td>C0003</td>
+    <td>余重新</td>
+    <td>chognxin</td>
+    <td><a href="javascript:void(0)" onclick="changeIframe2('15company_show.html')">新乐新</a></td>
+    <td>王重新</td>
+    <td>15810644610</td>
+    <td id="31">已锁定</td>
+    <td class="" id="33"><a id="32" href="javascript:unlock('31','32','33')">解锁</a></td>
+    </tr>
+</table>
+<div class="page">共<span>1</span>页<a class="p_last">上一页</a> <a class="on">1</a><a  class="p_next">下一页</a></div>
+</div>
+</div>
+<div class="noticeInfo"><h5>Notice 说明</h5>
+<p>【锁定/解锁提示】点击操作后，提示用户是否确认此操作，此操作需要写入到管理员日志中</p>
+</div>
+<script type="text/javascript" src="js/main.js"></script>
+</body>
+</html>

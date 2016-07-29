@@ -1,0 +1,302 @@
+[
+    {
+        "field": "sampleNo",
+        "text": "样品编号"
+    },
+    {
+        "field": "sampleDate",
+        "text": "采样时间"
+    },
+    {
+        "field": "sampleProvince",
+        "text": "采样省份"
+    },
+    {
+        "field": "farmName",
+        "text": "采样地名称"
+    },
+    {
+        "field": "sampleFarmAddr",
+        "text": "养殖场名称"
+    },
+    {
+        "field": "animalName",
+        "text": "动物"
+    },
+    {
+        "field": "sampleAnimalAge",
+        "text": "日龄"
+    },
+    {
+        "field": "sampleSource",
+        "text": "来源"
+    },
+    {
+        "field": "sampleCollectionPart",
+        "text": "部位"
+    },
+    {
+        "field": "sampleCollector",
+        "text": "采样人员"
+    },
+    {
+        "field": "sampleMedicalHistory",
+        "text": "动物用药史"
+    },
+    {
+        "field": "sampleRemarks",
+        "text": "样品备注"
+    },
+    {
+        "field": "strainCategory",
+        "text": "菌属"
+    },
+    {
+        "field": "strainType",
+        "text": "菌种"
+    },
+    {
+        "field": "strainStorageDate",
+        "text": "保存时间"
+    },
+    {
+        "field": "serotype",
+        "text": "血清型"
+    },
+    {
+        "field": "strainMlst",
+        "text": "MLST分型"
+    },
+    {
+        "field": "strainPlg",
+        "text": "PLG分型"
+    },
+    {
+        "field": "strainOperator",
+        "text": "菌种鉴定人"
+    },
+    {
+        "field": "strainParter",
+        "text": "细菌分型人"
+    },
+    {
+        "field": "strainRemarks",
+        "text": "菌株基本信息备注"
+    },
+    {
+        "field": "amp",
+        "text": "AMP"
+    },
+    {
+        "field": "oxa",
+        "text": "OXA"
+    },
+    {
+        "field": "pen",
+        "text": "PEN"
+    },
+    {
+        "field": "pip",
+        "text": "PIP"
+    },
+    {
+        "field": "tzp",
+        "text": "TZP"
+    },
+    {
+        "field": "caz",
+        "text": "CAZ"
+    },
+    {
+        "field": "cfz",
+        "text": "CFZ"
+    },
+    {
+        "field": "cqm",
+        "text": "CQM"
+    },
+    {
+        "field": "cro",
+        "text": "CRO"
+    },
+    {
+        "field": "ctx",
+        "text": "CTX"
+    },
+    {
+        "field": "fep",
+        "text": "FEP"
+    },
+    {
+        "field": "fox",
+        "text": "FOX"
+    },
+    {
+        "field": "amk",
+        "text": "AMK"
+    },
+    {
+        "field": "apr",
+        "text": "APR"
+    },
+    {
+        "field": "gen",
+        "text": "GEN"
+    },
+    {
+        "field": "neo",
+        "text": "NEO"
+    },
+    {
+        "field": "net",
+        "text": "NET"
+    },
+    {
+        "field": "str",
+        "text": "STR"
+    },
+    {
+        "field": "tob",
+        "text": "TOB"
+    },
+    {
+        "field": "dox",
+        "text": "DOX"
+    },
+    {
+        "field": "min",
+        "text": "MIN"
+    },
+    {
+        "field": "tet",
+        "text": "TET"
+    },
+    {
+        "field": "chl",
+        "text": "CHL"
+    },
+    {
+        "field": "ffc",
+        "text": "FFC"
+    },
+    {
+        "field": "azm",
+        "text": "AZM"
+    },
+    {
+        "field": "ery",
+        "text": "ERY"
+    },
+    {
+        "field": "rif",
+        "text": "RIF"
+    },
+    {
+        "field": "tec",
+        "text": "TEC"
+    },
+    {
+        "field": "van",
+        "text": "VAN"
+    },
+    {
+        "field": "cli",
+        "text": "CLI"
+    },
+    {
+        "field": "cl",
+        "text": "CL"
+    },
+    {
+        "field": "imp",
+        "text": "IMP"
+    },
+    {
+        "field": "mem",
+        "text": "MEM"
+    },
+    {
+        "field": "tia",
+        "text": "TIA"
+    },
+    {
+        "field": "val",
+        "text": "VAL"
+    },
+    {
+        "field": "fos",
+        "text": "FOS"
+    },
+    {
+        "field": "nit",
+        "text": "NIT"
+    },
+    {
+        "field": "sxt",
+        "text": "SXT"
+    },
+    {
+        "field": "tmp",
+        "text": "TMP"
+    },
+    {
+        "field": "cip",
+        "text": "CIP"
+    },
+    {
+        "field": "lev",
+        "text": "LEV"
+    },
+    {
+        "field": "nal",
+        "text": "NAL"
+    },
+    {
+        "field": "nor",
+        "text": "NOR"
+    },
+    {
+        "field": "ofx",
+        "text": "OFX"
+    },
+    {
+        "field": "lzd",
+        "text": "LZD"
+    },
+    {
+        "field": "oqx",
+        "text": "OQX"
+    },
+    {
+        "field": "micdetector",
+        "text": "实验人员"
+    },
+    {
+        "field": "micdetectionType",
+        "text": "实验方式"
+    },
+    {
+        "field": "micRemarks",
+        "text": "MIC备注"
+    },
+    {
+        "field": "genname",
+        "text": "耐药基因"
+    },
+    {
+        "field": "iseq",
+        "text": "插入元件"
+    },
+    {
+        "field": "replicon",
+        "text": "复制子"
+    },
+    {
+        "field": "genTc",
+        "text": "接合子"
+    },
+    {
+        "field": "genOperator",
+        "text": "操作人"
+    }
+]

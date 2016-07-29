@@ -1,0 +1,72 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=gb2312" />
+<title>人员管理</title>
+<link href="css/main.css" rel="stylesheet" />
+<script src="js/main.js" type="text/javascript"></script>
+</head>
+
+<body>
+<div id="sub_content">
+
+<h2 class="search_t">活动资源申请</h2>
+<h3></h3>
+<table class="info_tab3 ctabt">
+  <tr>
+    <th width="15%">活动名称</th>
+    <td class="noborder"><input class="txt" value="洛克王国2012新宠物素材申请" size="55" /></td>
+  </tr>
+  <tr>
+    <th>活动时间</th>
+    <td class="noborder"><input class="txt" value="2012-2-10" size="15" /> 
+      至      
+      <input class="txt" value="2012-4-15" size="15" /></td>
+  </tr>
+  <tr>
+    <th>申请说明</th>
+    <td class="noborder"><img src="images/editor.jpg" width="443" height="233" />
+      <!--textarea name="textarea" id="textarea" cols="55" rows="15"><#name#>您好，请点击下面的链接重新设置密码<br />链接：<#link#></textarea-->
+支持HTML</td>
+  </tr>
+  <tr>
+    <th>所属项目</th>
+    <td><select name="select5" id="select5">
+      <option value="0">请选择项目</option>
+      <option value="1" selected="selected">洛克王国掌机</option>
+      <option value="2">地下城与勇士图书出版项目</option>
+    </select></td>
+  </tr>
+  <tr>
+    <th>合作公司</th>
+    <td class="noborder">广州梦龙</td>
+  </tr>
+  <tr>
+    <th>相关人</th>
+    <td class="noborder"><textarea name="textarea2" id="textarea2" cols="55" rows="3">DoriWang(王晨)、PonLi(李达)</textarea>
+      <span class="grayf">可以设置多人</span></td>
+  </tr>
+  <tr>
+    <th>活动策划</th>
+    <td class="noborder"><p id="ind_pic1" style="display:none"><img src="images/temp_sg1.jpg" width="235" height="235" />
+      </p>
+      <p>
+        <input type="file" name="button4" id="button4" class="txt" />
+        <input type="button" value="上传" class="btn_orange" onclick="show2('ind_pic1')"/>
+      </p></td>
+  </tr>
+  <tr>
+    <th>审批记录</th>
+    <td class="noborder"><p>授权组：dorisqiu(邱晨) 2-15 发起申请</p>
+      <p>项目组：upsonliang(梁叶春) 2-20 审批申请</p></td>
+  </tr>
+</table>
+<div class="alignc pb20 pt20">
+	<input type="button" value="申 请" class="btn_sub" onclick="location.href('opResult.html?msg=申请成功！&url=11sg_applylist.html')"/>
+</div>
+</div>
+<div class="noticeInfo"><h5>Notice 说明</h5>
+<p>合作公司：根据选择的项目自动读取</p>
+</div>
+</body>
+</html>

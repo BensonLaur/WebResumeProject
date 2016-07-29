@@ -1,0 +1,146 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=gb2312" />
+<title>人员管理</title>
+<link href="css/main.css" rel="stylesheet" />
+<script type="text/javascript" src="js/main.js"></script>
+</head>
+
+<body>
+<div id="sub_content">
+
+<h2 class="search_t">新增角色</h2>
+<h3></h3>
+<table class="info_tab3 ctabt">
+  <tr>
+    <th width="15%">角色名称</th>
+    <td><input class="txt" value="" size="35" /></td>
+  </tr>
+  <tr>
+    <th>所属公司</th>
+    <td><strong>
+      <select name="select2" id="select2">
+	  <option value="0">-请选择-</option>
+        <option value="1">深圳市腾讯计算机系统有限公司</option>
+        <option value="2">腾讯科技(深圳)有限公司</option>
+        </select>
+      </strong></td>
+  </tr>
+  <tr>
+    <th>是否对普通用户可见</th>
+    <td><span class="noborder">
+      <input name="checkbox5" type="checkbox" id="checkbox5"  />
+      </span>不可见</td>
+  </tr>
+  <tr>
+    <th>角色说明</th>
+    <td class="noborder"><textarea name="textarea" id="textarea" cols="55" rows="5"></textarea></td>
+  </tr>
+</table>
+<h2 class="search_t">角色权限</h2>
+<table class="info_tab3 ctabt">
+ <tr>
+    <th width="15%">个人工作台</th>
+    <td>
+		<input type="checkbox" name="func-1[]" value="1" />我的待办  
+        <input type="checkbox" name="func-1[]" value="2" />我的已办 
+        <input type="checkbox" name="func-1[]" value="3" />个人资料
+		<input type="checkbox" name="func-1[]" value="4" />修改密码<br />
+
+		<input type="checkbox" name="func-1[]" value="5" />项目查询
+		<input type="checkbox" name="func-1[]" value="6" />用户查询
+		<input type="checkbox" name="func-1[]" value="7" />新建提醒
+		<input type="checkbox" name="func-1[]" value="8" />提醒列表<br />
+		
+		<input type="checkbox" name="func-1[]" value="9" />新建用户
+		<input type="checkbox" name="func-1[]" value="10" />编辑用户
+		<input type="checkbox" name="func-1[]" value="11" />重置密码
+		<input type="checkbox" name="func-1[]" value="11" />锁定&解锁用户
+        <p><input name="" type="button" value="全选" onClick="chkAllClick('func-1[]')"/></p></td>
+  </tr>
+  <tr>
+    <th width="15%">产品审批流程</th>
+    <td>
+		<input type="checkbox" name="func-1[]" value="1" />新建开发计划  
+        <input type="checkbox" name="func-1[]" value="2" />开发计划列表  
+        <input type="checkbox" name="func-1[]" value="3" />新建出版计划
+		<input type="checkbox" name="func-1[]" value="4" />出版计划列表 <br />
+
+		<input type="checkbox" name="func-1[]" value="5" />新建促销计划
+		<input type="checkbox" name="func-1[]" value="6" />促销计划列表
+		<input type="checkbox" name="func-1[]" value="7" />新建产品设计
+		<input type="checkbox" name="func-1[]" value="8" />产品设计列表 <br />
+		
+		<input type="checkbox" name="func-1[]" value="9" />新建打样申请
+		<input type="checkbox" name="func-1[]" value="10" />打样申请列表<br/>
+		<input type="checkbox" name="func-1[]" value="9" />审批产品开发申请
+		<input type="checkbox" name="func-1[]" value="10" />审批产品设计申请
+
+		<input type="checkbox" name="func-1[]" value="9" />审批产品打样申请
+        <p><input name="" type="button" value="全选" onClick="chkAllClick('func-1[]')"/></p></td>
+  </tr>
+  <tr>
+    <th width="15%">防伪标签</th>
+    <td>
+		<input type="checkbox" name="func-1[]" value="1" />新建防伪标申请  
+        <input type="checkbox" name="func-1[]" value="2" />防伪标申请列表  
+        <input type="checkbox" name="func-1[]" value="3" />防伪标生产记录
+		<input type="checkbox" name="func-1[]" value="4" />防伪标生产列表<br />
+
+		<input type="checkbox" name="func-1[]" value="5" />防伪标发货记录
+		<input type="checkbox" name="func-1[]" value="6" />防伪标付款&发票
+		<input type="checkbox" name="func-1[]" value="7" />审批防伪标签申请
+		<input type="checkbox" name="func-1[]" value="8" />防伪标签发货 <br />
+		
+		<input type="checkbox" name="func-1[]" value="9" />防伪标签付款登记
+		<input type="checkbox" name="func-1[]" value="10" />防伪标签开票登记
+		<input type="checkbox" name="func-1[]" value="9" />防伪标签发快递登记
+
+        <p><input name="" type="button" value="全选" onClick="chkAllClick('func-1[]')"/></p></td>
+  </tr>
+    <tr>
+    <th width="15%">StyleGuide&素材</th>
+    <td>
+		<input type="checkbox" name="func-1[]" value="1" />添加图片  
+        <input type="checkbox" name="func-1[]" value="2" />素材列表  
+        <input type="checkbox" name="func-1[]" value="3" />批量设置权限<br />
+		<input type="checkbox" name="func-1[]" value="4" />素材申请
+
+		<input type="checkbox" name="func-1[]" value="5" />申请列表
+		<input type="checkbox" name="func-1[]" value="6" />审批素材申请
+
+        <p><input name="" type="button" value="全选" onClick="chkAllClick('func-1[]')"/></p></td>
+  </tr>
+  <tr>
+	<th>授权经理</th>
+	<td><input type="checkbox" name="func-1[]" value="5" /></td>
+  </tr>
+  <tr>
+	<th>系统管理</th>
+	<td><input type="checkbox" name="func-1[]" value="5" /></td>
+  </tr>
+</table>
+<div class="alignc pb20 pt20">
+	<input type="button" value="提 交" class="btn_sub" onclick="showPop('message')"/>
+</div>
+<div class="noticeInfo"><h5>Notice 说明</h5>
+<p>【不可见】有些角色不需要参与授权审批流程，不需要所有用户都可见，例如防伪标签管理员、领导</p>
+<p>【授权经理、系统管理员权限】授权经理、系统管理员权限设定好就不修改了，所以不在此处体现</p>
+</div>
+</div>
+<div id="mask"></div>
+<div id="message" class="pop2">
+   <table class="info_tab3 ctabt">
+	<tr>
+    <td align="middle" class="style5"><div class="notice" id="msg1" name="msg1">操作成功</div></td>
+    </tr>
+    <tr>
+    <td align="center" class="style5">
+    <input type="button" value="确定" class="btn_sub" onclick="history.go(-1)" />
+    </td>
+    </tr>
+</table>
+</div>
+</body>
+</html>

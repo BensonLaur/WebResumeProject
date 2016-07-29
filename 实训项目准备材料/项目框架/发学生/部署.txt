@@ -1,0 +1,8 @@
+1、建数据库
+2、导入项目（设置编码UTF-8）
+2.1、导包
+2.2、设置数据库连接neusoft/src/resources/spring/applicationContext-mybatis.xml
+2.3、访问项目http://localhost:10086/neusoft/user/login.action
+账号:admin
+密码:admin123
+
